@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 type Props = {};
 
 export default function Header({}: Props) {
-	const [isScrollingUp, setIsScrollingUp] = useState(false);
+	const [isScrollingUp, setIsScrollingUp] = useState(true);
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
+	const [headerClass, setHeaderClass] = useState<string>("header");
 
 	useEffect(() => {
 		function handleScroll() {

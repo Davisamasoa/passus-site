@@ -24,7 +24,7 @@ export default function Home() {
 	return (
 		<>
 			<Header />
-			<header className="lg:px-32 relative md:mb-20 mb-10">
+			<header className="lg:px-32 relative md:mb-20 mt-40 mb-10">
 				<motion.img
 					animate={{ scaleX: 1, opacity: 1 }}
 					initial={{ scaleX: 0.5, opacity: 0 }}
@@ -36,7 +36,7 @@ export default function Home() {
 					animate={{ y: 0, opacity: 1 }}
 					initial={{ y: 100, opacity: 0 }}
 					transition={{ duration: 1, delay: 0.5 }}
-					className="absolute font-instrument_serif text-4xl top-2/4 left-1/4 -translate-y-[50%] z-10 text-white"
+					className="absolute font-instrument_serif sm:text-4xl text-2xl top-[45%] left-12 sm:left-1/4  z-10 text-white"
 				>
 					We&apos;ve come a long, long way <br /> together
 				</motion.h1>
