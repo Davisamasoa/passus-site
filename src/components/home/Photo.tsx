@@ -1,0 +1,35 @@
+import { LazyMotion, domAnimation, m, motion } from "framer-motion";
+import { useEffect, useState } from "react";
+
+type Props = {
+	src: string;
+	width: number | string;
+	alt: string;
+	subtitle: string;
+	title: string;
+};
+
+export default function Photo({ src, width, alt, subtitle, title }: Props) {
+	return (
+		<motion.article
+			whileInView={{ y: 0, opacity: 1 }}
+			initial={{ y: 20, opacity: 0 }}
+			transition={{ duration: 1 }}
+			className="mb-4"
+		>
+			<picture className="overflow-hidden">
+				<motion.img
+					whileHover={{ scale: 1.01 }}
+					className={`object-cover cursor-pointer hover:scale-125 transition-all duration-300 z-20 h-auto md:h-[400px]`}
+					width={width}
+					src={src}
+					alt={alt}
+				/>
+			</picture>
+			<div className="mt-2 flex flex-col">
+				<span className="text-zinc-500 text-sm">{subtitle} </span>
+				<h3 className="font-instrument_serif text-xl tracking-wider">{title}</h3>
+			</div>
+		</motion.article>
+	);
+}
