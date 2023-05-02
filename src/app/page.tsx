@@ -24,12 +24,13 @@ export default function Home() {
 	return (
 		<>
 			<Header />
-			<header className="lg:px-32 relative md:mb-20 mt-40 mb-10">
+			<header className="lg:mx-32  relative md:mb-20 mt-40 mb-10 z-50 max-w-fit max-h-[700px] overflow-hidden">
 				<motion.img
 					animate={{ scaleX: 1, opacity: 1 }}
 					initial={{ scaleX: 0.5, opacity: 0 }}
 					transition={{ duration: 1 }}
-					className="opacity-90 object-cover max-h-[700px]  w-full"
+					whileHover={{ scale: 1.1 }}
+					className="cursor-pointer opacity-90 object-cover max-h- w-full"
 					src="/assets/image/header-image.jpg"
 				/>
 				<motion.h1

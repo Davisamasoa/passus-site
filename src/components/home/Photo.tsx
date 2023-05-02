@@ -17,15 +17,16 @@ export default function Photo({ src, width, alt, subtitle, title }: Props) {
 			transition={{ duration: 1 }}
 			className="mb-4"
 		>
-			<picture className="overflow-hidden">
+			<div className=" z-50 overflow-hidden">
 				<motion.img
-					whileHover={{ scale: 1.01 }}
-					className={`object-cover cursor-pointer hover:scale-125 transition-all duration-300 z-20 h-auto md:h-[400px]`}
+					transition={{ duration: 0.5 }}
+					whileHover={{ scale: 1.1 }}
+					className={`object-cover cursor-pointer hover:scale-125 transition-all duration-300  h-auto md:h-[400px]`}
 					width={width}
 					src={src}
 					alt={alt}
 				/>
-			</picture>
+			</div>
 			<div className="mt-2 flex flex-col">
 				<span className="text-zinc-500 text-sm">{subtitle} </span>
 				<h3 className="font-instrument_serif text-xl tracking-wider">{title}</h3>
