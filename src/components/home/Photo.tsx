@@ -25,6 +25,7 @@ export default function Photo({ src, width, alt, subtitle, title }: Props) {
 					width={width}
 					src={src}
 					alt={alt}
+					loading="lazy"
 				/>
 			</div>
 			<div className="mt-2 flex flex-col">
