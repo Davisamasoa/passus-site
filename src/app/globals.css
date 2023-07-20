@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+
+ul li {
+	cursor: pointer;
+}
+
+.logo {
+	letter-spacing: -6px;
+}
+
+@media (max-width: 670px) {
+	main img {
+		width: 100%;
+	}
+}
+
+main img:hover {
+	transform: scale(2.1);
+}
+
+.header {
+	position: fixed;
+	top: 0;
+}
