@@ -1,5 +1,4 @@
-import { LazyMotion, domAnimation, m, motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 type Props = {
 	src: string;
@@ -7,14 +6,16 @@ type Props = {
 	alt: string;
 	subtitle: string;
 	title: string;
+	delay: number;
 };
 
-export default function Photo({ src, width, alt, subtitle, title }: Props) {
+export default function Photo({ src, width, alt, subtitle, title, delay }: Props) {
 	return (
 		<motion.article
 			whileInView={{ y: 0, opacity: 1 }}
-			initial={{ y: 20, opacity: 0 }}
-			transition={{ duration: 1 }}
+			initial={{ y: 50, opacity: 0 }}
+			viewport={{ once: true }}
+			transition={{ duration: 1.5, delay: delay }}
 			className="mb-4"
 		>
 			<div className=" z-50 overflow-hidden">

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Photo from "@/components/home/Photo";
+import PhotoReveal from "@/components/PhotoReveal";
 
 type photoData = {
 	src: string;
@@ -13,6 +14,8 @@ type photoData = {
 	subtitle: string;
 	title: string;
 };
+
+let delay = 0;
 
 export default function Home() {
 	const photoArray: photoData[] = new Array(12).fill({
@@ -24,28 +27,21 @@ export default function Home() {
 	return (
 		<>
 			<Header />
-			<header className="lg:mx-32  relative md:mb-20 mt-40 mb-10 z-50 max-w-fit max-h-[700px] overflow-hidden">
-				<motion.img
-					animate={{ scaleX: 1, opacity: 1 }}
-					initial={{ scaleX: 0.5, opacity: 0 }}
-					transition={{ duration: 1 }}
-					whileHover={{ scale: 1.1 }}
-					className="cursor-pointer opacity-90 object-cover max-h- w-full"
-					src="/assets/image/header-image.jpg"
-				/>
-				<motion.h1
-					animate={{ y: 0, opacity: 1 }}
-					initial={{ y: 100, opacity: 0 }}
-					transition={{ duration: 1, delay: 0.5 }}
-					className="absolute font-instrument_serif sm:text-4xl text-2xl top-[45%] left-12 sm:left-1/4  z-10 text-white"
-				>
-					We&apos;ve come a long, long way <br /> together
-				</motion.h1>
-			</header>
+			<PhotoReveal src="./assets/image/header-image.jpg" />
 			<main className="lg:px-80 md:px-20 px-7 mb-20">
-				<div className="flex flex-wrap justify-center  lg:justify-between gap-4 gap-x-2">
+				<div className="flex mt-16 flex-wrap justify-center  lg:justify-between gap-4 gap-x-2">
 					{photoArray.map((photo, index) => {
 						let width = 300;
+
+						delay += 0.15;
+
+						switch (index) {
+							case 0:
+							case 3:
+							case 6:
+							case 9:
+								delay = 0;
+						}
 
 						switch (index + 1) {
 							case 1:
@@ -61,6 +57,7 @@ export default function Home() {
 
 						return (
 							<Photo
+								delay={index > 0 ? delay : 0}
 								key={index}
 								width={width}
 								src={photo.src}
