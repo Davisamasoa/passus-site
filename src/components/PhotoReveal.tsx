@@ -37,7 +37,7 @@ export default function PhotoReveal({ src, expertisePhoto = true }: Props) {
 					className="font-instrument_serif w-fit  md:absolute left-6 md:left-[15%] top-2/4 md:!-translate-y-1/2 sm:text-3xl text-xl  md:text-white text-gray-700 p-5 flex flex-col gap-5"
 				>
 					<h3>Design</h3>
-					<p className="text-base w-3/4">
+					<p className="text-base sm:w-3/4 w-full">
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab debitis commodi, id, magnam in quos,
 						minima quo laboriosam voluptatem fugit sequi aperiam. At neque numquam cum labore ratione,
 						excepturi eum!
