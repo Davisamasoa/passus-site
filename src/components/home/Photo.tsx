@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 
 type Props = {
 	src: string;
-	width: number | string;
+
 	alt: string;
 	subtitle: string;
 	title: string;
 	delay: number;
 };
 
-export default function Photo({ src, width, alt, subtitle, title, delay }: Props) {
+export default function Photo({ src, alt, subtitle, title, delay }: Props) {
 	return (
 		<motion.article
 			whileInView={{ y: 0, opacity: 1 }}
@@ -23,7 +23,7 @@ export default function Photo({ src, width, alt, subtitle, title, delay }: Props
 					transition={{ duration: 0.5 }}
 					whileHover={{ scale: 1.1 }}
 					className={`object-cover cursor-pointer hover:scale-125 transition-all duration-300  h-auto md:h-[400px]`}
-					width={width}
+					width={"100%"}
 					src={src}
 					alt={alt}
 					loading="lazy"
@@ -31,7 +31,7 @@ export default function Photo({ src, width, alt, subtitle, title, delay }: Props
 			</div>
 			<div className="mt-2 flex flex-col">
 				<span className="text-zinc-500 text-sm">{subtitle} </span>
-				<h3 className="font-instrument_serif text-xl tracking-wider">{title}</h3>
+				<h3 className="font-instrument_serif text-xl ">{title}</h3>
 			</div>
 		</motion.article>
 	);

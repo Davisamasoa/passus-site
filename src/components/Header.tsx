@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -35,16 +37,16 @@ export default function Header({}: Props) {
 			<nav className="w-full md:w-fit">
 				<ul className="flex justify-between md:justify-center font-extralight md:gap-8 text-xs text-gray-500">
 					<li>
-						<Link href="/Work<">Work</Link>
+						<Link href="/work">Work</Link>
 					</li>
 					<li>
-						<Link href="/Carrers<">Expertise</Link>
+						<Link href="/expertise">Expertise</Link>
 					</li>
 					<li>
-						<Link href="/Carrers<">Carrers</Link>
+						<Link href="/carrers">Carrers</Link>
 					</li>
 					<li>
-						<Link href="/Studios">Studios</Link>
+						<Link href="/studios">Studios</Link>
 					</li>
 				</ul>
 			</nav>
