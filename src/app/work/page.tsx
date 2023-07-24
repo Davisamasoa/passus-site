@@ -72,6 +72,7 @@ export default function Home() {
 
 						return (
 							<Photo
+								id={index + 1}
 								delay={index > 0 ? delay : 0}
 								key={index}
 								src={photo.src}
