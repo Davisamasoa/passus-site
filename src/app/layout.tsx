@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="pt-br">
-			<body className="font-source_sans_pro tracking-tight pt-32">
+			<body className="font-source_sans_pro tracking-tight pt-32 sm:pt-24 min-h-screen">
 				<Header />
 				{children}
 				<Footer />
