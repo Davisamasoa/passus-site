@@ -3,6 +3,9 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import passus from "../svg/logo_passus.svg";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 type Props = {};
 
@@ -10,6 +13,8 @@ export default function Header({}: Props) {
 	const [isScrollingUp, setIsScrollingUp] = useState(true);
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
 	const [headerClass, setHeaderClass] = useState<string>("header");
+
+	const pathname = usePathname();
 
 	useEffect(() => {
 		function handleScroll() {
@@ -29,10 +34,12 @@ export default function Header({}: Props) {
 			transition={{ duration: 0.7 }}
 			className={`${
 				isScrollingUp ? "header" : ""
-			} bg-white md:h-[9vh] h-[15vh] flex md:justify-between justify-center  items-center lg:px-80 md:px-20 px-9 mx-auto flex-wrap py-7 w-full z-50`}
+			} bg-white md:h-[9vh] h-[15vh] flex md:justify-between justify-center  items-center lg:px-80 md:px-20 px-9 mx-auto flex-wrap py-7 w-full z-50 ${
+				pathname == "/" ? "hidden" : ""
+			}`}
 		>
 			<Link href="/">
-				<h3 className="text-3xl text-center md:w-fit w-[100vw] font-instrument_serif logo ">AKQA</h3>
+				<Image width={80} src={passus} alt="logo da passus" />
 			</Link>
 			<nav className="w-full md:w-fit">
 				<ul className="flex justify-between md:justify-center font-extralight md:gap-8 text-xs text-gray-500">

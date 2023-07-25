@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
@@ -21,15 +22,16 @@ export default function Photo({ src, alt, subtitle, title, delay, id }: Props) {
 				className="mb-4"
 			>
 				<div className=" z-50 overflow-hidden">
-					<motion.img
-						transition={{ duration: 0.5 }}
-						whileHover={{ scale: 1.1 }}
-						className={`object-cover cursor-pointer hover:scale-125 transition-all duration-300  h-auto md:h-[400px]`}
-						width={"100%"}
-						src={src}
-						alt={alt}
-						loading="lazy"
-					/>
+					<div>
+						<Image
+							className={`object-cover cursor-pointer hover:scale-110 transition-all duration-300  h-auto md:h-[400px] w-full`}
+							width={500}
+							height={400}
+							src={src}
+							alt={alt}
+							loading="lazy"
+						/>
+					</div>
 				</div>
 				<div className="mt-2 flex flex-col">
 					<span className="text-zinc-500 text-sm">{subtitle} </span>

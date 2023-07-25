@@ -18,11 +18,22 @@ ul li {
 	}
 }
 
-main img:hover {
-	transform: scale(2.1);
-}
-
 .header {
 	position: fixed;
 	top: 0;
+}
+
+@media (min-width: 768px) {
+	.home a:nth-child(1) img {
+		object-position: center -42px;
+	}
+}
+
+.home a:nth-child(1) img {
+	scale: 1.1;
+	object-position: center 0;
+}
+.home a:nth-child(2) img {
+	transform: scaleY(1.02);
+	object-position: 60% 8px;
 }
