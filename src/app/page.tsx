@@ -1,11 +1,8 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 
 type Props = {};
 
-const halfWndowHeight = (window.screen.height / 2).toString();
 export default function Home({}: Props) {
 	return (
 		<main className="flex md:flex-row flex-col -mt-32 sm:-mt-24 max-w-screen home overflow-hidden text-3xl font-instrument_serif bg-black">
