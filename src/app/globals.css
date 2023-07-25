@@ -4,6 +4,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 ul li {
 	cursor: pointer;
 }
@@ -29,10 +35,6 @@ ul li {
 	}
 }
 
-.home a:nth-child(1) img {
-	scale: 1.1;
-	object-position: center 0;
-}
 .home a:nth-child(2) img {
 	transform: scaleY(1.02);
 	object-position: 60% 8px;
