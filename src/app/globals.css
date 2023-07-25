@@ -30,12 +30,12 @@ ul li {
 }
 
 @media (min-width: 768px) {
-	.home a:nth-child(1) img {
+	.home a:nth-child(2) img {
 		object-position: center -42px;
 	}
 }
 
-.home a:nth-child(2) img {
+.home a:nth-child(3) img {
 	transform: scaleY(1.02);
 	object-position: 60% 8px;
 }
