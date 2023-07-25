@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 
 type Props = {};
 
@@ -8,7 +9,7 @@ export default function Home({}: Props) {
 		<main className="flex md:flex-row flex-col -mt-32 sm:-mt-24 max-w-screen max-h-screen home overflow-hidden md:text-3xl sm:text-2xl text-xl font-instrument_serif bg-black">
 			<Link href={"/work"} className="w-full md:max-w-[50%] relative group">
 				<img
-					className="h-[50vh] md:h-screen max-h-2/4 w-full object-cover relative group-hover:opacity-70 transition duration-300 opacity-90 scale-[1.1]"
+					className="h-[48vh] md:h-screen max-h-2/4 w-full object-cover relative group-hover:opacity-70 transition duration-300 opacity-90 scale-[1.1]"
 					src="/assets/image/tarcisio.jpg"
 					alt="foto do governador tarcísio"
 				/>
@@ -16,7 +17,7 @@ export default function Home({}: Props) {
 			</Link>
 			<Link href={"/work"} className="w-full md:max-w-[50%] relative group">
 				<img
-					className="h-[50vh] md:h-screen object-cover  relative group-hover:opacity-70 transition duration-300 opacity-90"
+					className="h-[48vh] md:h-screen object-cover  relative group-hover:opacity-70 transition duration-300 opacity-90"
 					src="/assets/image/miss.jpg"
 					alt="foto do governador tarcísio"
 				/>
