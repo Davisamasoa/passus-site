@@ -34,7 +34,7 @@ export default function Header({}: Props) {
 			transition={{ duration: 0.7 }}
 			className={`${
 				isScrollingUp ? "header" : ""
-			} bg-white md:h-[9vh] h-[15vh] flex md:justify-between justify-center  items-center lg:px-52 md:px-20 px-9 mx-auto flex-wrap py-7 w-full z-50 ${
+			} bg-white flex md:justify-between justify-between md:flex-row flex-col items-center md:gap-0 gap-3 lg:px-52 md:px-20 px-9 mx-auto py-5 w-full z-50 ${
 				pathname == "/" ? "hidden" : ""
 			}`}
 		>
