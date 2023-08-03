@@ -9,7 +9,7 @@ type Props = {
 export default function PhotoReveal({ src, expertisePhoto = true }: Props) {
 	return (
 		<div
-			className={`image-container relative block md:w-[90%] w-full ${
+			className={`image-container relative block w-full ${
 				expertisePhoto ? "max-h-[600px]" : "max-h-[700px]"
 			}  mx-auto overflow-hidden`}
 		>

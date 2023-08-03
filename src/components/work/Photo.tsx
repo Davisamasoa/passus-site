@@ -24,7 +24,7 @@ export default function Photo({ src, alt, subtitle, title, delay, id }: Props) {
 				<div className=" z-50 overflow-hidden">
 					<div>
 						<Image
-							className={`object-cover cursor-pointer hover:scale-110 transition-all duration-300  h-auto md:h-[400px] w-full`}
+							className={`object-cover cursor-pointer hover:scale-110 transition-all duration-300  h-auto  w-full`}
 							width={500}
 							height={400}
 							src={src}
