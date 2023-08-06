@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Home({}: Props) {
 	return (
-		<main className="flex md:flex-row flex-col -mt-32 sm:-mt-24 max-w-screen max-h-screen home overflow-hidden md:text-3xl sm:text-2xl text-xl font-instrument_serif bg-black relative">
+		<main className="flex md:flex-row flex-col max-w-screen max-h-screen home overflow-hidden md:text-3xl sm:text-2xl text-xl font-instrument_serif bg-black relative">
 			<Image
 				className="absolute z-10 grayscale invert w-16 md:w-24 top-1/2 md:top-auto md:bottom-10 left-1/2 -translate-x-1/2 md:-translate-y-0 -translate-y-[2.8vh]"
 				src={passusLogo}

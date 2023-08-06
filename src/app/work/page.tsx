@@ -29,11 +29,11 @@ export default function Home() {
 	});
 	return (
 		<>
-			<div className="md:mb-20">
+			<div className="md:mb-20 pt-24 sm:pt-16">
 				<PhotoReveal expertisePhoto={false} src="./assets/image/header-image.jpg" />
 			</div>
 			<main className="lg:px-52 md:px-20 px-7">
-				<div className="grid gap-7 md:grid-cols-2 grid-cols-1 mt-16 justify-center  lg:justify-between ">
+				<div className="grid gap-2 sm:gap-7 md:grid-cols-2 grid-cols-1 mt-16 justify-center  lg:justify-between ">
 					{mainPhotoArray.map((photo, index) => {
 						delay += 0.15;
 
@@ -58,7 +58,7 @@ export default function Home() {
 						);
 					})}
 				</div>
-				<div className="grid place-items-center md:grid-cols-3 grid-cols-1 mt-16 justify-center  lg:justify-between gap-7">
+				<div className="grid place-items-center md:grid-cols-3 grid-cols-1 mt-16 justify-center  lg:justify-between gap-2 sm:gap-7">
 					{photoArray.map((photo, index) => {
 						delay += 0.15;
 

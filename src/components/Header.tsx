@@ -39,7 +39,7 @@ export default function Header({}: Props) {
 			}`}
 		>
 			<Link href="/">
-				<Image width={80} src={passus} alt="logo da passus" />
+				<Image width={80} className="sm:w-20 w-16" src={passus} alt="logo da passus" />
 			</Link>
 			<nav className="w-full md:w-fit">
 				<ul className="flex justify-between md:justify-center font-extralight md:gap-8 text-xs text-gray-500">

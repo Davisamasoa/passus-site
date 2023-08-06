@@ -6,7 +6,7 @@ type Props = {};
 
 export default function page({}: Props) {
 	return (
-		<main className=" lg:px-80 md:px-20 px-7 grid sm:grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-20 text-gray-700 text-base">
+		<main className="pt-24 sm:pt-16 lg:px-80 md:px-20 px-7 grid sm:grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-20 text-gray-700 text-base">
 			<motion.div
 				whileInView={{ y: 0, opacity: 1 }}
 				initial={{ y: -50, opacity: 0 }}
