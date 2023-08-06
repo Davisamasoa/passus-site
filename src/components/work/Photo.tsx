@@ -26,7 +26,7 @@ export default function Photo({ src, alt, subtitle, title, delay, id }: Props) {
 						<Image
 							className={`object-cover cursor-pointer hover:scale-110 transition-all duration-300  h-auto  w-full`}
 							width={500}
-							height={400}
+							height={200}
 							src={src}
 							alt={alt}
 							loading="lazy"
