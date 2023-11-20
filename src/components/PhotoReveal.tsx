@@ -54,7 +54,8 @@ export default function PhotoReveal({ src, expertisePhoto = true }: Props) {
 					transition={{ duration: 1, delay: 0.7 }}
 					className="font-instrument_serif w-fit  md:absolute left-6 md:left-[15%] top-2/4 md:!-translate-y-1/2 sm:text-4xl text-xl md:text-white text-gray-700 px-7 py-5"
 				>
-					We&apos;ve come a long, long way <br /> together
+					Conectados com
+					<br /> o imutável.
 				</motion.h1>
 			)}
 		</div>
