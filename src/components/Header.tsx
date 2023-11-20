@@ -10,33 +10,32 @@ import { usePathname } from "next/navigation";
 type Props = {};
 
 export default function Header({}: Props) {
-	const [isScrollingUp, setIsScrollingUp] = useState(true);
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
-	const [headerClass, setHeaderClass] = useState<string>("header");
+	const [visible, setVisible] = useState(true);
 
-	const pathname = usePathname();
+	const handleScroll = () => {
+		const currentScrollPos = window.pageYOffset;
+		const isScrollingUp = currentScrollPos < prevScrollPos;
+
+		setPrevScrollPos(currentScrollPos);
+
+		setVisible(isScrollingUp || currentScrollPos < 10);
+	};
 
 	useEffect(() => {
-		function handleScroll() {
-			const currentScrollPos = window.pageYOffset;
-			setIsScrollingUp(prevScrollPos > currentScrollPos);
-			setPrevScrollPos(currentScrollPos);
-		}
-
 		window.addEventListener("scroll", handleScroll);
 
-		return () => window.removeEventListener("scroll", handleScroll);
-	}, [prevScrollPos]);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, [prevScrollPos, visible]);
 
 	return (
 		<motion.header
-			animate={{ y: isScrollingUp ? 0 : -100 }}
-			transition={{ duration: 0.7 }}
-			className={`${
-				isScrollingUp ? "header" : ""
-			} bg-white flex md:justify-between justify-between md:flex-row flex-col items-center md:gap-0 gap-3 lg:px-52 md:px-20 px-9 mx-auto py-5 w-full z-50 ${
-				pathname == "/" ? "hidden" : ""
-			}`}
+			initial={{ y: 0 }}
+			animate={{ y: visible ? 0 : -100 }}
+			transition={{ duration: 0.3 }}
+			className={`fixed top-0 bg-white flex md:justify-between justify-between md:flex-row flex-col items-center md:gap-0 gap-3 lg:px-52 md:px-20 px-9 mx-auto py-5 w-full z-50`}
 		>
 			<Link href="/">
 				<Image width={80} className="sm:w-20 w-16" src={passus} alt="logo da passus" />
@@ -50,7 +49,7 @@ export default function Header({}: Props) {
 						<Link href="/expertise">Expertise</Link>
 					</li>
 					<li>
-						<Link href="/carrers">Carrers</Link>
+						<Link href="/careers">Careers</Link>
 					</li>
 					<li>
 						<Link href="/studios">Studios</Link>
