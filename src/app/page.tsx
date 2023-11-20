@@ -29,7 +29,7 @@ export default function Home() {
 	});
 	return (
 		<>
-			<div className="md:mb-20 pt-24 sm:pt-16">
+			<div className="md:mb-20 pt-[88px] sm:pt-16">
 				<PhotoReveal expertisePhoto={false} src="./assets/image/header-image.jpg" />
 			</div>
 			<main className="lg:px-52 md:px-20 px-7">
