@@ -48,7 +48,9 @@ export default function Header({}: Props) {
 					<li>
 						<Link href="/expertise">Expertise</Link>
 					</li>
-
+					<li>
+						<Link href="/studios">Trajeto</Link>
+					</li>
 					<li>
 						<Link href="/studios">Contato</Link>
 					</li>

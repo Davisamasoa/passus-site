@@ -32,7 +32,7 @@ export default function Home() {
 			<div className="md:mb-20 pt-[88px] sm:pt-16">
 				<PhotoReveal expertisePhoto={false} src="./assets/image/header-image.jpg" />
 			</div>
-			<main className="lg:px-52 md:px-20 px-7">
+			<main className="lg:px-52 md:px-20 px-3">
 				<div className="grid gap-2 sm:gap-7 md:grid-cols-2 grid-cols-1 mt-6 md:mt-16 justify-center  lg:justify-between ">
 					{mainPhotoArray.map((photo, index) => {
 						delay += 0.15;
