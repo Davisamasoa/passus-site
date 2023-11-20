@@ -4,15 +4,13 @@ import Link from "next/link";
 type Props = {
 	src: string;
 	expertisePhoto?: boolean;
+	topic?: string;
+	text?: string;
 };
 
-export default function PhotoReveal({ src, expertisePhoto = true }: Props) {
+export default function PhotoReveal({ src, topic, text }: Props) {
 	return (
-		<div
-			className={`image-container relative block w-full ${
-				expertisePhoto ? "max-h-[600px]" : "max-h-[700px]"
-			}  mx-auto overflow-hidden`}
-		>
+		<div className={`image-container relative block w-full max-h-[600px] mx-auto overflow-hidden`}>
 			<motion.div
 				initial={{ clipPath: "inset(5% 30% 5% 30%)" }}
 				whileInView={{ clipPath: "inset(0 0 0 0)" }}
@@ -28,36 +26,24 @@ export default function PhotoReveal({ src, expertisePhoto = true }: Props) {
 				/>
 			</motion.div>
 
-			{expertisePhoto ? (
-				<motion.div
-					whileInView={{ marginTop: 0, opacity: 1 }}
-					viewport={{ once: true }}
-					initial={{ marginTop: 80, opacity: 0 }}
-					transition={{ duration: 0.7, delay: 0.3 }}
-					className="font-instrument_serif w-fit  md:absolute left-6 md:left-[15%] top-2/4 md:!-translate-y-1/2 sm:text-3xl text-xl  md:text-white text-gray-700 flex flex-col gap-5 px-7 py-5"
-				>
-					<h3>Design</h3>
-					<p className="text-base sm:w-3/4 w-full">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab debitis commodi, id, magnam in quos,
-						minima quo laboriosam voluptatem fugit sequi aperiam. At neque numquam cum labore ratione,
-						excepturi eum!
-					</p>
+			<motion.div
+				whileInView={{ marginTop: 0, opacity: 1 }}
+				viewport={{ once: true }}
+				initial={{ marginTop: 80, opacity: 0 }}
+				transition={{ duration: 0.7, delay: 0.3 }}
+				className="font-instrument_serif w-fit  md:absolute left-6 md:left-[15%] top-2/4 md:!-translate-y-1/2 sm:text-3xl text-xl  md:text-white text-gray-700 flex flex-col gap-5 px-7 py-5"
+			>
+				<h3>{topic} </h3>
+				<p className="text-base sm:w-3/4 w-full">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab debitis commodi, id, magnam in quos,
+					minima quo laboriosam voluptatem fugit sequi aperiam. At neque numquam cum labore ratione, excepturi
+					eum!
+				</p>
 
-					<Link className="text-lg border-b-[1px] pb-2 w-fit" href="#">
-						Ver projeto
-					</Link>
-				</motion.div>
-			) : (
-				<motion.h1
-					animate={{ marginTop: 0, opacity: 1 }}
-					initial={{ marginTop: 80, opacity: 0 }}
-					transition={{ duration: 1, delay: 0.7 }}
-					className="font-instrument_serif w-fit  md:absolute left-6 md:left-[15%] top-2/4 md:!-translate-y-1/2 sm:text-4xl text-xl md:text-white text-gray-700 px-7 py-5"
-				>
-					Conectados com
-					<br /> o imutável.
-				</motion.h1>
-			)}
+				<Link className="text-lg border-b-[1px] pb-2 w-fit" href="#">
+					Ver projeto
+				</Link>
+			</motion.div>
 		</div>
 	);
 }
