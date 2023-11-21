@@ -43,16 +43,16 @@ export default function Header({}: Props) {
 			<nav className="w-full md:w-fit">
 				<ul className="flex justify-between md:justify-center font-extralight md:gap-8 text-xs text-gray-500">
 					<li>
-						<Link href="/work">Trabalho</Link>
+						<Link href="/execucoes">Execuções</Link>
 					</li>
 					<li>
-						<Link href="/expertise">Expertise</Link>
+						<Link href="/inteligencias">Inteligências</Link>
 					</li>
 					<li>
-						<Link href="/studios">Trajeto</Link>
+						<Link href="/trajeto">Trajeto</Link>
 					</li>
 					<li>
-						<Link href="/studios">Contato</Link>
+						<Link href="/contato">Contato</Link>
 					</li>
 				</ul>
 			</nav>

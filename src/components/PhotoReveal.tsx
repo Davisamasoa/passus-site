@@ -40,7 +40,7 @@ export default function PhotoReveal({ src, topic, text }: Props) {
 					eum!
 				</p>
 
-				<Link className="text-lg border-b-[1px] pb-2 w-fit" href="#">
+				<Link className="text-lg border-b-[2px] pb-2 w-fit" href="#">
 					Ver projeto
 				</Link>
 			</motion.div>
