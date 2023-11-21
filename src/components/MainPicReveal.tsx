@@ -38,7 +38,7 @@ export default function MainPicReveal({ src, conceito }: Props) {
 					whileInView={{ marginTop: 0, opacity: 1 }}
 					initial={{ marginTop: 80, opacity: 0 }}
 					transition={{ duration: 1, delay: 0.7 }}
-					className="md:hidden  font-goudyOldStyle w-fit sm:text-3xl text-2xl leading-7 px-4 py-8 text-zinc-800"
+					className="md:hidden  font-goudyOldStyle w-fit sm:text-3xl text-2xl leading-5 px-4 py-8 text-zinc-800"
 				>
 					Conectados <br /> com o imutável.
 				</motion.h1>
