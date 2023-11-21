@@ -7,7 +7,7 @@ type Props = {};
 export default function page({}: Props) {
 	return (
 		<div>
-			<h1 className="md:pl-[17.2%] w-full px-4 pb-10 font-goudyOldStyle text-white opacity-90 sm:text-3xl text-2xl  leading-5">
+			<h1 className="md:pl-[17.2%] w-full px-4 pb-10 font-goudyOldStyle text-white opacity-90 sm:text-3xl text-2xl leading-6">
 				Ferramentas mudam,
 				<br /> pessoas não.
 			</h1>
