@@ -34,7 +34,7 @@ export default function PhotoReveal({ src, topic, text }: Props) {
 				className="font-goudyOldStyle w-fit  md:absolute  top-2/4 md:!-translate-y-1/2 sm:text-4xl text-2xl  md:text-white text-gray-700 flex flex-col gap-5 sm:px-[13.5%] py-5 px-9 "
 			>
 				<h3>{topic} </h3>
-				<p className="sm:text-xl sm:w-3/4 w-full">{text}</p>
+				<p className="sm:text-xl text-base sm:w-1/2 w-full">{text}</p>
 			</motion.div>
 		</div>
 	);
