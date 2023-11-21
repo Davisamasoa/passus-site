@@ -31,15 +31,10 @@ export default function PhotoReveal({ src, topic, text }: Props) {
 				viewport={{ once: true }}
 				initial={{ marginTop: 80, opacity: 0 }}
 				transition={{ duration: 0.7, delay: 0.3 }}
-				className="font-glc w-fit  md:absolute  top-2/4 md:!-translate-y-1/2 sm:text-5xl text-3xl  md:text-white text-gray-700 flex flex-col gap-5 sm:px-[13.5%] py-5 px-9 "
+				className="font-goudyOldStyle w-fit  md:absolute  top-2/4 md:!-translate-y-1/2 sm:text-4xl text-2xl  md:text-white text-gray-700 flex flex-col gap-5 sm:px-[13.5%] py-5 px-9 "
 			>
 				<h3>{topic} </h3>
-				<div className="text-xl pb-2 flex justify-start gap-5 flex-col">
-					<p className="font-goudyOldStyle sm:w-3/4 w-full">{text}</p>
-					<Link className="border-b-[2px] tracking-wide w-fit" href="#">
-						Ver projeto
-					</Link>
-				</div>
+				<p className="sm:text-xl sm:w-3/4 w-full">{text}</p>
 			</motion.div>
 		</div>
 	);
