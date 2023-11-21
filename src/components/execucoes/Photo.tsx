@@ -35,7 +35,7 @@ export default function Photo({ src, alt, subtitle, title, delay, id }: Props) {
 				</div>
 				<div className="mt-2 flex flex-col">
 					<span className="text-zinc-500 text-sm">{subtitle} </span>
-					<h3 className="font-instrument_serif text-xl ">{title}</h3>
+					<h3 className="font-goudyOldStyle text-xl ">{title}</h3>
 				</div>
 			</motion.article>
 		</Link>

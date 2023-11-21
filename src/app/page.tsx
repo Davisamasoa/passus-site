@@ -1,6 +1,6 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import Photo from "@/components/work/Photo";
+import Photo from "@/components/execucoes/Photo";
 import PhotoReveal from "@/components/PhotoReveal";
 import MainPicReveal from "@/components/MainPicReveal";
 
@@ -33,7 +33,7 @@ export default function Home() {
 				<MainPicReveal src="https://drive.google.com/file/d/169iRNsvuxVpdJWb2aImuh4i8evEI8FjN/view?usp=sharing" />
 			</div>
 			<main className="lg:px-52 md:px-20 px-3 mb-20">
-				<div className="grid gap-2 sm:gap-7 md:grid-cols-2 grid-cols-1 mt-6 md:mt-16 justify-center  lg:justify-between ">
+				<div className="grid gap-2 sm:gap-7 md:grid-cols-2 grid-cols-1 md:mt-16 justify-center  lg:justify-between ">
 					{mainPhotoArray.map((photo, index) => {
 						delay += 0.15;
 

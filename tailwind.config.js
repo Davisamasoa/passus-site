@@ -19,7 +19,9 @@ module.exports = {
 		},
 		fontFamily: {
 			source_sans_pro: ["Source Sans Pro", "sans-serif"],
-			instrument_serif: ["Instrument Serif", "serif"],
+			basic: ["Basic", "sans-serif"],
+			goudyOldStyle: ["GoudyOldStyle", "serif"],
+			glc: ["GLC", "serif"],
 		},
 	},
 	plugins: [],

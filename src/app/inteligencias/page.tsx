@@ -37,7 +37,12 @@ const expertises: expertiseType[] = [
 
 export default function page({}: Props) {
 	return (
-		<div>
+		<div className="">
+			<h1 className="sm:text-start text-center sm:pl-[17.2%] sm:pr-[50%] px-9 sm:pt-6 sm:pb-16 pb-8 font-goudyOldStyle w-fit sm:text-4xl text-xl text-gray-800 opacity-90">
+				Queremos o perene, não o perecível. <br /> Buscamos elo com o que não se dilui como pó, mas ao que
+				resiste feito pedra.
+			</h1>
+
 			{expertises.map((expertise, index) => (
 				<PhotoReveal src={expertise.src} topic={expertise.topic} text={expertise.text} key={index} />
 			))}

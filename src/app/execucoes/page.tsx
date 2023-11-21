@@ -1,6 +1,6 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import Photo from "@/components/work/Photo";
+import Photo from "@/components/execucoes/Photo";
 import PhotoReveal from "@/components/PhotoReveal";
 import MainPicReveal from "@/components/MainPicReveal";
 

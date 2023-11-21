@@ -2,7 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+@font-face {
+	font-family: GoudyOldStyle;
+	src: url("../../public/assets/font/Goudy\ Old\ Style\ Regular.ttf");
+}
+
+@font-face {
+	font-family: GLC;
+	src: url("../../public/assets/font/1592\ GLC\ Garamond\ W00\ Normal.ttf");
+}
+
+@font-face {
+	font-family: Basic;
+	src: url("../../public/assets/font/Basic-Commercial-LT-Com-Light.ttf");
+}
 
 * {
 	margin: 0;

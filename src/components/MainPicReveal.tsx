@@ -35,10 +35,9 @@ export default function MainPicReveal({ src }: Props) {
 				animate={{ marginTop: 0, opacity: 1 }}
 				initial={{ marginTop: 80, opacity: 0 }}
 				transition={{ duration: 1, delay: 0.7 }}
-				className="md:hidden font-instrument_serif w-fit left-6 md:left-[15%] md:absolute top-2/4 md:!-translate-y-1/2 sm:text-3xl text-2xl leading-7 md:text-white text-gray-700 lg:px-52 md:px-20 px-9 py-5"
+				className="md:hidden font-goudyOldStyle w-fit sm:text-3xl text-2xl leading-7 md:text-white text-gray-700 lg:px-52 md:px-20 px-9 py-8"
 			>
-				Conectados com
-				<br /> o imutável.
+				Conectados <br /> com o imutável.
 			</motion.h1>
 		</div>
 	);
