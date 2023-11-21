@@ -10,13 +10,8 @@ type expertiseType = {
 const expertises: expertiseType[] = [
 	{
 		src: "./assets/image/header-image.jpg",
-		topic: "Estratégia",
-		text: "O pensamento precede a fala. Raciocinamos a mensagem, expressamos o que pensamos e somos interpretados pelo outro. Nessa ordem. O intento. O método. O outro.",
-	},
-	{
-		src: "./assets/image/header-image.jpg",
-		topic: "Política",
-		text: "Estética e paixão. A estética do discurso, da mensagem e dos gestos. A conexão com as paixões e rejeições de identidade do outro. A campanha é uma busca constante de conexões com os amores e desamores do eleitor.",
+		topic: "Storytelling",
+		text: "Vender o história é criar laços. Contar momentos e memórias é uma das armas mais poderosas do homem. Foi a capacidade de contar histórias que moldou o mundo que temos. As sociedades, a ancestralidade, as nações… e é assim que conseguimos fortalecer a ligação entre pessoas.",
 	},
 	{
 		src: "./assets/image/header-image.jpg",
@@ -25,20 +20,30 @@ const expertises: expertiseType[] = [
 	},
 	{
 		src: "./assets/image/header-image.jpg",
-		topic: "Histórias",
-		text: "Vender o passado é criar laços com o presente. Contar histórias é uma das armas mais poderosas do homem. Foi a capacidade de contar histórias que moldou o mundo que temos. As sociedades, a ancestralidade, as nações… e é contando histórias que conseguimos fortalecer a ligação entre pessoas.",
+		topic: "Alcance",
+		text: "Falar com o mundo. Uma característica do tempo é a comunicação ilimitada – não só pela distancia, mas pela capacidade de alcançar massas. A comunicação é social, embora tenha, em fins últimos, que se conectar ao pessoal. Essa dicotomia é fundamental para ser eficiente nos tempos das quantidades.",
 	},
 	{
 		src: "./assets/image/header-image.jpg",
-		topic: "Alcance",
-		text: "Falar com o mundo. Uma característica do tempo é a comunicação ilimitada – não só pela distancia, mas pela capacidade de alcançar massas. A comunicação é social, embora tenha, em fins últimos, que se conectar ao pessoal. Essa dicotomia é fundamental para ser eficiente nos tempos das quantidades.",
+		topic: "Estratégia",
+		text: "O pensamento precede a fala. Raciocinamos a mensagem, expressamos o que pensamos e somos interpretados pelo outro. Nessa ordem. O intento. O método. O outro.",
+	},
+	{
+		src: "./assets/image/header-image.jpg",
+		topic: "Eventos",
+		text: "O agora são as lembranças que teremos no futuro. Construir memórias é ter cuidado com o futuro que recordar. Registre momentos, marque pessoas.",
+	},
+	{
+		src: "./assets/image/header-image.jpg",
+		topic: "Produto",
+		text: "Vende quem fala. Comunicar um produto é conversar com as necessidades e esperanças de quem houve. Ser assertivo na abordagem é o que define se a oferta é um mecanismo de facilidade ou um incômodo para quem ouve.",
 	},
 ];
 
 export default function page({}: Props) {
 	return (
 		<div>
-			<h1 className="md:text-start text-center md:pl-[17.2%]  w-full px-9 pb-10 font-goudyOldStyle  md:text-4xl text-xl text-gray-800 opacity-90">
+			<h1 className="md:text-start text-center md:pl-[17.2%]  w-full px-4 pb-10 font-goudyOldStyle  md:text-4xl text-xl text-gray-800 opacity-90">
 				Queremos o perene, não o perecível. <br /> Buscamos elo com o que não se dilui
 				<br /> como pó, mas ao que resiste feito pedra.
 			</h1>

@@ -23,6 +23,15 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: white;
+}
+
+body.dark {
+	background-color: black;
+	color: white;
+}
+
 ul li {
 	cursor: pointer;
 }

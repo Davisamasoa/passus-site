@@ -29,7 +29,7 @@ export default function Home() {
 	});
 	return (
 		<>
-			<main className="lg:px-52 md:px-20 px-3 mb-20">
+			<main className="lg:px-52 md:px-20 px-4 mb-20">
 				<div className="grid gap-2 sm:gap-7 md:grid-cols-2 grid-cols-1 justify-center lg:justify-between ">
 					{mainPhotoArray.map((photo, index) => {
 						delay += 0.15;
