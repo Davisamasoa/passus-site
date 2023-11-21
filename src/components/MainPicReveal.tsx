@@ -25,6 +25,7 @@ export default function MainPicReveal({ src }: Props) {
 						autoPlay
 						muted
 						playsInline
+						loop
 					>
 						<source src={`${process.env.NEXT_PUBLIC_VIDEOURL}`} />
 					</motion.video>

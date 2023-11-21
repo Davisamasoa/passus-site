@@ -4,8 +4,8 @@ import Link from "next/link";
 type Props = {
 	src: string;
 	expertisePhoto?: boolean;
-	topic?: string;
-	text?: string;
+	topic: string;
+	text: string;
 };
 
 export default function PhotoReveal({ src, topic, text }: Props) {
@@ -34,15 +34,7 @@ export default function PhotoReveal({ src, topic, text }: Props) {
 				className="font-instrument_serif w-fit  md:absolute left-6 md:left-[15%] top-2/4 md:!-translate-y-1/2 sm:text-3xl text-xl  md:text-white text-gray-700 flex flex-col gap-5 px-7 py-5"
 			>
 				<h3>{topic} </h3>
-				<p className="text-base sm:w-3/4 w-full">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab debitis commodi, id, magnam in quos,
-					minima quo laboriosam voluptatem fugit sequi aperiam. At neque numquam cum labore ratione, excepturi
-					eum!
-				</p>
-
-				<Link className="text-lg border-b-[2px] pb-2 w-fit" href="#">
-					Ver projeto
-				</Link>
+				<p className="text-base sm:w-3/4 w-full">{text}</p>
 			</motion.div>
 		</div>
 	);
