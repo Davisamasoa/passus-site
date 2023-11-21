@@ -5,7 +5,7 @@ type Props = {};
 
 export default function page({}: Props) {
 	return (
-		<div className="pt-24 sm:pt-[66px]">
+		<div>
 			<PhotoReveal src="./assets/image/header-image.jpg" topic="Estratégia" />
 			<PhotoReveal src="./assets/image/header-image.jpg" topic="Política" />
 			<PhotoReveal src="./assets/image/header-image.jpg" topic="Design" />

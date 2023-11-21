@@ -29,7 +29,7 @@ export default function Home() {
 	});
 	return (
 		<>
-			<div className="md:mb-20 pt-[88px] sm:pt-16">
+			<div>
 				<MainPicReveal src="https://drive.google.com/file/d/169iRNsvuxVpdJWb2aImuh4i8evEI8FjN/view?usp=sharing" />
 			</div>
 			<main className="lg:px-52 md:px-20 px-3">
