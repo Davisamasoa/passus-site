@@ -36,6 +36,7 @@ export default function MainPicReveal({ src, conceito }: Props) {
 			{!conceito ? (
 				<motion.h1
 					whileInView={{ marginTop: 0, opacity: 1 }}
+					viewport={{ once: true }}
 					initial={{ marginTop: 80, opacity: 0 }}
 					transition={{ duration: 1, delay: 0.7 }}
 					className="md:hidden  font-goudyOldStyle w-fit sm:text-3xl text-2xl leading-6 px-9 py-8 text-zinc-800"
@@ -51,16 +52,12 @@ export default function MainPicReveal({ src, conceito }: Props) {
 						transition={{ duration: 1, delay: 0 }}
 						className="md:pl-[17.2%] md:w-2/3 py-10  w-full px-4 pb-10 font-goudyOldStyle  sm:text-xl text-base text-gray-300 opacity-90"
 					>
-						<p>
-							&nbsp;&nbsp;Através dos tempos, línguas, meios e métodos mudam, as pessoas não. Sempre fomos os
-							mesmos. Sentimos medo, amamos, criamos laços, esperançamos, constituímos famílias e vivemos
-							nossas vidas enquanto é possível. É como é, é como foi e é como será.
-						</p>
-						<p className="mt-2">
-							&nbsp;&nbsp; Queremos o perene, não o perecível. Buscamos elo com o que não se dilui como pó –
-							mas ao que resiste feito pedra. A modernidade, para nós, é um meio, não o final abstrato. A
-							inovação está no método, não no objetivo.
-						</p>
+						&nbsp;&nbsp;Através dos tempos, línguas, meios e métodos mudam, as pessoas não. Sempre fomos os
+						mesmos. Sentimos medo, amamos, criamos laços, esperançamos, constituímos famílias e vivemos nossas
+						vidas enquanto é possível. É como é, é como foi e é como será. <br /> &nbsp;&nbsp; Queremos o
+						perene, não o perecível. Buscamos elo com o que não se dilui como pó – mas ao que resiste feito
+						pedra. A modernidade, para nós, é um meio, não o final abstrato. A inovação está no método, não no
+						objetivo.
 					</motion.h1>
 				</>
 			)}

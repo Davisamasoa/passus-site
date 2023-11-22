@@ -23,6 +23,7 @@ export default function PhotoReveal({ src, topic, text }: Props) {
 					transition={{ duration: 0.4 }}
 					src={src}
 					alt="Imagem"
+					className="w-full"
 				/>
 			</motion.div>
 
