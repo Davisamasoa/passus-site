@@ -13,7 +13,7 @@ type Props = {
 
 export default function Photo({ src, alt, subtitle, title, delay, id }: Props) {
 	return (
-		<Link href={`execucoes/${id}`}>
+		<Link className="w-full" href={`execucoes/${id}`}>
 			<motion.article
 				whileInView={{ y: 0, opacity: 1 }}
 				initial={{ y: 50, opacity: 0 }}

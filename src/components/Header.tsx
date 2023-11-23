@@ -15,7 +15,6 @@ export default function Header({}: Props) {
 	const [visible, setVisible] = useState(true);
 
 	const pathname = usePathname();
-	console.log(pathname);
 
 	const handleScroll = () => {
 		const currentScrollPos = window.pageYOffset;
