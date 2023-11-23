@@ -54,7 +54,7 @@ export default function Home() {
 	return (
 		<>
 			<main className="sm:gap-5 md:px-[10%] lg:px-[15%] px-4 mb-20 text-gray-400">
-				<div className="border-b-[1px] flex justify-start mx-auto md:w-3/5 w-fu mb-10 items-baseline border-gray-400">
+				<div className="border-b-[1px] flex justify-start mx-auto md:w-3/5 w-fu mb-10 items-baseline border-gray-700">
 					<i className="bi bi-search text-xl text-white"></i>
 					<input
 						value={inputValue}

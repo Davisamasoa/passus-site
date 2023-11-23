@@ -6,7 +6,7 @@ type Props = {};
 
 export default function page({}: Props) {
 	return (
-		<div className="text-gray-500 sm:gap-5 md:px-[10%] lg:px-[15%] px-9">
+		<div className="text-gray-500 sm:gap-5 md:px-[10%] lg:px-[15%] px-headerPadding">
 			<motion.h1
 				animate={{ marginTop: 0, opacity: 1 }}
 				initial={{ marginTop: -30, opacity: 0 }}

@@ -34,7 +34,7 @@ export default function PhotoReveal({ src, topic, text }: Props) {
 				viewport={{ once: true }}
 				initial={{ marginTop: 80, opacity: 0 }}
 				transition={{ duration: 0.7, delay: 0.3 }}
-				className="font-goudyOldStyle w-fit  md:absolute  top-2/4 md:!-translate-y-1/2 sm:text-3xl text-xl  md:text-white text-gray-700 flex flex-col gap-3 sm:gap-5 md:pl-[10%] lg:pl-[15%] pt-10 px-9 "
+				className="font-goudyOldStyle w-fit  md:absolute  top-2/4 md:!-translate-y-1/2 sm:text-3xl text-xl  md:text-white text-gray-700 flex flex-col gap-3 sm:gap-5 md:pl-[10%] lg:pl-[15%] pt-10 px-headerPadding"
 			>
 				<h3>{topic} </h3>
 				<p className="sm:text-xl text-base lg:w-1/2 w-full">{text}</p>

@@ -17,6 +17,9 @@ module.exports = {
 				md: "769px",
 				sm: "481px",
 			},
+			padding: {
+				headerPadding: "3rem",
+			},
 		},
 		fontFamily: {
 			source_sans_pro: ["Source Sans Pro", "sans-serif"],

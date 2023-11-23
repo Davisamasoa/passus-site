@@ -52,7 +52,7 @@ export default function Header({}: Props) {
 				pathname == "/conceito" || pathname == "/execucoes"
 					? "bg-black text-gray-400"
 					: "bg-white text-gray-500"
-			} flex md:justify-between justify-between md:flex-row flex-col items-center md:gap-0 gap-7 sm:gap-5 md:px-[10%] lg:px-[15%] px-9 mx-auto py-8 w-full z-50`}
+			} flex  justify-between md:flex-row flex-col items-center md:gap-0 gap-7  md:px-[10%] lg:px-[15%] px-headerPadding mx-auto py-8 w-full z-50`}
 		>
 			<Link href="/">
 				<Image
