@@ -51,13 +51,8 @@ ul li {
 	top: 0;
 }
 
-@media (min-width: 768px) {
-	.home a:nth-child(2) img {
-		object-position: center -42px;
+@media (min-width: 1424px) {
+	.inteli {
+		object-position: center -200px;
 	}
-}
-
-.home a:nth-child(3) img {
-	transform: scaleY(1.02);
-	object-position: 60% 8px;
 }
