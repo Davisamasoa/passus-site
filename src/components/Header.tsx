@@ -27,7 +27,7 @@ export default function Header({}: Props) {
 	useEffect(() => {
 		const body = document.querySelector("body");
 		if (body) {
-			if (pathname == "/conceito") {
+			if (pathname == "/conceito" || pathname == "/execucoes") {
 				body.style.backgroundColor = "black";
 			} else {
 				body.style.backgroundColor = "#FFF";
@@ -49,13 +49,17 @@ export default function Header({}: Props) {
 			animate={{ y: visible ? 0 : -100 }}
 			transition={{ duration: 0.3 }}
 			className={`fixed top-0  ${
-				pathname == "/conceito" ? "bg-black text-gray-400" : "bg-white text-gray-500"
-			} flex md:justify-between justify-between md:flex-row flex-col items-center md:gap-0 gap-7 sm:gap-5 md:px-[15%] px-9 mx-auto py-8 w-full z-50`}
+				pathname == "/conceito" || pathname == "/execucoes"
+					? "bg-black text-gray-400"
+					: "bg-white text-gray-500"
+			} flex md:justify-between justify-between md:flex-row flex-col items-center md:gap-0 gap-7 sm:gap-5 md:px-[10%] lg:px-[15%] px-9 mx-auto py-8 w-full z-50`}
 		>
 			<Link href="/">
 				<Image
 					width={80}
-					className={`sm:w-20 w-16 ${pathname == "/conceito" ? "invert" : undefined}`}
+					className={`sm:w-20 w-16 ${
+						pathname == "/conceito" || pathname == "/execucoes" ? "invert" : undefined
+					}`}
 					src={passus}
 					alt="logo da passus"
 				/>

@@ -9,9 +9,10 @@ type Props = {
 	title: string;
 	delay: number;
 	id: Number;
+	dark?: boolean;
 };
 
-export default function Photo({ src, alt, subtitle, title, delay, id }: Props) {
+export default function Photo({ src, alt, subtitle, title, delay, id, dark = false }: Props) {
 	return (
 		<Link className="w-full" href={`execucoes/${id}`}>
 			<motion.article
@@ -35,7 +36,7 @@ export default function Photo({ src, alt, subtitle, title, delay, id }: Props) {
 				</div>
 				<div className="mt-2 flex flex-col">
 					<span className="text-zinc-500 text-xs">{subtitle} </span>
-					<h3 className="font-goudyOldStyle text-2xl ">{title}</h3>
+					<h3 className={`font-goudyOldStyle text-2xl ${dark ? "text-white" : "text-black"}`}>{title}</h3>
 				</div>
 			</motion.article>
 		</Link>

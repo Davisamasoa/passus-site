@@ -39,7 +39,7 @@ export default function MainPicReveal({ src, conceito }: Props) {
 					viewport={{ once: true }}
 					initial={{ marginTop: 80, opacity: 0 }}
 					transition={{ duration: 1, delay: 0.7 }}
-					className="md:hidden  font-goudyOldStyle w-fit sm:text-4xl text-2xl leading-6 px-9 sm:px-[15%] py-8 text-zinc-800"
+					className="md:hidden  font-goudyOldStyle w-fit sm:text-4xl text-2xl leading-6 px-9 sm:gap-5 md:px-[10%] lg:px-[15%] py-8 text-zinc-800"
 				>
 					Conectados <br /> com o imutável.
 				</motion.h1>
@@ -50,7 +50,7 @@ export default function MainPicReveal({ src, conceito }: Props) {
 						viewport={{ once: true }}
 						initial={{ marginTop: -80, opacity: 0 }}
 						transition={{ duration: 1, delay: 0 }}
-						className="mx-auto sm:px-[15%] md:px-[30%] py-10  w-full px-4 pb-10 font-goudyOldStyle  sm:text-xl text-base text-gray-400"
+						className="mx-auto sm:px-[15%] md:px-[30%] py-10  w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base text-gray-400"
 					>
 						<p>
 							Através dos tempos, línguas, meios e métodos mudam, as pessoas não. Sempre fomos os mesmos.

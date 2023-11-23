@@ -6,16 +6,16 @@ type Props = {};
 
 export default function page({}: Props) {
 	return (
-		<div className="text-gray-500">
+		<div className="text-gray-500 sm:gap-5 md:px-[10%] lg:px-[15%] px-9">
 			<motion.h1
 				animate={{ marginTop: 0, opacity: 1 }}
 				initial={{ marginTop: -30, opacity: 0 }}
 				transition={{ duration: 1, delay: 0 }}
-				className="md:pl-[15%] w-full px-9 pt-10 font-basic opacity-90 text-xs leading-6"
+				className="w-full pt-10 font-basic opacity-90 text-xs leading-6"
 			>
 				Para novas execuções
 			</motion.h1>
-			<div className="md:pl-[15%] px-9 sm:-mt-1 pb-10 font-goudyOldStyle text-gray-800 sm:text-3xl md:text-4xl text-2xl leading-6">
+			<div className="sm:-mt-1 pb-10 font-goudyOldStyle text-gray-800 sm:text-3xl md:text-4xl text-2xl leading-6">
 				<motion.a
 					animate={{ marginTop: 0, opacity: 1 }}
 					initial={{ marginTop: -30, opacity: 0 }}
@@ -26,7 +26,7 @@ export default function page({}: Props) {
 					contato@passus.in
 				</motion.a>
 			</div>
-			<p className="md:pl-[15%] w-full px-9 font-basic opacity-90 sm:text-base text-sm leading-6">
+			<p className="w-full font-basic opacity-90 sm:text-base text-sm leading-6">
 				<motion.a
 					animate={{ marginTop: 0, opacity: 1 }}
 					initial={{ marginTop: -30, opacity: 0 }}
