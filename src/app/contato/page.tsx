@@ -31,7 +31,9 @@ export default function page({}: Props) {
 					animate={{ marginTop: 0, opacity: 1 }}
 					initial={{ marginTop: -30, opacity: 0 }}
 					transition={{ duration: 1, delay: 1 }}
-					className="sm:px-[25px] px-[14px] py-3 border-[1px] border-gray-500 cursor-pointer"
+					target="_blank"
+					href="https://wa.me/5515997856284"
+					className="sm:px-[25px] px-[14px] py-3 border-[1px] border-gray-200 cursor-pointer"
 				>
 					Se conecte por Whatsapp
 				</motion.a>
