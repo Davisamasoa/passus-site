@@ -50,7 +50,7 @@ export default function Header({}: Props) {
 			animate={{ y: visible ? 0 : -100 }}
 			transition={{ duration: 0.3 }}
 			className={`fixed top-0  ${
-				pathname == "/conceito" ? "bg-black text-gray-300" : "bg-white text-gray-500"
+				pathname == "/conceito" ? "bg-black text-gray-400" : "bg-white text-gray-500"
 			} flex md:justify-between justify-between md:flex-row flex-col items-center md:gap-0 gap-7 sm:gap-5 lg:px-52 md:px-20 px-9 mx-auto py-8 w-full z-50`}
 		>
 			<Link href="/">

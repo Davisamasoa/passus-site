@@ -50,7 +50,7 @@ export default function MainPicReveal({ src, conceito }: Props) {
 						viewport={{ once: true }}
 						initial={{ marginTop: -80, opacity: 0 }}
 						transition={{ duration: 1, delay: 0 }}
-						className="md:pl-[17.2%] md:w-2/3 py-10  w-full px-4 pb-10 font-goudyOldStyle  sm:text-xl text-base text-gray-300 opacity-90"
+						className="md:pl-[17.2%] md:w-2/3 py-10  w-full px-4 pb-10 font-goudyOldStyle  sm:text-xl text-base text-gray-400"
 					>
 						&nbsp;&nbsp;Através dos tempos, línguas, meios e métodos mudam, as pessoas não. Sempre fomos os
 						mesmos. Sentimos medo, amamos, criamos laços, esperançamos, constituímos famílias e vivemos nossas

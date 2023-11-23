@@ -9,17 +9,17 @@ type expertiseType = {
 };
 const expertises: expertiseType[] = [
 	{
-		src: "./assets/image/tarcisio.JPG",
+		src: "./assets/image/tarcisio.jpg",
 		topic: "Storytelling",
 		text: "Vender o história é criar laços. Contar momentos e memórias é uma das armas mais poderosas do homem. Foi a capacidade de contar histórias que moldou o mundo que temos. As sociedades, a ancestralidade, as nações… e é assim que conseguimos fortalecer a ligação entre pessoas.",
 	},
 	{
-		src: "./assets/image/B-ON.JPG",
+		src: "./assets/image/B-ON.jpg",
 		topic: "Design",
 		text: "A beleza importa e sempre importou. A busca do belo não é um capricho, mas é o desejo de despertar a contemplação e de passar uma mensagem através das percepções visuais que tocam o imaginário.",
 	},
 	{
-		src: "./assets/image/Programa 4x4.JPG",
+		src: "./assets/image/Programa 4x4.jpg",
 		topic: "Alcance",
 		text: "Falar com o mundo. Uma característica do tempo é a comunicação ilimitada – não só pela distancia, mas pela capacidade de alcançar massas. A comunicação é social, embora tenha, em fins últimos, que se conectar ao pessoal. Essa dicotomia é fundamental para ser eficiente nos tempos das quantidades.",
 	},
@@ -34,7 +34,7 @@ const expertises: expertiseType[] = [
 		text: "O agora são as lembranças que teremos no futuro. Construir memórias é ter cuidado com o futuro que recordar. Registre momentos, marque pessoas.",
 	},
 	{
-		src: "./assets/image/header-image.jpg",
+		src: "./assets/image/ashbyu.jpg",
 		topic: "Produto",
 		text: "Vende quem fala. Comunicar um produto é conversar com as necessidades e esperanças de quem houve. Ser assertivo na abordagem é o que define se a oferta é um mecanismo de facilidade ou um incômodo para quem ouve.",
 	},
