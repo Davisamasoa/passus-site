@@ -32,7 +32,7 @@ export default function Home() {
 			<div>
 				<MainPicReveal conceito={false} src={process.env.NEXT_PUBLIC_VIDEOURL} />
 			</div>
-			<main className="lg:px-52 md:px-20 px-4">
+			<main className="md:px-[15%] px-4">
 				<div className="grid gap-2 sm:gap-7 md:grid-cols-2 grid-cols-1 md:mt-16 justify-center  lg:justify-between ">
 					{mainPhotoArray.map((photo, index) => {
 						delay += 0.15;

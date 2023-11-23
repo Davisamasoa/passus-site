@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang="pt-br">
 			<body
-				className={`font-basic tracking-tight min-h-screen pb-24 pt-[130px] sm:pt-[90px] bg-white relative`}
+				className={`font-basic tracking-tight min-h-screen pb-28 pt-[130px] sm:pt-[126px] md:pt-[90px] bg-white relative`}
 			>
 				<Header />
 				{children}

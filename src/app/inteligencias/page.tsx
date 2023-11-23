@@ -42,8 +42,8 @@ const expertises: expertiseType[] = [
 
 export default function page({}: Props) {
 	return (
-		<div>
-			<h1 className="md:text-start text-center md:pl-[17.2%]  w-full px-9 pb-10 font-goudyOldStyle   sm:text-3xl text-xl text-gray-800 opacity-90">
+		<div className="-mb-8">
+			<h1 className="md:text-start text-center md:pl-[15%]  w-full px-9 pb-10 font-goudyOldStyle sm:text-3xl md:text-4xl text-xl text-gray-800 opacity-90">
 				Queremos o perene, não o perecível. <br /> Buscamos elo com o que não se dilui
 				<br /> como pó, mas ao que resiste feito pedra.
 			</h1>
