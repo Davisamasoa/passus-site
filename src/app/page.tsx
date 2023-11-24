@@ -124,11 +124,8 @@ export default function Home() {
 						);
 					})}
 				</div>
-				<p className="w-full py-4 flex justify-center font-basic opacity-90 sm:text-base text-sm leading-6">
-					<Link
-						href="/execucoes"
-						className="sm:px-[25px] px-[14px] py-3 border-[1px] border-gray-200 cursor-pointer"
-					>
+				<p className="w-full py-4 flex justify-center font-basic opacity-90 text-xs leading-6 text-gray-500">
+					<Link href="/execucoes" className="px-4 py-3 border-[1px] border-gray-200 cursor-pointer">
 						Ver mais trabalhos
 					</Link>
 				</p>
