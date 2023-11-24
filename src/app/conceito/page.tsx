@@ -7,7 +7,7 @@ type Props = {};
 export default function page({}: Props) {
 	return (
 		<div>
-			<h1 className="sm:gap-5 md:px-[10%] lg:px-[15%] w-full px-headerPadding pb-10 font-goudyOldStyle text-white opacity-90 sm:text-3xl md:text-4xl text-2xl leading-6">
+			<h1 className="sm:gap-5 md:px-[10%]  w-full lg:px-headerPaddingLG px-headerPadding pb-10 font-goudyOldStyle text-white opacity-90 sm:text-3xl md:text-4xl text-2xl leading-6">
 				Ferramentas mudam,
 				<br /> pessoas não.
 			</h1>

@@ -10,11 +10,23 @@ type Props = {
 	delay: number;
 	id: Number;
 	dark?: boolean;
+	size?: "w-[50%]" | "w-[25%]" | "w-full" | string;
+	main?: boolean;
 };
 
-export default function Photo({ src, alt, subtitle, title, delay, id, dark = false }: Props) {
+export default function Photo({
+	src,
+	alt,
+	subtitle,
+	title,
+	delay,
+	id,
+	dark = false,
+	size = "w-full",
+	main = false,
+}: Props) {
 	return (
-		<Link className="w-full" href={`execucoes/${id}`}>
+		<Link className={`object-cover ${size} w-full block`} href={`execucoes/${id}`}>
 			<motion.article
 				whileInView={{ y: 0, opacity: 1 }}
 				initial={{ y: 50, opacity: 0 }}
@@ -25,9 +37,12 @@ export default function Photo({ src, alt, subtitle, title, delay, id, dark = fal
 				<div className=" z-50 overflow-hidden">
 					<div>
 						<Image
-							className={`object-cover cursor-pointer hover:scale-110 transition-all duration-300  h-auto  w-full`}
+							className={`object-cover cursor-pointer hover:scale-110 transition-all duration-300  w-full ${
+								main ? "lg:!min-h-[450px] !min-h-[350px]" : undefined
+							}`}
+							// Adicione esta linha para ajustar a largura
 							width={500}
-							height={200}
+							height={500}
 							src={src}
 							alt={alt}
 							loading="lazy"
