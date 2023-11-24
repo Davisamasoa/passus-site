@@ -8,7 +8,7 @@ import Link from "next/link";
 
 type photoData = {
 	src: string;
-	alt: string;
+
 	subtitle: string;
 	title: string;
 	srcset?: string | undefined;
@@ -20,22 +20,39 @@ export default function Home() {
 	const mainPhotoArray: photoData[] = [
 		{
 			src: "/assets/image/h-miss.jpg",
-			alt: "Jornada para a coroa – 2022",
-			subtitle: "Miss Universo",
-			title: "Jornada para a coroa – 2022",
+			subtitle: "Miss Universo 2022",
+			title: "Jornada para a coroa",
 		},
 		{
 			src: "/assets/image/h-tarcisio.jpg",
-			alt: "Tarcísio de Freitas",
 			subtitle: "Tarcísio de Freitas",
 			title: "Jornada por São Paulo",
 			srcset: "/assets/image/mobile-tarcisio.jpg",
 		},
 		{
 			src: "/assets/image/mobile-aldorebelo.jpg",
-			alt: "Aldo Rebelo",
 			subtitle: "Aldo Rebelo",
 			title: "O projeto nacionalista",
+		},
+	];
+
+	const mainPhotoArray2: photoData[] = [
+		{
+			src: "/assets/image/h-poit.jpg",
+			subtitle: "Vinicius Poit",
+			title: "Campanha ao Governo de São Paulo",
+			srcset: "/assets/image/mobile-poit.jpg",
+		},
+		{
+			src: "/assets/image/h-credal.jpg",
+			subtitle: "Credal Bank",
+			title: "Credito para todos",
+			srcset: "/assets/image/mobile-credal.jpg",
+		},
+		{
+			src: "/assets/image/h-temer-e-macri.jpg",
+			subtitle: "Michel Temer e Maurício Macri",
+			title: "Conferência da liberdade",
 		},
 	];
 
@@ -55,8 +72,8 @@ export default function Home() {
 			<div>
 				<MainPicReveal conceito={false} src={process.env.NEXT_PUBLIC_VIDEOURL} />
 			</div>
-			<main className="flex flex-col gap-y-2 sm:gap-y-4 2xl:gap-y-6 2xl:px-headerPaddingLG md:px-headerPadding px-4 -mb-5 md:-mb-0 md:mt-10">
-				<div className="flex flex-col md:flex-row  flex-nowrap gap-2 sm:gap-4 2xl:gap-6">
+			<main className="flex flex-col gap-2 2xl:gap-6 2xl:px-headerPaddingLG md:px-headerPadding px-4 -mb-5 md:-mb-0 md:mt-10">
+				<div className="flex flex-col md:flex-row  flex-nowrap gap-6 sm:gap-4 2xl:gap-6">
 					{mainPhotoArray.map((photo, index) => {
 						delay += 0.15;
 						let size = "w-full";
@@ -79,7 +96,7 @@ export default function Home() {
 								delay={index > 0 ? delay : 0}
 								key={index}
 								src={photo.src}
-								alt={photo.alt}
+								alt={photo.subtitle}
 								subtitle={photo.subtitle}
 								title={photo.title}
 								id={index + 1}
@@ -90,8 +107,8 @@ export default function Home() {
 						);
 					})}
 				</div>
-				<div className="flex flex-col md:flex-row flex-nowrap gap-2 sm:gap-4 2xl:gap-6">
-					{mainPhotoArray.map((photo, index) => {
+				<div className="flex flex-col md:flex-row flex-nowrap gap-6 sm:gap-4 2xl:gap-6">
+					{mainPhotoArray2.map((photo, index) => {
 						delay += 0.15;
 						let size2 = "w-full";
 						switch (index) {
@@ -113,7 +130,7 @@ export default function Home() {
 								delay={index > 0 ? delay : 0}
 								key={index}
 								src={photo.src}
-								alt={photo.alt}
+								alt={photo.subtitle}
 								subtitle={photo.subtitle}
 								title={photo.title}
 								id={index + 1}
@@ -124,7 +141,7 @@ export default function Home() {
 						);
 					})}
 				</div>
-				<p className="w-full py-4 flex justify-center font-basic opacity-90 text-xs leading-6 text-gray-500">
+				<p className="w-full py-6 flex justify-center font-basic opacity-90 text-xs leading-6 text-gray-500">
 					<Link href="/execucoes" className="px-4 py-3 border-[1px] border-gray-200 cursor-pointer">
 						Ver mais trabalhos
 					</Link>

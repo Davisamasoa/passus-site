@@ -27,6 +27,14 @@ export default function Photo({
 	main = false,
 	srcset = undefined,
 }: Props) {
+	let photoPosition: boolean = true;
+	switch (subtitle) {
+		case "Tarcísio de Freitas":
+		case "Credal Bank":
+		case "Michel Temer e Maurício Macri":
+			photoPosition = false;
+	}
+
 	return (
 		<Link className={`object-cover ${size} w-full block`} href={`execucoes/${id}`}>
 			<motion.article
@@ -41,7 +49,9 @@ export default function Photo({
 						{srcset ? <source media="(max-width: 768px)" srcSet={srcset} /> : undefined}
 
 						<Image
-							className={`photo-position object-cover cursor-pointer hover:scale-110 transition-all duration-300 lg:max-h-none h-[250px] sm:h-[400px] w-full ${
+							className={`${
+								photoPosition ? "photo-position" : undefined
+							}   object-cover cursor-pointer hover:scale-110 transition-all duration-300 lg:max-h-none h-[230px] sm:h-[400px] w-full ${
 								main ? "2xl:!h-[400px] lg:!h-[350px] md:!h-[300px] " : undefined
 							}`}
 							// Adicione esta linha para ajustar a largura
@@ -55,9 +65,7 @@ export default function Photo({
 				</div>
 				<div className="mt-2 flex flex-col">
 					<span className="text-zinc-500 text-xs">{subtitle} </span>
-					<h3 className={`font-goudyOldStyle text-2xl -mt-1 ${dark ? "text-white" : "text-black"}`}>
-						{title}
-					</h3>
+					<h3 className={`font-goudyOldStyle text-2xl 1 ${dark ? "text-white" : "text-black"}`}>{title}</h3>
 				</div>
 			</motion.article>
 		</Link>
