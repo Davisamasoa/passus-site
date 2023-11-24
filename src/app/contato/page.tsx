@@ -6,7 +6,13 @@ type Props = {};
 
 export default function page({}: Props) {
 	return (
-		<div className="text-gray-500 sm:gap-5 md:px-[10%] lg:px-headerPaddingLG px-headerPadding">
+		<motion.div
+			whileInView={{ opacity: 1 }}
+			viewport={{ once: true }}
+			initial={{ opacity: 0 }}
+			transition={{ duration: 1.5 }}
+			className="text-gray-500 sm:gap-5 md:px-[10%] lg:px-headerPaddingLG px-headerPadding"
+		>
 			<motion.h1
 				animate={{ marginTop: 0, opacity: 1 }}
 				initial={{ marginTop: -30, opacity: 0 }}
@@ -38,6 +44,6 @@ export default function page({}: Props) {
 					Se conecte por Whatsapp
 				</motion.a>
 			</p>
-		</div>
+		</motion.div>
 	);
 }

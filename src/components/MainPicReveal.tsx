@@ -18,26 +18,16 @@ export default function MainPicReveal({ src, conceito }: Props) {
 				transition={{ duration: 1 }}
 			>
 				<div>
-					<motion.video
-						width="100%"
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 0.9 }}
-						transition={{ duration: 0.4 }}
-						autoPlay
-						muted
-						playsInline
-						loop
-						controls={conceito}
-					>
+					<video width="100%" autoPlay muted playsInline loop controls={conceito}>
 						<source src={src} />
-					</motion.video>
+					</video>
 				</div>
 			</motion.div>
 			{!conceito ? (
 				<motion.h1
-					whileInView={{ marginTop: 0, opacity: 1 }}
+					whileInView={{ marginTop: 0 }}
 					viewport={{ once: true }}
-					initial={{ marginTop: 80, opacity: 0 }}
+					initial={{ marginTop: 80 }}
 					transition={{ duration: 1, delay: 0.7 }}
 					className="md:hidden  font-goudyOldStyle w-fit sm:text-4xl text-2xl leading-6 px-headerPadding sm:gap-5 md:px-[10%] lg:px-[15%] py-8 text-zinc-800"
 				>
@@ -46,9 +36,9 @@ export default function MainPicReveal({ src, conceito }: Props) {
 			) : (
 				<>
 					<motion.h1
-						whileInView={{ marginTop: 0, opacity: 1 }}
+						whileInView={{ marginTop: 0 }}
 						viewport={{ once: true }}
-						initial={{ marginTop: -80, opacity: 0 }}
+						initial={{ marginTop: -80 }}
 						transition={{ duration: 1, delay: 0 }}
 						className="mx-auto sm:px-headerPadding md:px-[25%] py-10  w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base text-gray-400"
 					>

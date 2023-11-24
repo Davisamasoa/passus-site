@@ -45,8 +45,8 @@ export default function Header({}: Props) {
 
 	return (
 		<motion.header
-			initial={{ y: 0 }}
-			animate={{ y: visible ? 0 : -100 }}
+			initial={{ y: 0, opacity: 0 }}
+			animate={{ y: visible ? 0 : -130, opacity: 1 }}
 			transition={{ duration: 0.3 }}
 			className={`fixed top-0  ${
 				pathname == "/conceito" || pathname == "/execucoes"

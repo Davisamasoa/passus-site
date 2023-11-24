@@ -18,8 +18,8 @@ module.exports = {
 				sm: "481px",
 			},
 			padding: {
-				headerPadding: "1.5rem",
-				headerPaddingLG: "15%",
+				headerPadding: "3rem",
+				headerPaddingLG: "13%",
 			},
 		},
 		fontFamily: {
