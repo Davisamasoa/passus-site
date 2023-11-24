@@ -72,7 +72,7 @@ export default function Home() {
 			<div>
 				<MainPicReveal conceito={false} src={process.env.NEXT_PUBLIC_VIDEOURL} />
 			</div>
-			<main className="flex flex-col gap-2 2xl:gap-6 2xl:px-headerPaddingLG md:px-headerPadding px-4 -mb-5 md:-mb-0 md:mt-10">
+			<main className="flex flex-col gap-6 sm:gap-4 2xl:gap-6 2xl:px-headerPaddingLG md:px-headerPadding px-4 -mb-5 md:-mb-0 md:mt-10">
 				<div className="flex flex-col md:flex-row  flex-nowrap gap-6 sm:gap-4 2xl:gap-6">
 					{mainPhotoArray.map((photo, index) => {
 						delay += 0.15;
