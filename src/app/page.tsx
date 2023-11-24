@@ -38,8 +38,8 @@ export default function Home() {
 			<div>
 				<MainPicReveal conceito={false} src={process.env.NEXT_PUBLIC_VIDEOURL} />
 			</div>
-			<main className="sm:gap-5 lg:px-headerPaddingLG md:px-headerPadding px-4 -mb-5 md:-mb-0 md:mt-10">
-				<div className="flex flex-col md:flex-row  flex-nowrap gap-2 sm:gap-5 lg:gap-7">
+			<main className="sm:gap-4 2xl:px-headerPaddingLG md:px-headerPadding px-4 -mb-5 md:-mb-0 md:mt-10">
+				<div className="flex flex-col md:flex-row  flex-nowrap gap-2 sm:gap-4 2xl:gap-6">
 					{mainPhotoArray.map((photo, index) => {
 						delay += 0.15;
 						let size = "w-full";
@@ -54,7 +54,7 @@ export default function Home() {
 								break;
 							case 1:
 							case 2:
-								size = "md:w-[25%]";
+								size = "md:w-[24.2%]";
 						}
 
 						return (
@@ -72,7 +72,7 @@ export default function Home() {
 						);
 					})}
 				</div>
-				<div className="flex flex-col md:flex-row flex-nowrap gap-2 sm:gap-5 lg:gap-7">
+				<div className="flex flex-col md:flex-row flex-nowrap gap-2 sm:gap-4 2xl:gap-6">
 					{mainPhotoArray.map((photo, index) => {
 						delay += 0.15;
 						let size2 = "w-full";
@@ -87,7 +87,7 @@ export default function Home() {
 								break;
 							case 0:
 							case 1:
-								size2 = "md:w-[23%]";
+								size2 = "md:w-[24%]";
 						}
 
 						return (
@@ -105,7 +105,7 @@ export default function Home() {
 						);
 					})}
 				</div>
-				<div className="grid place-items-center md:grid-cols-3 grid-cols-1 mt-4 md:mt-16 justify-center  lg:justify-between gap-2 sm:gap-5 lg:gap-7">
+				<div className="grid place-items-center md:grid-cols-3 grid-cols-1 mt-4 md:mt-16 justify-center  lg:justify-between gap-2 sm:gap-4 2xl:gap-6">
 					{photoArray.map((photo, index) => {
 						delay += 0.15;
 

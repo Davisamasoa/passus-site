@@ -53,8 +53,8 @@ export default function Home() {
 
 	return (
 		<>
-			<div className="flex flex-col  mx-auto md:w-3/5 w-full lg:px-headerPaddingLG px-headerPadding mb-10 ">
-				<h1 className="sm:gap-5 pb-10 font-goudyOldStyle text-white opacity-90 sm:text-3xl md:text-4xl text-2xl leading-6 text-center md:text-start">
+			<div className="flex flex-col  mx-auto md:w-3/5 w-full 2xl:px-headerPaddingLG px-headerPadding mb-10 ">
+				<h1 className="sm:gap-5 my-2 md:mb-10 md:mt-14 pb-10 font-goudyOldStyle text-white opacity-90 sm:text-3xl md:text-5xl text-2xl leading-6 text-center md:text-start">
 					Conexão entre os que falam <br />e os que precisam ouvir.
 				</h1>
 				<div className="flex justify-start items-baseline border-gray-700 border-b-[1px]">
@@ -72,7 +72,7 @@ export default function Home() {
 				viewport={{ once: true }}
 				initial={{ opacity: 0 }}
 				transition={{ duration: 1.5 }}
-				className="sm:gap-5 lg:px-headerPaddingLG md:px-headerPadding lg:mt-10 px-4 mb-20 text-gray-400"
+				className="sm:gap-5 2xl:px-headerPaddingLG md:px-headerPadding lg:mt-10 px-4 mb-20 text-gray-400"
 			>
 				{inputValue !== "" ? (
 					<div className="grid place-items-center md:grid-cols-3 grid-cols-1 mt-4 md:mt-16 justify-center  lg:justify-between gap-2 sm:gap-7">
