@@ -31,7 +31,7 @@ export default function Home() {
 		},
 		{
 			src: "/assets/image/mobile-aldorebelo.jpg",
-			subtitle: "Aldo Rebelo",
+			subtitle: "Aldo Rebelo ",
 			title: "O projeto nacionalista",
 		},
 	];
@@ -39,7 +39,7 @@ export default function Home() {
 	const mainPhotoArray2: photoData[] = [
 		{
 			src: "/assets/image/h-poit.jpg",
-			subtitle: "Vinicius Poit",
+			subtitle: "Vinicius Poit ",
 			title: "Campanha ao Governo de São Paulo",
 			srcset: "/assets/image/mobile-poit.jpg",
 		},

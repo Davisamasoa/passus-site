@@ -27,12 +27,11 @@ export default function Photo({
 	main = false,
 	srcset = undefined,
 }: Props) {
-	let photoPosition: boolean = true;
+	let photoPosition: boolean = false;
 	switch (subtitle) {
-		case "Tarcísio de Freitas":
-		case "Credal Bank":
-		case "Michel Temer e Maurício Macri":
-			photoPosition = false;
+		case "Aldo Rebelo ":
+		case "Vinicius Poit ":
+			photoPosition = true;
 	}
 
 	return (

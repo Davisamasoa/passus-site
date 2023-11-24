@@ -65,7 +65,7 @@ const photoArray: photoData[] = [
 		title: "O segundo grito de liberdade",
 	},
 	{
-		src: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
+		src: "/assets/image/trabalho/patriota.jpg",
 		subtitle: "Patriotas",
 		title: "Conservadorismo e liberdade",
 	},
@@ -149,8 +149,6 @@ export default function Home() {
 			setResults(null);
 		}
 	}
-
-	console.log(results);
 
 	function filterResults(value: string) {
 		const filteredResults = photoArray.filter(
