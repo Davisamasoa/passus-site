@@ -124,7 +124,7 @@ export default function Home() {
 						);
 					})}
 				</div>
-				<p className="w-full py-2 flex justify-center font-basic opacity-90 sm:text-base text-sm leading-6">
+				<p className="w-full py-4 flex justify-center font-basic opacity-90 sm:text-base text-sm leading-6">
 					<Link
 						href="/execucoes"
 						className="sm:px-[25px] px-[14px] py-3 border-[1px] border-gray-200 cursor-pointer"
@@ -132,32 +132,6 @@ export default function Home() {
 						Ver mais trabalhos
 					</Link>
 				</p>
-				<div className="grid place-items-center md:grid-cols-3 grid-cols-1  justify-center  lg:justify-between gap-2 sm:gap-4 2xl:gap-6">
-					{photoArray.map((photo, index) => {
-						delay += 0.15;
-
-						switch (index) {
-							case 0:
-							case 3:
-							case 6:
-							case 9:
-								delay = 0;
-						}
-
-						return (
-							<Photo
-								id={index + 1}
-								delay={index > 0 ? delay : 0}
-								key={index}
-								src={photo.src}
-								alt={photo.alt}
-								subtitle={photo.subtitle}
-								title={photo.title}
-								srcset={photo.srcset}
-							/>
-						);
-					})}
-				</div>
 			</main>
 		</motion.div>
 	);
