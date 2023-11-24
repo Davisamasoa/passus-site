@@ -22,7 +22,7 @@ export default function Footer({}: Props) {
 					<a
 						target="_blank"
 						href="https://wa.me/5515997856284"
-						className="py-3 px-3 cursor-pointer border-[1px] border-zinc-600 text-zinc-400"
+						className="cursor-pointer border-b-[1px] border-zinc-700 text-zinc-400"
 					>
 						Whatsapp
 					</a>

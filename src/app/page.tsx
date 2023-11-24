@@ -10,6 +10,7 @@ type photoData = {
 	alt: string;
 	subtitle: string;
 	title: string;
+	srcset?: string | undefined;
 };
 
 let delay = 0;
@@ -27,12 +28,14 @@ export default function Home() {
 			alt: "Tarcísio de Freitas",
 			subtitle: "Tarcísio de Freitas",
 			title: "Jornada por São Paulo",
+			srcset: "/assets/image/mobile-tarcisio.jpg",
 		},
 		{
 			src: "/assets/image/h-aldorebelo.jpg",
 			alt: "Aldo Rebelo",
 			subtitle: "Aldo Rebelo",
 			title: "O projeto nacionalista",
+			srcset: "/assets/image/mobile-aldorebelo.jpg",
 		},
 	];
 
@@ -82,6 +85,7 @@ export default function Home() {
 								id={index + 1}
 								size={size}
 								main={true}
+								srcset={photo?.srcset}
 							/>
 						);
 					})}
@@ -115,6 +119,7 @@ export default function Home() {
 								id={index + 1}
 								size={size2}
 								main={true}
+								srcset={photo.srcset}
 							/>
 						);
 					})}
@@ -140,6 +145,7 @@ export default function Home() {
 								alt={photo.alt}
 								subtitle={photo.subtitle}
 								title={photo.title}
+								srcset={photo.srcset}
 							/>
 						);
 					})}

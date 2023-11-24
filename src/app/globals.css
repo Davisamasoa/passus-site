@@ -56,3 +56,9 @@ ul li {
 		object-position: center -200px;
 	}
 }
+
+@media (max-width: 768px) {
+	.photo-position {
+		object-position: center -10px;
+	}
+}

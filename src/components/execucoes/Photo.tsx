@@ -12,6 +12,7 @@ type Props = {
 	dark?: boolean;
 	size?: "w-[50%]" | "w-[25%]" | "w-full" | string;
 	main?: boolean;
+	srcset?: undefined | string;
 };
 
 export default function Photo({
@@ -24,6 +25,7 @@ export default function Photo({
 	dark = false,
 	size = "w-full",
 	main = false,
+	srcset = undefined,
 }: Props) {
 	return (
 		<Link className={`object-cover ${size} w-full block`} href={`execucoes/${id}`}>
@@ -35,9 +37,11 @@ export default function Photo({
 				className="mb-4"
 			>
 				<div className=" z-50 overflow-hidden">
-					<div>
-						<img
-							className={`object-cover cursor-pointer hover:scale-110 transition-all duration-300 lg:max-h-none h-[250px] sm:h-[400px] w-full ${
+					<picture>
+						{srcset ? <source media="(max-width: 768px)" srcSet={srcset} /> : undefined}
+
+						<Image
+							className={`photo-position object-cover cursor-pointer hover:scale-110 transition-all duration-300 lg:max-h-none h-[250px] sm:h-[400px] w-full ${
 								main ? "2xl:!h-[400px] lg:!h-[350px] md:!h-[300px] " : undefined
 							}`}
 							// Adicione esta linha para ajustar a largura
@@ -47,11 +51,13 @@ export default function Photo({
 							alt={alt}
 							loading="lazy"
 						/>
-					</div>
+					</picture>
 				</div>
 				<div className="mt-2 flex flex-col">
 					<span className="text-zinc-500 text-xs">{subtitle} </span>
-					<h3 className={`font-goudyOldStyle text-2xl ${dark ? "text-white" : "text-black"}`}>{title}</h3>
+					<h3 className={`font-goudyOldStyle text-2xl -mt-1 ${dark ? "text-white" : "text-black"}`}>
+						{title}
+					</h3>
 				</div>
 			</motion.article>
 		</Link>
