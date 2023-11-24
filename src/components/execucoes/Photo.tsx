@@ -37,7 +37,7 @@ export default function Photo({
 				<div className=" z-50 overflow-hidden">
 					<div>
 						<img
-							className={`object-cover cursor-pointer hover:scale-110 transition-all duration-300  w-full ${
+							className={`object-cover cursor-pointer hover:scale-110 transition-all duration-300 lg:max-h-none h-[250px] sm:h-[400px] w-full ${
 								main ? "2xl:!h-[400px] lg:!h-[350px] md:!h-[300px] " : undefined
 							}`}
 							// Adicione esta linha para ajustar a largura
