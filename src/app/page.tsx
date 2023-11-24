@@ -4,6 +4,7 @@ import Photo from "@/components/execucoes/Photo";
 import MainPicReveal from "@/components/MainPicReveal";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type photoData = {
 	src: string;
@@ -31,11 +32,10 @@ export default function Home() {
 			srcset: "/assets/image/mobile-tarcisio.jpg",
 		},
 		{
-			src: "/assets/image/h-aldorebelo.jpg",
+			src: "/assets/image/mobile-aldorebelo.jpg",
 			alt: "Aldo Rebelo",
 			subtitle: "Aldo Rebelo",
 			title: "O projeto nacionalista",
-			srcset: "/assets/image/mobile-aldorebelo.jpg",
 		},
 	];
 
@@ -55,7 +55,7 @@ export default function Home() {
 			<div>
 				<MainPicReveal conceito={false} src={process.env.NEXT_PUBLIC_VIDEOURL} />
 			</div>
-			<main className="sm:gap-4 2xl:px-headerPaddingLG md:px-headerPadding px-4 -mb-5 md:-mb-0 md:mt-10">
+			<main className="flex flex-col gap-y-2 sm:gap-y-4 2xl:gap-y-6 2xl:px-headerPaddingLG md:px-headerPadding px-4 -mb-5 md:-mb-0 md:mt-10">
 				<div className="flex flex-col md:flex-row  flex-nowrap gap-2 sm:gap-4 2xl:gap-6">
 					{mainPhotoArray.map((photo, index) => {
 						delay += 0.15;
@@ -124,7 +124,15 @@ export default function Home() {
 						);
 					})}
 				</div>
-				<div className="grid place-items-center md:grid-cols-3 grid-cols-1 mt-4 md:mt-16 justify-center  lg:justify-between gap-2 sm:gap-4 2xl:gap-6">
+				<p className="w-full py-2 flex justify-center font-basic opacity-90 sm:text-base text-sm leading-6">
+					<Link
+						href="/execucoes"
+						className="sm:px-[25px] px-[14px] py-3 border-[1px] border-gray-200 cursor-pointer"
+					>
+						Ver mais trabalhos
+					</Link>
+				</p>
+				<div className="grid place-items-center md:grid-cols-3 grid-cols-1  justify-center  lg:justify-between gap-2 sm:gap-4 2xl:gap-6">
 					{photoArray.map((photo, index) => {
 						delay += 0.15;
 

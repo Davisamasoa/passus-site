@@ -34,7 +34,7 @@ export default function Photo({
 				initial={{ y: 50, opacity: 0 }}
 				viewport={{ once: true }}
 				transition={{ duration: 1.5, delay: delay }}
-				className="mb-4"
+				className=""
 			>
 				<div className=" z-50 overflow-hidden">
 					<picture>
