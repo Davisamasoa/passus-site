@@ -68,7 +68,7 @@ export default function Home() {
 				className="sm:gap-5 2xl:px-headerPaddingLG md:px-headerPadding lg:mt-10 px-4 mb-20 text-gray-400"
 			>
 				{inputValue !== "" ? (
-					<div className="grid place-items-center md:grid-cols-3 grid-cols-1 mt-4 md:mt-16 justify-center  lg:justify-between gap-2 sm:gap-7">
+					<div className="grid place-items-center md:grid-cols-3 grid-cols-1 mt-4 md:mt-16 justify-center  lg:justify-between gap-6 sm:gap-4 2xl:gap-6">
 						{results?.map((photo, index) => {
 							return (
 								<Photo
@@ -86,7 +86,7 @@ export default function Home() {
 						})}
 					</div>
 				) : (
-					<div className="grid gap-2 sm:gap-7 md:grid-cols-2 grid-cols-1 justify-center lg:justify-between ">
+					<div className="grid gap-6 sm:gap-4 2xl:gap-6 md:grid-cols-2 grid-cols-1 justify-center lg:justify-between ">
 						{photoArray.map((photo, index) => {
 							delay += 0.15;
 

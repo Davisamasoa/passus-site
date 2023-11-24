@@ -63,9 +63,11 @@ export default function Photo({
 						/>
 					</picture>
 				</div>
-				<div className="mt-2 flex flex-col">
+				<div className="mt-2 pl-2 flex flex-col">
 					<span className="text-zinc-500 text-xs">{subtitle} </span>
-					<h3 className={`font-goudyOldStyle text-2xl 1 ${dark ? "text-white" : "text-black"}`}>{title}</h3>
+					<h3 className={`font-goudyOldStyle text-2xl md:pr-28 -mt-1  ${dark ? "text-white" : "text-black"}`}>
+						{title}
+					</h3>
 				</div>
 			</motion.article>
 		</Link>
