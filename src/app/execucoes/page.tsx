@@ -45,7 +45,7 @@ const photoArray: photoData[] = [
 		title: "O projeto nacionalista",
 	},
 	{
-		src: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
+		src: "/assets/image/trabalho/ashby.jpg",
 		subtitle: "Ashby",
 		title: "3 décadas de sabor",
 	},
@@ -66,17 +66,17 @@ const photoArray: photoData[] = [
 	},
 	{
 		src: "/assets/image/trabalho/patriota.jpg",
-		subtitle: "Patriotas",
+		subtitle: "Patriota",
 		title: "Conservadorismo e liberdade",
 	},
 	{
 		src: "/assets/image/trabalho/ARCAH .JPEG",
 		subtitle: "ARCAH",
-		title: "O believe in good people",
+		title: "I believe in good people",
 	},
 	{
 		src: "/assets/image/trabalho/B-ON saudável.JPG",
-		subtitle: "B-ON saudável",
+		subtitle: "B-ON",
 		title: "Nutrição prática e saudável",
 	},
 	{
@@ -122,12 +122,12 @@ const photoArray: photoData[] = [
 	{
 		src: "/assets/image/trabalho/Aurapharma.JPG",
 		subtitle: " Aurapharma",
-		title: "CBD é saúde",
+		title: "Mais vida, menos barreiras",
 	},
 	{
 		src: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
 		subtitle: "CBDMED",
-		title: "Mais vida, menos barreiras",
+		title: "CBD é saúde",
 	},
 	{
 		src: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",

@@ -13,7 +13,8 @@ type Props = {};
 export default function Header({}: Props) {
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
 	const [visible, setVisible] = useState(true);
-
+	const [headerColor, setHeaderColor] = useState<string>();
+	const [logoColor, setLogoColor] = useState<string>();
 	const pathname = usePathname();
 
 	const handleScroll = () => {
@@ -24,13 +25,31 @@ export default function Header({}: Props) {
 
 		setVisible(isScrollingUp || currentScrollPos < 10);
 	};
+
 	useEffect(() => {
 		const body = document.querySelector("body");
+
 		if (body) {
-			if (pathname == "/conceito" || pathname == "/execucoes") {
-				body.style.backgroundColor = "black";
-			} else {
-				body.style.backgroundColor = "#FFF";
+			switch (pathname) {
+				case "/conceito":
+				case "/execucoes":
+				case "/execucoes/aldo-rebelo":
+				case "/execucoes/arcah":
+				case "/execucoes/ashby":
+				case "/execucoes/b-on":
+				case "/execucoes/jovem-pan-e-brasil-200":
+				case "/execucoes/campanha-pela-reforma-tributaria":
+				case "/execucoes/brasil-200":
+				case "/execucoes/michel-temer-e-mauricio-macri":
+				case "/execucoes/umiss":
+					body.style.backgroundColor = "black";
+					setHeaderColor("bg-black text-gray-400");
+					setLogoColor("invert");
+					break;
+				default:
+					body.style.backgroundColor = "#FFF";
+					setLogoColor("");
+					setHeaderColor("bg-white text-gray-500");
 			}
 		}
 	}, [pathname]);
@@ -48,21 +67,10 @@ export default function Header({}: Props) {
 			initial={{ y: 0, opacity: 0 }}
 			animate={{ y: visible ? 0 : -130, opacity: 1 }}
 			transition={{ duration: 0.3 }}
-			className={`fixed top-0  ${
-				pathname == "/conceito" || pathname == "/execucoes"
-					? "bg-black text-gray-400"
-					: "bg-white text-gray-500"
-			} flex  justify-between md:flex-row flex-col items-center md:gap-0 gap-7  2xl:px-headerPaddingLG px-headerPadding mx-auto py-8 w-full z-50`}
+			className={`fixed top-0  ${headerColor} flex  justify-between md:flex-row flex-col items-center md:gap-0 gap-7  2xl:px-headerPaddingLG px-headerPadding mx-auto py-8 w-full z-50`}
 		>
 			<Link href="/">
-				<Image
-					width={80}
-					className={`sm:w-20 w-16 ${
-						pathname == "/conceito" || pathname == "/execucoes" ? "invert" : undefined
-					}`}
-					src={passus}
-					alt="logo da passus"
-				/>
+				<Image width={80} className={`sm:w-20 w-16 ${logoColor}`} src={passus} alt="logo da passus" />
 			</Link>
 			<nav className="w-full md:w-fit">
 				<ul className="flex justify-between md:justify-center font-extralight md:gap-8 text-xs">
