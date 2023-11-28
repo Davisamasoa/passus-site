@@ -69,24 +69,30 @@ export default function Header({}: Props) {
 			transition={{ duration: 0.3 }}
 			className={`fixed top-0  ${headerColor} flex  justify-between md:flex-row flex-col items-center md:gap-0 gap-7  2xl:px-headerPaddingLG px-headerPadding mx-auto py-8 w-full z-50`}
 		>
-			<Link href="/">
-				<a>
-					<Image width={80} className={`sm:w-20 w-16 ${logoColor}`} src={passus} alt="logo da passus" />
-				</a>
+			<Link scroll={true} href="/">
+				<Image width={80} className={`sm:w-20 w-16 ${logoColor}`} src={passus} alt="logo da passus" />
 			</Link>
 			<nav className="w-full md:w-fit">
 				<ul className="flex justify-between md:justify-center font-extralight md:gap-8 text-xs">
 					<li>
-						<Link href="/execucoes">Execuções</Link>
+						<Link scroll={true} href="/execucoes">
+							Execuções
+						</Link>
 					</li>
 					<li>
-						<Link href="/inteligencias">Inteligências</Link>
+						<Link scroll={true} href="/inteligencias">
+							Inteligências
+						</Link>
 					</li>
 					<li>
-						<Link href="/conceito">Conceito</Link>
+						<Link scroll={true} href="/conceito">
+							Conceito
+						</Link>
 					</li>
 					<li>
-						<Link href="/contato">Contato</Link>
+						<Link scroll={true} href="/contato">
+							Contato
+						</Link>
 					</li>
 				</ul>
 			</nav>

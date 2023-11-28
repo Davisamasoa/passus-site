@@ -37,13 +37,13 @@ export default function Photo({
 	return (
 		<Link
 			className={`object-cover ${size} w-full block`}
-			href={`execucoes/${subtitle
+			href={`/execucoes/${subtitle
 				.normalize("NFD")
 				.replace(/[\u0300-\u036f]/g, "")
 				.replaceAll(" ", "-")
 				.toLowerCase()}`}
-			scroll={true}
 			prefetch={false}
+			scroll={true}
 		>
 			<LazyMotion features={domAnimation}>
 				<m.div
