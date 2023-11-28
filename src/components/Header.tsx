@@ -70,7 +70,9 @@ export default function Header({}: Props) {
 			className={`fixed top-0  ${headerColor} flex  justify-between md:flex-row flex-col items-center md:gap-0 gap-7  2xl:px-headerPaddingLG px-headerPadding mx-auto py-8 w-full z-50`}
 		>
 			<Link href="/">
-				<Image width={80} className={`sm:w-20 w-16 ${logoColor}`} src={passus} alt="logo da passus" />
+				<a>
+					<Image width={80} className={`sm:w-20 w-16 ${logoColor}`} src={passus} alt="logo da passus" />
+				</a>
 			</Link>
 			<nav className="w-full md:w-fit">
 				<ul className="flex justify-between md:justify-center font-extralight md:gap-8 text-xs">

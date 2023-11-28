@@ -62,9 +62,9 @@ export default function Work({
 
 			{text1 ? (
 				<motion.h1
-					whileInView={{ marginTop: 0 }}
+					whileInView={{ opacity: 1 }}
 					viewport={{ once: true }}
-					initial={{ marginTop: -80 }}
+					initial={{ opacity: 0 }}
 					transition={{ duration: 1, delay: 0 }}
 					className={`mx-auto sm:px-headerPadding md:px-[25%] py-10  w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
 						dark ? "text-gray-400" : "text-gray-800"
@@ -89,9 +89,9 @@ export default function Work({
 			) : undefined}
 			{text3 ? (
 				<motion.h1
-					whileInView={{ marginTop: 0 }}
+					whileInView={{ opacity: 1 }}
 					viewport={{ once: true }}
-					initial={{ marginTop: -80 }}
+					initial={{ opacity: 0 }}
 					transition={{ duration: 1, delay: 0 }}
 					className={`mx-auto sm:px-headerPadding md:px-[25%] py-10  w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
 						dark ? "text-gray-400" : "text-gray-800"
@@ -117,9 +117,9 @@ export default function Work({
 			) : undefined}
 			{text6 ? (
 				<motion.h1
-					whileInView={{ marginTop: 0 }}
+					whileInView={{ opacity: 1 }}
 					viewport={{ once: true }}
-					initial={{ marginTop: -80 }}
+					initial={{ opacity: 0 }}
 					transition={{ duration: 1, delay: 0 }}
 					className={`mx-auto sm:px-headerPadding md:px-[25%] py-10  w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
 						dark ? "text-gray-400" : "text-gray-800"
