@@ -48,7 +48,6 @@ const workData: photoData[] = [
 			"/assets/image/trabalho/poit/6.jpg",
 			"/assets/image/trabalho/poit/7.jpg",
 			"/assets/image/trabalho/poit/8.jpg",
-
 			"/assets/image/trabalho/poit/10.jpg",
 			"/assets/image/trabalho/poit/11.jpg",
 			"/assets/image/trabalho/poit/12.jpg",
@@ -78,12 +77,12 @@ const workData: photoData[] = [
 		topic: "Beleza nacional",
 	},
 	{
-		img1: "/assets/image/trabalho/Programa 4x4.JPG",
+		img1: "/assets/image/trabalho/Programa 4x4.jpg",
 		author: "Programa 4x4",
 		topic: "Jornalismo independente",
 	},
 	{
-		img1: "/assets/image/trabalho/Tarcísio de Freitas.JPG",
+		img1: "/assets/image/trabalho/Tarcísio de Freitas.jpg",
 		author: "Tarcísio de Freitas",
 		topic: "Jornada por São Paulo",
 	},
@@ -189,8 +188,8 @@ const workData: photoData[] = [
 		dark: true,
 		author: "B-ON",
 		topic: "Consciência, Qualidade e Sabor em Cada Escolha.",
-		img1: "/assets/image/trabalho/B-ON saudável.JPG",
-		img2: "/assets/image/trabalho/B-ON saudável.JPG",
+		img1: "/assets/image/trabalho/B-ON saudável.jpg",
+		img2: "/assets/image/trabalho/B-ON saudável.jpg",
 		text1:
 			"A B-ON Saudável consolidou-se no mercado de alimentos como um farol em meio à vastidão de produtos ultraprocessados. Defendendo a saúde e bem-estar de seus consumidores, a empresa fornece uma gama de alimentos saborosos e ricos em nutrientes.",
 		text2:
@@ -203,7 +202,7 @@ const workData: photoData[] = [
 			"A parceria entre a B-ON Saudável e a Agência Passus redefiniu padrões, transformando a percepção do público sobre o que significa verdadeiramente consumir de forma consciente e saudável",
 	},
 	{
-		img1: "/assets/image/trabalho/Pamplona Alimentos .JPG",
+		img1: "/assets/image/trabalho/Pamplona Alimentos .jpg",
 		author: "Pamplona Alimentos",
 		topic: "Sabor e tradição",
 	},
@@ -242,15 +241,15 @@ const workData: photoData[] = [
 		topic: "O que há por trás da coroa",
 	},
 	{
-		img1: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
+		img1: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
 		author: "SoulTV",
 		topic: "Um streaming para todos",
 	},
 	{
 		author: "Miss Universo 2022",
 		topic: "Miss Universo Brasil Tour",
-		img1: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
-		img2: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
+		img1: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
+		img2: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
 		text1:
 			"Na televisão, é essencial contar com espaços dedicados ao público feminino, que ofereçam dicas, cuidados e programas que valorizam e enaltecem a mulher em todas as suas facetas.",
 		text2:
@@ -280,8 +279,8 @@ const workData: photoData[] = [
 	{
 		author: "Aurapharma",
 		topic: "A vida é prioridade. Sempre.",
-		img1: "/assets/image/trabalho/Aurapharma.JPG",
-		img2: "/assets/image/trabalho/Aurapharma.JPG",
+		img1: "/assets/image/trabalho/Aurapharma.jpg",
+		img2: "/assets/image/trabalho/Aurapharma.jpg",
 		text1:
 			"Em um cenário onde o uso da Cannabis Medicinal é uma necessidade para muitas pessoas que enfrentam doenças neurológicas, a realidade brasileira ainda se mantém com desafios de comunicação que dificultam o debate correto do tema.",
 		text2:
@@ -292,7 +291,7 @@ const workData: photoData[] = [
 			"Nossa parceria com a Aura Pharma teve como objetivo primordial promover uma compreensão firme sobre o potencial da Cannabis medicinal, destacando sua relevância como uma alternativa valiosa, assim como outros remédios da indústria farmacêutica. Além disso, enfatizamos a importância de seguir protocolos seguros e transparentes, sempre respaldados por artigos científicos e estudos clínicos de alta qualidade.",
 	},
 	{
-		img1: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
+		img1: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
 		author: "CBDMED",
 		topic: "CBD é saúde",
 	},
@@ -300,8 +299,8 @@ const workData: photoData[] = [
 		dark: true,
 		author: "UMiss",
 		topic: "Tudo sobre o universo feminino",
-		img1: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
-		img2: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
+		img1: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
+		img2: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
 		text1:
 			"Na televisão, é essencial contar com espaços dedicados ao público feminino, que ofereçam dicas, cuidados e programas que valorizam e enaltecem a mulher em todas as suas facetas.",
 		text2:

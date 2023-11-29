@@ -15,7 +15,7 @@ let delay = 0;
 
 const photoArray: photoData[] = [
 	{
-		src: "/assets/image/trabalho/Vinicius Poit.jpg",
+		src: "/assets/image/trabalho/poit/Vinicius Poit.jpg",
 		subtitle: "Vinicius Poit",
 		title: "Campanha ao Governo de São Paulo",
 	},
@@ -25,17 +25,17 @@ const photoArray: photoData[] = [
 		title: "Beleza nacional",
 	},
 	{
-		src: "/assets/image/trabalho/Programa 4x4.JPG",
+		src: "/assets/image/trabalho/Programa 4x4.jpg",
 		subtitle: "Programa 4x4",
 		title: "Jornalismo independente",
 	},
 	{
-		src: "/assets/image/trabalho/Tarcísio de Freitas.JPG",
+		src: "/assets/image/trabalho/Tarcísio de Freitas.jpg",
 		subtitle: "Tarcísio de Freitas",
 		title: "Jornada por São Paulo",
 	},
 	{
-		src: "/assets/image/trabalho/Jovem Pan e Brasil 200.JPEG",
+		src: "/assets/image/trabalho/Jovem Pan e Brasil 200.jpeg",
 		subtitle: "Jovem Pan e Brasil 200",
 		title: "Estender mãos, construir um país",
 	},
@@ -70,17 +70,17 @@ const photoArray: photoData[] = [
 		title: "Conservadorismo e liberdade",
 	},
 	{
-		src: "/assets/image/trabalho/ARCAH .JPEG",
+		src: "/assets/image/trabalho/ARCAH .jpeg",
 		subtitle: "ARCAH",
 		title: "I believe in good people",
 	},
 	{
-		src: "/assets/image/trabalho/B-ON saudável.JPG",
+		src: "/assets/image/trabalho/B-ON saudável.jpg",
 		subtitle: "B-ON",
 		title: "Nutrição prática e saudável",
 	},
 	{
-		src: "/assets/image/trabalho/Pamplona Alimentos .JPG",
+		src: "/assets/image/trabalho/Pamplona Alimentos .jpg",
 		subtitle: "Pamplona Alimentos",
 		title: "Sabor e tradição",
 	},
@@ -105,7 +105,7 @@ const photoArray: photoData[] = [
 		title: "Um streaming do seu jeito",
 	},
 	{
-		src: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
+		src: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
 		subtitle: "UMiss",
 		title: "Miss Universo Brasil Tour",
 	},
@@ -120,17 +120,17 @@ const photoArray: photoData[] = [
 		title: "Uma parceira do produtor",
 	},
 	{
-		src: "/assets/image/trabalho/Aurapharma.JPG",
+		src: "/assets/image/trabalho/Aurapharma.jpg",
 		subtitle: " Aurapharma",
 		title: "Mais vida, menos barreiras",
 	},
 	{
-		src: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
+		src: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
 		subtitle: "CBDMED",
 		title: "CBD é saúde",
 	},
 	{
-		src: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
+		src: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
 		subtitle: "Canal UMiss",
 		title: "Tudo sobre o universo feminino",
 	},
