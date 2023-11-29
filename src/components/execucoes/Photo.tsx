@@ -70,7 +70,7 @@ export default function Photo({
 							{srcset ? <source media="(max-width: 768px)" srcSet={srcset} /> : undefined}
 
 							<Image
-								className={`${photoPosition ? "photo-position" : undefined}  ${
+								className={` ${photoPosition ? "photo-position" : undefined}  ${
 									subtitle == "Aldo Rebelo" ? "aldo" : undefined
 								}   object-cover cursor-pointer hover:scale-110 transition-all duration-300 lg:max-h-none h-[230px] sm:h-[400px] w-full ${
 									main ? "2xl:!h-[400px] lg:!h-[350px] md:!h-[300px] " : undefined
