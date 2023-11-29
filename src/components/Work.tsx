@@ -48,7 +48,7 @@ export default function Work({
 						viewport={{ once: true }}
 						transition={{ duration: 1 }}
 					>
-						<video width="100%" autoPlay muted playsInline loop controls>
+						<video width="100%" controls>
 							<source src={video} />
 						</video>
 					</m.div>
@@ -118,7 +118,7 @@ export default function Work({
 						viewport={{ once: true }}
 						transition={{ duration: 1 }}
 					>
-						<video width="100%" autoPlay muted playsInline loop controls>
+						<video width="100%" controls>
 							<source src={video2} />
 						</video>
 					</m.div>
