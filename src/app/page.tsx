@@ -30,9 +30,10 @@ export default function Home() {
 			srcset: "/assets/image/mobile-tarcisio.jpg",
 		},
 		{
-			src: "/assets/image/mobile-aldorebelo.jpg",
+			src: "/assets/image/h-aldorebelo.jpg",
 			subtitle: "Aldo Rebelo",
 			title: "O projeto nacionalista",
+			srcset: "/assets/image/mobile-aldorebelo.jpg",
 		},
 	];
 
