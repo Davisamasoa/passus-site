@@ -20,7 +20,16 @@ export default function PhotoReveal({ src, topic, text }: Props) {
 				viewport={{ once: true }}
 				transition={{ duration: 1 }}
 			>
-				<Image width={2000} height={1000} src={src} alt="Imagem" className="w-full inteli image" />
+				<Image
+					width={2000}
+					height={1000}
+					src={src}
+					placeholder="blur"
+					blurDataURL="https://cdn.wallpapersafari.com/89/17/nIGxhw.jpg"
+					quality={100}
+					alt={topic}
+					className="w-full inteli image"
+				/>
 			</motion.div>
 
 			<motion.div

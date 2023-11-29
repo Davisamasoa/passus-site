@@ -63,11 +63,14 @@ export default function Photo({
 								}   object-cover cursor-pointer hover:scale-110 transition-all duration-300 lg:max-h-none h-[230px] sm:h-[400px] w-full ${
 									main ? "2xl:!h-[400px] lg:!h-[350px] md:!h-[300px] " : undefined
 								}`}
-								width={700}
+								width={1500}
 								height={500}
 								src={src}
 								alt={alt}
 								loading="lazy"
+								placeholder="blur"
+								blurDataURL="https://cdn.wallpapersafari.com/89/17/nIGxhw.jpg"
+								quality={100}
 							/>
 						</picture>
 					</div>

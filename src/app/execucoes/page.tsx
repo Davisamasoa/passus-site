@@ -121,7 +121,7 @@ const photoArray: photoData[] = [
 	},
 	{
 		src: "/assets/image/trabalho/Aurapharma.jpg",
-		subtitle: " Aurapharma",
+		subtitle: "Aurapharma",
 		title: "Mais vida, menos barreiras",
 	},
 	{
@@ -131,7 +131,7 @@ const photoArray: photoData[] = [
 	},
 	{
 		src: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
-		subtitle: "Canal UMiss",
+		subtitle: "UMiss",
 		title: "Tudo sobre o universo feminino",
 	},
 ];

@@ -26,9 +26,9 @@ export default function MainPicReveal({ src, conceito }: Props) {
 				</m.div>
 				{!conceito ? (
 					<m.h1
-						whileInView={{ marginTop: 0 }}
+						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
-						initial={{ marginTop: 80 }}
+						initial={{ opacity: 0 }}
 						transition={{ duration: 1, delay: 0.7 }}
 						className="md:hidden  font-goudyOldStyle w-fit sm:text-4xl text-2xl leading-6 px-headerPadding sm:gap-5 md:px-[10%] lg:px-[15%] py-8 text-zinc-800"
 					>
@@ -37,9 +37,9 @@ export default function MainPicReveal({ src, conceito }: Props) {
 				) : (
 					<>
 						<m.h1
-							whileInView={{ marginTop: 0 }}
+							whileInView={{ opacity: 1 }}
 							viewport={{ once: true }}
-							initial={{ marginTop: -80 }}
+							initial={{ opacity: 0 }}
 							transition={{ duration: 1, delay: 0 }}
 							className="mx-auto sm:px-headerPadding md:px-[25%] py-10  w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base text-gray-400"
 						>

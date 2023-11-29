@@ -82,7 +82,7 @@ const workData: photoData[] = [
 		topic: "Jornalismo independente",
 	},
 	{
-		img1: "/assets/image/trabalho/Tarcísio de Freitas.jpg",
+		img1: "/assets/image/trabalho/Tarcísio de Freitas.jpg",
 		author: "Tarcísio de Freitas",
 		topic: "Jornada por São Paulo",
 	},
@@ -90,9 +90,9 @@ const workData: photoData[] = [
 		dark: true,
 		author: "Jovem Pan e Brasil 200",
 		topic: "Contra a Fome na pandemia.",
-		img1: "/assets/image/trabalho/Jovem Pan e Brasil 200.JPEG",
-		img2: "/assets/image/trabalho/Jovem Pan e Brasil 200.JPEG",
-		img3: "/assets/image/trabalho/Jovem Pan e Brasil 200.JPEG",
+		img1: "/assets/image/trabalho/Jovem Pan e Brasil 200.jpeg",
+		img2: "/assets/image/trabalho/Jovem Pan e Brasil 200.jpeg",
+		img3: "/assets/image/trabalho/Jovem Pan e Brasil 200.jpeg",
 		text1:
 			"No contexto da pandemia de COVID-19, a sociedade enfrentou momentos extremamente desafiadores, onde muitas pessoas se viram em situações de extrema vulnerabilidade e necessidade.",
 		text2:
@@ -172,8 +172,8 @@ const workData: photoData[] = [
 		dark: true,
 		author: "ARCAH",
 		topic: "I believe in good people",
-		img1: "/assets/image/trabalho/ARCAH .JPEG",
-		img2: "/assets/image/trabalho/ARCAH .JPEG",
+		img1: "/assets/image/trabalho/ARCAH .jpeg",
+		img2: "/assets/image/trabalho/ARCAH .jpeg",
 		text1:
 			"Em nossa recente parceria, tivemos o privilégio de trabalhar com a ARCAH, uma organização que, desde sua fundação, tem se dedicado a reintegrar socialmente pessoas em situação de rua.",
 		text2:
@@ -188,8 +188,8 @@ const workData: photoData[] = [
 		dark: true,
 		author: "B-ON",
 		topic: "Consciência, Qualidade e Sabor em Cada Escolha.",
-		img1: "/assets/image/trabalho/B-ON saudável.jpg",
-		img2: "/assets/image/trabalho/B-ON saudável.jpg",
+		img1: "/assets/image/trabalho/B-ON saudável.jpg",
+		img2: "/assets/image/trabalho/B-ON saudável.jpg",
 		text1:
 			"A B-ON Saudável consolidou-se no mercado de alimentos como um farol em meio à vastidão de produtos ultraprocessados. Defendendo a saúde e bem-estar de seus consumidores, a empresa fornece uma gama de alimentos saborosos e ricos em nutrientes.",
 		text2:
