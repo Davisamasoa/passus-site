@@ -1,6 +1,9 @@
-import React from "react";
+import React, { ReactChild } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+
 type Props = {
 	dark: boolean | undefined;
 	img1?: string;
@@ -13,6 +16,8 @@ type Props = {
 	text5?: string;
 	text6?: string;
 	video?: string | undefined;
+	video2?: string | undefined;
+	carousel?: string[];
 };
 
 export default function Work({
@@ -27,6 +32,8 @@ export default function Work({
 	text5,
 	text6,
 	video,
+	video2,
+	carousel,
 }: Props) {
 	return (
 		<div
@@ -53,7 +60,13 @@ export default function Work({
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}
 				>
-					<Image width={2000} height={2000} className="image" alt="a" src={img1} />
+					<Image
+						width={2000}
+						height={2000}
+						className="image h-[390px] md:h-[500px] lg:h-[600px] object-cover"
+						alt="a"
+						src={img1}
+					/>
 				</motion.div>
 			) : undefined}
 
@@ -79,7 +92,25 @@ export default function Work({
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}
 				>
-					<Image width={1300} height={850} className="image" alt="a" src={img2} />
+					<Image
+						width={1300}
+						height={850}
+						className="image h-[390px] md:h-[500px] lg:h-[600px] object-cover"
+						alt="a"
+						src={img2}
+					/>
+				</motion.div>
+			) : undefined}
+			{video2 ? (
+				<motion.div
+					initial={{ clipPath: "inset(5% 30% 5% 30%)" }}
+					whileInView={{ clipPath: "inset(0 0 0 0)" }}
+					viewport={{ once: true }}
+					transition={{ duration: 1 }}
+				>
+					<video width="100%" autoPlay muted playsInline loop controls>
+						<source src={video2} />
+					</video>
 				</motion.div>
 			) : undefined}
 
@@ -106,7 +137,13 @@ export default function Work({
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}
 				>
-					<Image width={2000} height={2000} className="image" alt="a" src={img3} />
+					<Image
+						width={2000}
+						height={2000}
+						className="image h-[390px] md:h-[500px] lg:h-[600px] object-cover"
+						alt="a"
+						src={img3}
+					/>
 				</motion.div>
 			) : undefined}
 			{text6 ? (
@@ -121,6 +158,18 @@ export default function Work({
 				>
 					<p>{text6}</p>
 				</motion.h1>
+			) : undefined}
+
+			{carousel ? (
+				<Carousel showThumbs={false} className="py-10">
+					{carousel.map((src, index) => {
+						return (
+							<div key={index}>
+								<img className="h-[390px] md:h-[500px] lg:h-[600px] object-cover" src={src} />
+							</div>
+						);
+					})}
+				</Carousel>
 			) : undefined}
 		</div>
 	);

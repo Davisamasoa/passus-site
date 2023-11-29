@@ -20,6 +20,7 @@ type photoData = {
 	text4?: string;
 	text5?: string;
 	text6?: string;
+	carousel?: string[];
 };
 
 let delay = 0;
@@ -28,8 +29,8 @@ const workData: photoData[] = [
 	{
 		author: "Vinicius Poit",
 		topic: "Respeito ao povo paulista.",
-		img1: "/assets/image/trabalho/Vinicius Poit.jpg",
-		img2: "/assets/image/trabalho/Vinicius Poit.jpg",
+		img1: "/assets/image/trabalho/poit/Vinicius Poit.jpg",
+		img2: "/assets/image/trabalho/poit/Vinicius Poit.jpg",
 		text1:
 			"Vinicius Poit, ex-candidato ao governo de São Paulo, apresentou estratégias centradas na eficiência da gestão pública, visando utilizar melhor os recursos em benefício do cidadão e incentivar o empreendedorismo como forma de impulsionar a economia e gerar oportunidades de emprego.",
 		text2:
@@ -38,6 +39,37 @@ const workData: photoData[] = [
 			"No cenário político, a má gestão de recursos públicos e o uso inadequado dos impostos prejudica todo o desenvolvimento do estado, afetando áreas essenciais como saúde, educação e infraestrutura.",
 		text4:
 			"Nossa proposta de comunicação foi inovadora e envolvente. Utilizando-se das redes sociais, criamos uma narrativa que aproximou Poit do público jovem e empreendedor. A Agência Passus se orgulha de ter sido parte deste projeto transformador, unindo inovação em comunicação com a visão progressista de Vinicius Poit.",
+		carousel: [
+			"/assets/image/trabalho/poit/1.jpg",
+			"/assets/image/trabalho/poit/2.jpg",
+			"/assets/image/trabalho/poit/3.jpg",
+			"/assets/image/trabalho/poit/4.jpg",
+			"/assets/image/trabalho/poit/5.jpg",
+			"/assets/image/trabalho/poit/6.jpg",
+			"/assets/image/trabalho/poit/7.jpg",
+			"/assets/image/trabalho/poit/8.jpg",
+
+			"/assets/image/trabalho/poit/10.jpg",
+			"/assets/image/trabalho/poit/11.jpg",
+			"/assets/image/trabalho/poit/12.jpg",
+			"/assets/image/trabalho/poit/13.jpg",
+			"/assets/image/trabalho/poit/14.jpg",
+			"/assets/image/trabalho/poit/15.jpg",
+			"/assets/image/trabalho/poit/16.jpg",
+			"/assets/image/trabalho/poit/17.jpg",
+			"/assets/image/trabalho/poit/18.jpg",
+			"/assets/image/trabalho/poit/19.jpg",
+			"/assets/image/trabalho/poit/20.jpg",
+			"/assets/image/trabalho/poit/21.jpg",
+			"/assets/image/trabalho/poit/22.jpg",
+			"/assets/image/trabalho/poit/23.jpg",
+			"/assets/image/trabalho/poit/24.jpg",
+			"/assets/image/trabalho/poit/25.jpg",
+			"/assets/image/trabalho/poit/26.jpg",
+			"/assets/image/trabalho/poit/27.jpg",
+			"/assets/image/trabalho/poit/28.jpg",
+			"/assets/image/trabalho/poit/29.jpg",
+		],
 	},
 
 	{
@@ -333,6 +365,7 @@ export default function Page({}: Props) {
 					text4={workData[position]?.text4}
 					text5={workData[position]?.text5}
 					text6={workData[position]?.text6}
+					carousel={workData[position]?.carousel}
 				/>
 			</motion.main>
 		</>
