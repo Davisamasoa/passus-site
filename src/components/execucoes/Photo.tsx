@@ -1,6 +1,7 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 
 type Props = {
 	src: string;
@@ -62,8 +63,8 @@ export default function Photo({
 								}   object-cover cursor-pointer hover:scale-110 transition-all duration-300 lg:max-h-none h-[230px] sm:h-[400px] w-full ${
 									main ? "2xl:!h-[400px] lg:!h-[350px] md:!h-[300px] " : undefined
 								}`}
-								width={500}
-								height={500}
+								width={2000}
+								height={2000}
 								src={src}
 								alt={alt}
 								loading="lazy"

@@ -20,9 +20,9 @@ const photoArray: photoData[] = [
 		title: "Campanha ao Governo de São Paulo",
 	},
 	{
-		src: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
+		src: "/assets/image/trabalho/Miss – Beleza nacional.jpg",
 		subtitle: "Miss Universo Brasil",
-		title: "A beleza nacional",
+		title: "Beleza nacional",
 	},
 	{
 		src: "/assets/image/trabalho/Programa 4x4.JPG",
@@ -32,7 +32,7 @@ const photoArray: photoData[] = [
 	{
 		src: "/assets/image/trabalho/Tarcísio de Freitas.JPG",
 		subtitle: "Tarcísio de Freitas",
-		title: "Agendas por São Paulo",
+		title: "Jornada por São Paulo",
 	},
 	{
 		src: "/assets/image/trabalho/Jovem Pan e Brasil 200.JPEG",
@@ -100,9 +100,9 @@ const photoArray: photoData[] = [
 		title: "O que há por trás da coroa",
 	},
 	{
-		src: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
+		src: "/assets/image/trabalho/SoulTV.jpg",
 		subtitle: "SoulTV",
-		title: "Um streaming para todos",
+		title: "Um streaming do seu jeito",
 	},
 	{
 		src: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",

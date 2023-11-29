@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
@@ -19,14 +20,7 @@ export default function PhotoReveal({ src, topic, text }: Props) {
 				viewport={{ once: true }}
 				transition={{ duration: 1 }}
 			>
-				<motion.img
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 0.9 }}
-					transition={{ duration: 0.4 }}
-					src={src}
-					alt="Imagem"
-					className="w-full inteli"
-				/>
+				<Image width={2000} height={2000} src={src} alt="Imagem" className="w-full inteli image" />
 			</motion.div>
 
 			<motion.div

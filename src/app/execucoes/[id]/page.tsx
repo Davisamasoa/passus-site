@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Work from "@/components/Work";
 import { usePathname } from "next/navigation";
@@ -41,9 +41,9 @@ const workData: photoData[] = [
 	},
 
 	{
-		img1: "/assets/image/trabalho/Miss Universo Brasil Tour.JPG",
+		img1: "/assets/image/trabalho/Miss – Beleza nacional.jpg",
 		author: "Miss Universo Brasil",
-		topic: "A beleza nacional",
+		topic: "Beleza nacional",
 	},
 	{
 		img1: "/assets/image/trabalho/Programa 4x4.JPG",
@@ -53,7 +53,7 @@ const workData: photoData[] = [
 	{
 		img1: "/assets/image/trabalho/Tarcísio de Freitas.JPG",
 		author: "Tarcísio de Freitas",
-		topic: "Agendas por São Paulo",
+		topic: "Jornada por São Paulo",
 	},
 	{
 		dark: true,
@@ -309,7 +309,7 @@ export default function Page({}: Props) {
 				viewport={{ once: true }}
 				initial={{ opacity: 0 }}
 				transition={{ duration: 1.5 }}
-				className={`${workData[position]?.dark ? "text-white" : "text-gray-800"} `}
+				className={`${workData[position]?.dark ? "text-white" : "text-gray-800"}`}
 			>
 				<h1
 					className={`sm:gap-5 md:px-[10%]  w-full lg:px-headerPaddingLG px-headerPadding font-goudyOldStyle text-center md:text-start text-xs md:text-sm leading-6 ${

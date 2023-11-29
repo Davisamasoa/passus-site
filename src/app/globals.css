@@ -66,3 +66,7 @@ ul li {
 .aldo {
 	object-position: center -10px;
 }
+
+.image {
+	width: 100%;
+}

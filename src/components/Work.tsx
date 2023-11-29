@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 type Props = {
 	dark: boolean | undefined;
 	img1?: string;
@@ -39,11 +40,9 @@ export default function Work({
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}
 				>
-					<div>
-						<video width="100%" autoPlay muted playsInline loop controls>
-							<source src={video} />
-						</video>
-					</div>
+					<video width="100%" autoPlay muted playsInline loop controls>
+						<source src={video} />
+					</video>
 				</motion.div>
 			) : undefined}
 
@@ -54,9 +53,7 @@ export default function Work({
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}
 				>
-					<div>
-						<img src={img1} width="100%" />
-					</div>
+					<Image width={2000} height={2000} quality={100} priority className="image" alt="a" src={img1} />
 				</motion.div>
 			) : undefined}
 
@@ -82,11 +79,10 @@ export default function Work({
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}
 				>
-					<div>
-						<img src={img2} width="100%" />
-					</div>
+					<Image width={2000} height={2000} quality={100} priority className="image" alt="a" src={img2} />
 				</motion.div>
 			) : undefined}
+
 			{text3 ? (
 				<motion.h1
 					whileInView={{ opacity: 1 }}
@@ -110,9 +106,7 @@ export default function Work({
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}
 				>
-					<div>
-						<img src={img3} width="100%" />
-					</div>
+					<Image width={2000} height={2000} quality={100} priority className="image" alt="a" src={img3} />
 				</motion.div>
 			) : undefined}
 			{text6 ? (
