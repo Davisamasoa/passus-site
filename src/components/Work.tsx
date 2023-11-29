@@ -63,6 +63,7 @@ export default function Work({
 					<Image
 						width={2000}
 						height={2000}
+						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
 						className="image h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover"
 						alt="a"
 						src={img1}
@@ -140,6 +141,7 @@ export default function Work({
 					<Image
 						width={2000}
 						height={2000}
+						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
 						className="image h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover"
 						alt="a"
 						src={img3}
@@ -161,7 +163,7 @@ export default function Work({
 			) : undefined}
 
 			{carousel ? (
-				<Carousel showThumbs={false} className="pb-10">
+				<Carousel showIndicators={false} showThumbs={false} className="pb-10">
 					{carousel.map((src, index) => {
 						return (
 							<div key={index}>

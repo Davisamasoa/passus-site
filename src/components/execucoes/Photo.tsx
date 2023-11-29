@@ -1,7 +1,8 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useState } from "react";
+import { SkewLoader } from "react-spinners";
 
 type Props = {
 	src: string;
@@ -28,6 +29,8 @@ export default function Photo({
 	main = false,
 	srcset = undefined,
 }: Props) {
+	const [loading, setLoading] = useState<boolean>(true);
+
 	let photoPosition: boolean = false;
 	switch (subtitle) {
 		case "Aldo Rebelo":
@@ -54,23 +57,31 @@ export default function Photo({
 					className=""
 				>
 					<div className=" z-50 overflow-hidden">
+						{loading ? (
+							<div
+								className={`bg-gray-400 flex justify-center items-center lg:max-h-none h-[230px] sm:h-[400px] w-full ${
+									main ? "2xl:!h-[400px] lg:!h-[350px] md:!h-[300px] " : undefined
+								}`}
+							>
+								<SkewLoader size={10} />
+							</div>
+						) : undefined}
 						<picture>
 							{srcset ? <source media="(max-width: 768px)" srcSet={srcset} /> : undefined}
 
 							<Image
-								className={`${photoPosition ? "photo-position" : undefined} ${
+								className={`${photoPosition ? "photo-position" : undefined}  ${
 									subtitle == "Aldo Rebelo" ? "aldo" : undefined
 								}   object-cover cursor-pointer hover:scale-110 transition-all duration-300 lg:max-h-none h-[230px] sm:h-[400px] w-full ${
 									main ? "2xl:!h-[400px] lg:!h-[350px] md:!h-[300px] " : undefined
 								}`}
 								width={1500}
 								height={500}
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
 								src={src}
 								alt={alt}
+								onLoad={() => setLoading(false)}
 								loading="lazy"
-								placeholder="blur"
-								blurDataURL="https://cdn.wallpapersafari.com/89/17/nIGxhw.jpg"
-								quality={100}
 							/>
 						</picture>
 					</div>

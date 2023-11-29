@@ -14,6 +14,7 @@ type photoData = {
 	img2?: string;
 	img3?: string;
 	video?: string;
+	video2?: string;
 	text1?: string;
 	text2?: string;
 	text3?: string;
@@ -29,8 +30,8 @@ const workData: photoData[] = [
 	{
 		author: "Vinicius Poit",
 		topic: "Respeito ao povo paulista.",
-		img1: "/assets/image/trabalho/poit/Vinicius Poit.jpg",
-		img2: "/assets/image/trabalho/poit/poit.jpg",
+		img1: "/assets/image/trabalho/poit/poit.jpg",
+		video2: "https://davisms.s3.sa-east-1.amazonaws.com/Vi%CC%81deo+-+Poit.mp4",
 		text1:
 			"Vinicius Poit, ex-candidato ao governo de São Paulo, apresentou estratégias centradas na eficiência da gestão pública, visando utilizar melhor os recursos em benefício do cidadão e incentivar o empreendedorismo como forma de impulsionar a economia e gerar oportunidades de emprego.",
 		text2:
@@ -364,6 +365,8 @@ export default function Page({}: Props) {
 					text4={workData[position]?.text4}
 					text5={workData[position]?.text5}
 					text6={workData[position]?.text6}
+					video={workData[position]?.video}
+					video2={workData[position]?.video2}
 					carousel={workData[position]?.carousel}
 				/>
 			</motion.main>
