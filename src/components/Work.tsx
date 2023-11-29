@@ -53,7 +53,7 @@ export default function Work({
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}
 				>
-					<Image width={2000} height={2000} quality={100} priority className="image" alt="a" src={img1} />
+					<Image width={2000} height={2000} className="image" alt="a" src={img1} />
 				</motion.div>
 			) : undefined}
 
@@ -79,7 +79,7 @@ export default function Work({
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}
 				>
-					<Image width={2000} height={2000} quality={100} priority className="image" alt="a" src={img2} />
+					<Image width={1300} height={850} className="image" alt="a" src={img2} />
 				</motion.div>
 			) : undefined}
 
@@ -106,7 +106,7 @@ export default function Work({
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}
 				>
-					<Image width={2000} height={2000} quality={100} priority className="image" alt="a" src={img3} />
+					<Image width={2000} height={2000} className="image" alt="a" src={img3} />
 				</motion.div>
 			) : undefined}
 			{text6 ? (
