@@ -30,7 +30,7 @@ const workData: photoData[] = [
 		author: "Vinicius Poit",
 		topic: "Respeito ao povo paulista.",
 		img1: "/assets/image/trabalho/poit/Vinicius Poit.jpg",
-		img2: "/assets/image/trabalho/poit/Vinicius Poit.jpg",
+		img2: "/assets/image/trabalho/poit/poit.jpg",
 		text1:
 			"Vinicius Poit, ex-candidato ao governo de São Paulo, apresentou estratégias centradas na eficiência da gestão pública, visando utilizar melhor os recursos em benefício do cidadão e incentivar o empreendedorismo como forma de impulsionar a economia e gerar oportunidades de emprego.",
 		text2:
@@ -358,7 +358,7 @@ export default function Page({}: Props) {
 					dark={workData[position]?.dark}
 					img1={workData[position]?.img1}
 					img2={workData[position]?.img2}
-					img3={workData[position]?.img2}
+					img3={workData[position]?.img3}
 					text1={workData[position]?.text1}
 					text2={workData[position]?.text2}
 					text3={workData[position]?.text3}

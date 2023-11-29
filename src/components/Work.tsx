@@ -63,7 +63,7 @@ export default function Work({
 					<Image
 						width={2000}
 						height={2000}
-						className="image h-[390px] md:h-[500px] lg:h-[600px] object-cover"
+						className="image h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover"
 						alt="a"
 						src={img1}
 					/>
@@ -95,7 +95,7 @@ export default function Work({
 					<Image
 						width={1300}
 						height={850}
-						className="image h-[390px] md:h-[500px] lg:h-[600px] object-cover"
+						className="image h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover"
 						alt="a"
 						src={img2}
 					/>
@@ -140,7 +140,7 @@ export default function Work({
 					<Image
 						width={2000}
 						height={2000}
-						className="image h-[390px] md:h-[500px] lg:h-[600px] object-cover"
+						className="image h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover"
 						alt="a"
 						src={img3}
 					/>
@@ -161,11 +161,11 @@ export default function Work({
 			) : undefined}
 
 			{carousel ? (
-				<Carousel showThumbs={false} className="py-10">
+				<Carousel showThumbs={false} className="pb-10">
 					{carousel.map((src, index) => {
 						return (
 							<div key={index}>
-								<img className="h-[390px] md:h-[500px] lg:h-[600px] object-cover" src={src} />
+								<img className="h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover" src={src} />
 							</div>
 						);
 					})}
