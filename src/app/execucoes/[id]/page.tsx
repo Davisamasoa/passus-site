@@ -145,8 +145,8 @@ const workData: photoData[] = [
 		dark: true,
 		author: "Aldo Rebelo",
 		topic: "Uma vida dedicada à política.",
-		img1: "/assets/image/trabalho/Aldo Rebelo.jpg",
-		img2: "/assets/image/trabalho/Aldo Rebelo.jpg",
+		video: "https://davisms.s3.sa-east-1.amazonaws.com/aldorebelo.mp4",
+		img2: "/assets/image/trabalho/aldo rebelo/aldo.jpg",
 		text1:
 			"Desde o início de sua trajetória política, Aldo Rebelo se destacou como um nome comprometido com o desenvolvimento e a soberania do Brasil. Atuante em diversos cargos ao longo de sua carreira, Aldo acumulou experiência em funções significativas: foi Ministro da Coordenação Política e Assuntos Institucionais, Ministro dos Esportes, Ministro da Ciência, Tecnologia e Inovação, e Ministro da Defesa.",
 		text2:
@@ -154,6 +154,15 @@ const workData: photoData[] = [
 		text3: "O projeto nacionalista.",
 		text4:
 			"Agora, pelo PDT, Aldo Rebelo pleiteou uma vaga no Senado Federal, trazendo uma proposta de candidatura que busca conciliar desenvolvimento econômico com justiça social. Sua campanha foca na garantia dos direitos dos trabalhadores, na promoção de políticas trabalhistas e na defesa de um Brasil que valorize a ideia de nação soberana.",
+		carousel: [
+			"/assets/image/trabalho/aldo rebelo/1.jpg",
+			"/assets/image/trabalho/aldo rebelo/2.jpg",
+			"/assets/image/trabalho/aldo rebelo/3.jpg",
+			"/assets/image/trabalho/aldo rebelo/4.jpg",
+			"/assets/image/trabalho/aldo rebelo/5.jpg",
+			"/assets/image/trabalho/aldo rebelo/6.jpg",
+			"/assets/image/trabalho/aldo rebelo/7.jpg",
+		],
 	},
 	{
 		dark: true,
