@@ -6,9 +6,12 @@ import { Carousel } from "react-responsive-carousel";
 
 type Props = {
 	dark: boolean | undefined;
+	topic2?: string;
 	img1?: string;
 	img2?: string;
 	img3?: string;
+	img4?: string;
+	firstText?: string;
 	text1?: string;
 	text2?: string;
 	text3?: string;
@@ -22,9 +25,12 @@ type Props = {
 
 export default function Work({
 	dark,
+	topic2,
 	img1,
 	img2,
 	img3,
+	img4,
+	firstText,
 	text1,
 	text2,
 	text3,
@@ -40,13 +46,34 @@ export default function Work({
 			className={`image-container relative block
 			 mx-auto overflow-hidden md:px-[10%]  w-full lg:px-headerPaddingLG`}
 		>
+			{firstText ? (
+				<LazyMotion features={domAnimation}>
+					<m.h1
+						whileInView={{ opacity: 1 }}
+						viewport={{ once: true }}
+						initial={{ opacity: 0 }}
+						transition={{ duration: 1, delay: 0 }}
+						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
+							dark ? "text-gray-400" : "text-gray-800"
+						} `}
+					>
+						<p>{firstText}</p>
+					</m.h1>
+				</LazyMotion>
+			) : undefined}
 			{video ? (
 				<LazyMotion features={domAnimation}>
-					<div>
-						<video width="100%" controls>
+					<m.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						viewport={{ once: true }}
+						transition={{ duration: 1 }}
+						className="pb-10"
+					>
+						<video width="100%" controls autoPlay playsInline muted loop>
 							<source src={video} />
 						</video>
-					</div>
+					</m.div>
 				</LazyMotion>
 			) : undefined}
 
@@ -54,9 +81,10 @@ export default function Work({
 				<LazyMotion features={domAnimation}>
 					<m.div
 						initial={{ clipPath: "inset(5% 30% 5% 30%)" }}
-						whileInView={{ clipPath: "inset(0 0 0 0)" }}
+						whileInView={{ clipPath: "inset(0 0 0 0)", opacity: 1 }}
 						viewport={{ once: true }}
 						transition={{ duration: 1 }}
+						className="pb-10"
 					>
 						<Image
 							width={2000}
@@ -77,7 +105,7 @@ export default function Work({
 						viewport={{ once: true }}
 						initial={{ opacity: 0 }}
 						transition={{ duration: 1, delay: 0 }}
-						className={`mx-auto sm:px-headerPadding md:px-[25%] py-10  w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
+						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
 							dark ? "text-gray-400" : "text-gray-800"
 						} `}
 					>
@@ -87,13 +115,31 @@ export default function Work({
 					</m.h1>
 				</LazyMotion>
 			) : undefined}
+
+			{topic2 ? (
+				<LazyMotion features={domAnimation}>
+					<m.h1
+						whileInView={{ opacity: 1 }}
+						viewport={{ once: true }}
+						initial={{ opacity: 0 }}
+						transition={{ duration: 1, delay: 0 }}
+						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-2xl text-lg ${
+							dark ? "text-white" : "text-black"
+						} `}
+					>
+						{topic2}
+					</m.h1>
+				</LazyMotion>
+			) : undefined}
+
 			{img2 ? (
 				<LazyMotion features={domAnimation}>
 					<m.div
-						initial={{ clipPath: "inset(5% 30% 5% 30%)" }}
-						whileInView={{ clipPath: "inset(0 0 0 0)" }}
+						initial={{ clipPath: "inset(5% 30% 5% 30%)", opacity: 0 }}
+						whileInView={{ clipPath: "inset(0 0 0 0)", opacity: 1 }}
 						viewport={{ once: true }}
 						transition={{ duration: 1 }}
+						className="pb-10"
 					>
 						<Image
 							width={1300}
@@ -107,11 +153,16 @@ export default function Work({
 			) : undefined}
 			{video2 ? (
 				<LazyMotion features={domAnimation}>
-					<div>
-						<video width="100%" controls>
+					<m.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						viewport={{ once: true }}
+						transition={{ duration: 1 }}
+					>
+						<video width="100%" controls autoPlay playsInline muted loop>
 							<source src={video2} />
 						</video>
-					</div>
+					</m.div>
 				</LazyMotion>
 			) : undefined}
 
@@ -122,7 +173,7 @@ export default function Work({
 						viewport={{ once: true }}
 						initial={{ opacity: 0 }}
 						transition={{ duration: 1, delay: 0 }}
-						className={`mx-auto sm:px-headerPadding md:px-[25%] py-10  w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
+						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
 							dark ? "text-gray-400" : "text-gray-800"
 						} `}
 					>
@@ -137,9 +188,10 @@ export default function Work({
 				<LazyMotion features={domAnimation}>
 					<m.div
 						initial={{ clipPath: "inset(5% 30% 5% 30%)" }}
-						whileInView={{ clipPath: "inset(0 0 0 0)" }}
+						whileInView={{ clipPath: "inset(0 0 0 0)", opacity: 1 }}
 						viewport={{ once: true }}
 						transition={{ duration: 1 }}
+						className="pb-10"
 					>
 						<Image
 							width={2000}
@@ -152,24 +204,8 @@ export default function Work({
 					</m.div>
 				</LazyMotion>
 			) : undefined}
-			{text6 ? (
-				<LazyMotion features={domAnimation}>
-					<m.h1
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: true }}
-						initial={{ opacity: 0 }}
-						transition={{ duration: 1, delay: 0 }}
-						className={`mx-auto sm:px-headerPadding md:px-[25%] py-10  w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
-							dark ? "text-gray-400" : "text-gray-800"
-						} `}
-					>
-						<p>{text6}</p>
-					</m.h1>
-				</LazyMotion>
-			) : undefined}
-
 			{carousel ? (
-				<Carousel showIndicators={false} showThumbs={false} className="pb-10">
+				<Carousel className="pb-10" showIndicators={false} showThumbs={false}>
 					{carousel.map((src, index) => {
 						return (
 							<div key={index}>
@@ -178,6 +214,42 @@ export default function Work({
 						);
 					})}
 				</Carousel>
+			) : undefined}
+			{text6 ? (
+				<LazyMotion features={domAnimation}>
+					<m.h1
+						whileInView={{ opacity: 1 }}
+						viewport={{ once: true }}
+						initial={{ opacity: 0 }}
+						transition={{ duration: 1, delay: 0 }}
+						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
+							dark ? "text-gray-400" : "text-gray-800"
+						} `}
+					>
+						<p>{text6}</p>
+					</m.h1>
+				</LazyMotion>
+			) : undefined}
+
+			{img4 ? (
+				<LazyMotion features={domAnimation}>
+					<m.div
+						initial={{ clipPath: "inset(5% 30% 5% 30%)" }}
+						whileInView={{ clipPath: "inset(0 0 0 0)", opacity: 1 }}
+						viewport={{ once: true }}
+						transition={{ duration: 1 }}
+						className="pb-10"
+					>
+						<Image
+							width={2000}
+							height={2000}
+							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
+							className="image h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover"
+							alt="a"
+							src={img4}
+						/>
+					</m.div>
+				</LazyMotion>
 			) : undefined}
 		</div>
 	);

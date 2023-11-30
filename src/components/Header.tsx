@@ -42,6 +42,8 @@ export default function Header({}: Props) {
 				case "/execucoes/brasil-200":
 				case "/execucoes/michel-temer-e-mauricio-macri":
 				case "/execucoes/umiss":
+				case "/execucoes/programa-4x4":
+				case "/execucoes/tarcisio-de-freitas":
 					body.style.backgroundColor = "black";
 					setHeaderColor("bg-black text-gray-400");
 					setLogoColor("invert");

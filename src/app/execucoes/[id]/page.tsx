@@ -10,11 +10,14 @@ type photoData = {
 	dark?: boolean;
 	author: string;
 	topic: string;
+	topic2?: string;
 	img1?: string;
 	img2?: string;
 	img3?: string;
+	img4?: string;
 	video?: string;
 	video2?: string;
+	firstText?: string;
 	text1?: string;
 	text2?: string;
 	text3?: string;
@@ -32,6 +35,7 @@ const workData: photoData[] = [
 		topic: "Respeito ao povo paulista.",
 		img1: "/assets/image/trabalho/poit/poit.jpg",
 		video2: "https://davisms.s3.sa-east-1.amazonaws.com/Vi%CC%81deo+-+Poit.mp4",
+		firstText: "",
 		text1:
 			"Vinicius Poit, ex-candidato ao governo de São Paulo, apresentou estratégias centradas na eficiência da gestão pública, visando utilizar melhor os recursos em benefício do cidadão e incentivar o empreendedorismo como forma de impulsionar a economia e gerar oportunidades de emprego.",
 		text2:
@@ -78,12 +82,44 @@ const workData: photoData[] = [
 		topic: "Beleza nacional",
 	},
 	{
-		img1: "/assets/image/trabalho/Programa 4x4.jpg",
+		dark: true,
+		video: "https://davisms.s3.sa-east-1.amazonaws.com/programa4x4.mp4",
+		text1:
+			"O jornalismo é uma poderosa ferramenta para a promoção de informação e construção de uma sociedade engajada. No entanto, nem todos seguem uma abordagem responsável e imparcial. Muitas produções acabam prejudicando a busca pela verdade e comprometendo a qualidade das informações.",
+		text2:
+			"Apesar disso, há programas que se destacam pela excelência em sua abordagem jornalística, como o Programa 4 por 4, que reúne os maiores nomes do jornalismo independente para debates embasados sobre temas políticos e sociais.",
+		img2: "/assets/image/trabalho/programa4x4/1.jpg",
+		text3:
+			"Essa estratégia é feita a partir de diferentes perspectivas, o que permite que os telespectadores tenham acesso a informações fundamentadas. Apresentado por Luis Ernesto Lacombe, Ana Paula Henkel, Rodrigo Constantino e Guilherme Fiuza, o programa ao vivo conseguiu grande relevância.",
+		text6:
+			"A Agência Passus participou da concepção do branding, do lançamento e da estratégia digital. Com quase 900 mil inscritos no YouTube, cerca de 700 mil seguidores em redes sociais e altas médias de visualizações, o Programa 4 por 4 se tornou um destaque nas suas transmissões ao vivo aos domingos.",
+		img3: "/assets/image/trabalho/programa4x4/2.jpg",
+		img4: "/assets/image/trabalho/programa4x4/3.jpg",
 		author: "Programa 4x4",
-		topic: "Jornalismo independente",
+		topic: "Jornalismo sério e independente",
+		topic2: "Jornalismo sério e independente",
 	},
 	{
-		img1: "/assets/image/trabalho/Tarcísio de Freitas.jpg",
+		dark: true,
+		video: "https://davisms.s3.sa-east-1.amazonaws.com/tarcisio.mp4",
+		text1:
+			"São Paulo enfrenta desafios significativos em termos de segurança pública, saúde e educação, fatores que influenciam diretamente na qualidade de vida de seus moradores.",
+		text2:
+			"Tarcísio de Freitas, ex-Ministro da Infraestrutura e atual Governador de São Paulo, teve como principal objetivo trazer a esperança de volta aos paulistanos. Estratégias de políticas públicas e a relação de sua figura técnica e comprometida foram a escolha de 13 milhões de pessoas",
+		img2: "/assets/image/trabalho/Tarcísio de Freitas.jpg",
+		text3:
+			"A proposta da Agência Passus para esse trabalho se pautou em humanizar a figura de Tarcísio, aproximando-o da realidade dos cidadãos. Por meio de vídeos e fotografias de alta qualidade, retratamos momentos genuínos do pré-candidato em interações cotidianas e reuniões estratégicas.",
+		carousel: [
+			"/assets/image/trabalho/tarcisio/1.jpg",
+			"/assets/image/trabalho/tarcisio/2.jpg",
+			"/assets/image/trabalho/tarcisio/3.jpg",
+			"/assets/image/trabalho/tarcisio/4.jpg",
+			"/assets/image/trabalho/tarcisio/5.jpg",
+			"/assets/image/trabalho/tarcisio/6.jpg",
+			"/assets/image/trabalho/tarcisio/7.jpg",
+		],
+		text6:
+			"Com uma linguagem contemporânea e dinâmica, a comunicação foi projetada para alcançar e engajar diversas faixas etárias, ressaltando o caráter inovador da campanha e a visão de futuro de Tarcísio para São Paulo.",
 		author: "Tarcísio de Freitas",
 		topic: "Jornada por São Paulo",
 	},
@@ -142,6 +178,16 @@ const workData: photoData[] = [
 	},
 	{
 		img1: "/assets/image/trabalho/Rubinho Nunes.jpg",
+		text1:
+			"Na política brasileira, é inegável que já enfrentamos enormes desafios, incluindo escândalos de corrupção, falta de incentivo ao empreendedorismo e uma excessiva burocratização. Tudo isso acaba dificultando o desenvolvimento econômico e social do nosso país.",
+		text2:
+			"Em meio a isso, o vereador e um dos cofundadores do MBL (Movimento Brasil Livre), Rubinho Nunes, se posicionou como uma voz ativa na luta contra a corrupção.",
+		topic2: "Força para defender, ousadia para enfrentar.",
+		img2: "/assets/image/trabalho/Rubinho Nunes.jpg",
+		text3:
+			"Sua atuação busca incentivar o empreendedorismo e proporcionar um ambiente mais favorável ao desenvolvimento socioeconômico do Brasil, apoiando todos os empreendedores que desejam trabalhar de forma honesta.",
+		text4:
+			"Com uma comunicação dinâmica, jovem, de alta retenção em redes e muito digital, a Passus trabalhou na concepção estratégica, tráfego, captação de leads e na estrutura de comunicação da campanha eleitoral de 2020.",
 		author: "Rubinho Nunes",
 		topic: "São mais justa e livre",
 	},
@@ -204,6 +250,15 @@ const workData: photoData[] = [
 	},
 	{
 		img1: "/assets/image/trabalho/Pamplona Alimentos .jpg",
+		text1:
+			"Nem todas as empresas alimentícias estão verdadeiramente comprometidas com a preocupação em fornecer alimentos de qualidade, especialmente quando se trata de carne suína. Com frequência, os padrões de produção e os interesses comerciais prevalecem, colocando em segundo plano o bem-estar dos animais e a excelência do produto final.",
+		text2:
+			"Contudo, a Pamplona Alimentos é uma exceção notável nesse cenário desde 1948. A empresa dedica-se a levar para as famílias as melhores carnes suínas, com um compromisso sólido de tradição e qualidade.",
+		img2: "/assets/image/trabalho/Pamplona Alimentos .jpg",
+		text3:
+			"A Pamplona se destaca pela sua cuidadosa integração ao meio ambiente, promovendo uma alimentação saudável, responsável e sustentável.",
+		text4:
+			"Com a criação de peças que evidenciavam toda a tradição e qualidade da Pamplona, a Agência Passus trabalhou para estabelecer uma relação ainda maior de confiança com os produtos Pamplona.",
 		author: "Pamplona Alimentos",
 		topic: "Sabor e tradição",
 	},
@@ -262,6 +317,13 @@ const workData: photoData[] = [
 	},
 	{
 		img1: "/assets/image/trabalho/Vodka Tiiv.jpg",
+		text1:
+			"A Tiiv é vanguarda. A pioneira no Brasil a produzir vodka orgânica, adotando padrões rigorosos que a colocam como uma das poucas no mundo a seguir tais critérios. Sua estratégia vai além de simplesmente oferecer um destilado; a Tiiv não só carrega em sua composição ingredientes naturais de qualidade superior, mas também o espírito de inovação e sustentabilidade.",
+		topic2: "Inspiração russa e alma brasileira",
+		text3:
+			"Com a promessa de entregar uma experiência premium aos apreciadores de vodka, esta marca emergente destaca-se pelo seu compromisso com o meio ambiente e a produção consciente, proporcionando ao consumidor uma bebida livre de agrotóxicos e substâncias prejudiciais.",
+		text4:
+			"A proposta de comunicação desenvolvida pela Agência Passus para a Vodka Tiiv foi meticulosamente pensada para refletir a qualidade, principalmente como base para drinks de alta coquetelaria.",
 		author: "Vodka Tiiv",
 		topic: "Thanks it is vodka",
 	},
@@ -356,9 +418,12 @@ export default function Page({}: Props) {
 				</h1>
 				<Work
 					dark={workData[position]?.dark}
+					topic2={workData[position]?.topic2}
 					img1={workData[position]?.img1}
 					img2={workData[position]?.img2}
 					img3={workData[position]?.img3}
+					img4={workData[position]?.img4}
+					firstText={workData[position]?.firstText}
 					text1={workData[position]?.text1}
 					text2={workData[position]?.text2}
 					text3={workData[position]?.text3}
