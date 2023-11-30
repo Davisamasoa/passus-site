@@ -84,7 +84,7 @@ export default function Work({
 						viewport={{ once: true }}
 						initial={{ opacity: 0 }}
 						transition={{ duration: 1.5 }}
-						className="pb-10"
+						className="pb-10 px-4 md:px-0"
 					>
 						<Image
 							width={2000}
@@ -139,7 +139,7 @@ export default function Work({
 						viewport={{ once: true }}
 						initial={{ opacity: 0 }}
 						transition={{ duration: 1.5 }}
-						className="pb-10"
+						className="pb-10 px-4 md:px-0"
 					>
 						<Image
 							width={1300}
@@ -158,6 +158,7 @@ export default function Work({
 						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
 						transition={{ duration: 1.5 }}
+						className="pb-10"
 					>
 						<video width="100%" controls autoPlay playsInline muted loop>
 							<source src={video2} />
@@ -191,7 +192,7 @@ export default function Work({
 						viewport={{ once: true }}
 						initial={{ opacity: 0 }}
 						transition={{ duration: 1.5 }}
-						className="pb-10"
+						className="pb-10 px-4 md:px-0"
 					>
 						<Image
 							width={2000}
@@ -205,7 +206,7 @@ export default function Work({
 				</LazyMotion>
 			) : undefined}
 			{carousel ? (
-				<Carousel className="pb-10" showIndicators={false} showThumbs={false}>
+				<Carousel className="pb-10 px-4 md:px-0" showIndicators={false} showThumbs={false}>
 					{carousel.map((src, index) => {
 						return (
 							<div key={index}>
@@ -238,7 +239,7 @@ export default function Work({
 						viewport={{ once: true }}
 						initial={{ opacity: 0 }}
 						transition={{ duration: 1.5 }}
-						className="pb-10"
+						className="pb-10 px-4 md:px-0"
 					>
 						<Image
 							width={2000}

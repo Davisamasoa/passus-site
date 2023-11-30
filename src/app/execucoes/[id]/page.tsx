@@ -34,7 +34,7 @@ const workData: photoData[] = [
 		author: "Vinicius Poit",
 		topic: "Respeito ao povo paulista.",
 		img1: "/assets/image/trabalho/poit/poit.jpg",
-		video2: "https://davisms.s3.sa-east-1.amazonaws.com/Vi%CC%81deo+-+Poit.mp4",
+		video2: "https://davisms.s3.sa-east-1.amazonaws.com/poit.mp4",
 		firstText: "",
 		text1:
 			"Vinicius Poit, ex-candidato ao governo de São Paulo, apresentou estratégias centradas na eficiência da gestão pública, visando utilizar melhor os recursos em benefício do cidadão e incentivar o empreendedorismo como forma de impulsionar a economia e gerar oportunidades de emprego.",
@@ -127,9 +127,9 @@ const workData: photoData[] = [
 		dark: true,
 		author: "Jovem Pan e Brasil 200",
 		topic: "Contra a Fome na pandemia.",
-		img1: "/assets/image/trabalho/Jovem Pan e Brasil 200.jpeg",
-		img2: "/assets/image/trabalho/Jovem Pan e Brasil 200.jpeg",
-		img3: "/assets/image/trabalho/Jovem Pan e Brasil 200.jpeg",
+		video: "https://davisms.s3.sa-east-1.amazonaws.com/jovempan.mp4",
+		img2: "/assets/image/trabalho/jovempan/1.jpg",
+		img3: "/assets/image/trabalho/jovempan/2.jpg",
 		text1:
 			"No contexto da pandemia de COVID-19, a sociedade enfrentou momentos extremamente desafiadores, onde muitas pessoas se viram em situações de extrema vulnerabilidade e necessidade.",
 		text2:
