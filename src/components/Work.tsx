@@ -42,16 +42,11 @@ export default function Work({
 		>
 			{video ? (
 				<LazyMotion features={domAnimation}>
-					<m.div
-						initial={{ clipPath: "inset(5% 30% 5% 30%)" }}
-						whileInView={{ clipPath: "inset(0 0 0 0)" }}
-						viewport={{ once: true }}
-						transition={{ duration: 1 }}
-					>
+					<div>
 						<video width="100%" controls>
 							<source src={video} />
 						</video>
-					</m.div>
+					</div>
 				</LazyMotion>
 			) : undefined}
 
@@ -112,16 +107,11 @@ export default function Work({
 			) : undefined}
 			{video2 ? (
 				<LazyMotion features={domAnimation}>
-					<m.div
-						initial={{ clipPath: "inset(5% 30% 5% 30%)" }}
-						whileInView={{ clipPath: "inset(0 0 0 0)" }}
-						viewport={{ once: true }}
-						transition={{ duration: 1 }}
-					>
+					<div>
 						<video width="100%" controls>
 							<source src={video2} />
 						</video>
-					</m.div>
+					</div>
 				</LazyMotion>
 			) : undefined}
 
