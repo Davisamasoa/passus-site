@@ -16,7 +16,7 @@ export default function page({}: Props) {
 			<motion.h1
 				animate={{ marginTop: 0, opacity: 1 }}
 				initial={{ marginTop: -30, opacity: 0 }}
-				transition={{ duration: 1, delay: 0 }}
+				transition={{ duration: 1.5, delay: 0 }}
 				className="w-full pt-10 font-basic opacity-90 text-xs leading-6"
 			>
 				Para novas execuções
@@ -25,7 +25,7 @@ export default function page({}: Props) {
 				<motion.a
 					animate={{ marginTop: 0, opacity: 1 }}
 					initial={{ marginTop: -30, opacity: 0 }}
-					transition={{ duration: 1, delay: 0.5 }}
+					transition={{ duration: 1.5, delay: 0.5 }}
 					href="mailto:contato@passus.in"
 					className="border-b-[1px] border-gray-200 pb-1"
 				>
@@ -36,7 +36,7 @@ export default function page({}: Props) {
 				<motion.a
 					animate={{ marginTop: 0, opacity: 1 }}
 					initial={{ marginTop: -30, opacity: 0 }}
-					transition={{ duration: 1, delay: 1 }}
+					transition={{ duration: 1.5, delay: 1 }}
 					target="_blank"
 					href="https://wa.me/5515997856284"
 					className="sm:px-[25px] px-[14px] py-3 border-[1px] border-gray-200 cursor-pointer"

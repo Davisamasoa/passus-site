@@ -52,7 +52,7 @@ export default function Work({
 						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
 						initial={{ opacity: 0 }}
-						transition={{ duration: 1, delay: 0 }}
+						transition={{ duration: 1.5, delay: 0 }}
 						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
 							dark ? "text-gray-400" : "text-gray-800"
 						} `}
@@ -67,7 +67,7 @@ export default function Work({
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
-						transition={{ duration: 1 }}
+						transition={{ duration: 1.5 }}
 						className="pb-10"
 					>
 						<video width="100%" controls autoPlay playsInline muted loop>
@@ -80,10 +80,10 @@ export default function Work({
 			{img1 ? (
 				<LazyMotion features={domAnimation}>
 					<m.div
-						initial={{ clipPath: "inset(5% 30% 5% 30%)" }}
-						whileInView={{ clipPath: "inset(0 0 0 0)", opacity: 1 }}
+						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
-						transition={{ duration: 1 }}
+						initial={{ opacity: 0 }}
+						transition={{ duration: 1.5 }}
 						className="pb-10"
 					>
 						<Image
@@ -104,7 +104,7 @@ export default function Work({
 						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
 						initial={{ opacity: 0 }}
-						transition={{ duration: 1, delay: 0 }}
+						transition={{ duration: 1.5, delay: 0 }}
 						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
 							dark ? "text-gray-400" : "text-gray-800"
 						} `}
@@ -122,7 +122,7 @@ export default function Work({
 						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
 						initial={{ opacity: 0 }}
-						transition={{ duration: 1, delay: 0 }}
+						transition={{ duration: 1.5, delay: 0 }}
 						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-2xl text-lg ${
 							dark ? "text-white" : "text-black"
 						} `}
@@ -135,10 +135,10 @@ export default function Work({
 			{img2 ? (
 				<LazyMotion features={domAnimation}>
 					<m.div
-						initial={{ clipPath: "inset(5% 30% 5% 30%)", opacity: 0 }}
-						whileInView={{ clipPath: "inset(0 0 0 0)", opacity: 1 }}
+						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
-						transition={{ duration: 1 }}
+						initial={{ opacity: 0 }}
+						transition={{ duration: 1.5 }}
 						className="pb-10"
 					>
 						<Image
@@ -157,7 +157,7 @@ export default function Work({
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
-						transition={{ duration: 1 }}
+						transition={{ duration: 1.5 }}
 					>
 						<video width="100%" controls autoPlay playsInline muted loop>
 							<source src={video2} />
@@ -172,7 +172,7 @@ export default function Work({
 						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
 						initial={{ opacity: 0 }}
-						transition={{ duration: 1, delay: 0 }}
+						transition={{ duration: 1.5, delay: 0 }}
 						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
 							dark ? "text-gray-400" : "text-gray-800"
 						} `}
@@ -187,10 +187,10 @@ export default function Work({
 			{img3 ? (
 				<LazyMotion features={domAnimation}>
 					<m.div
-						initial={{ clipPath: "inset(5% 30% 5% 30%)" }}
-						whileInView={{ clipPath: "inset(0 0 0 0)", opacity: 1 }}
+						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
-						transition={{ duration: 1 }}
+						initial={{ opacity: 0 }}
+						transition={{ duration: 1.5 }}
 						className="pb-10"
 					>
 						<Image
@@ -221,7 +221,7 @@ export default function Work({
 						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
 						initial={{ opacity: 0 }}
-						transition={{ duration: 1, delay: 0 }}
+						transition={{ duration: 1.5, delay: 0 }}
 						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
 							dark ? "text-gray-400" : "text-gray-800"
 						} `}
@@ -234,10 +234,10 @@ export default function Work({
 			{img4 ? (
 				<LazyMotion features={domAnimation}>
 					<m.div
-						initial={{ clipPath: "inset(5% 30% 5% 30%)" }}
-						whileInView={{ clipPath: "inset(0 0 0 0)", opacity: 1 }}
+						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
-						transition={{ duration: 1 }}
+						initial={{ opacity: 0 }}
+						transition={{ duration: 1.5 }}
 						className="pb-10"
 					>
 						<Image
