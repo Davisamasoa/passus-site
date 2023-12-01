@@ -206,7 +206,13 @@ export default function Work({
 				</LazyMotion>
 			) : undefined}
 			{carousel ? (
-				<Carousel className="pb-10 px-4 md:px-0" showIndicators={false} showThumbs={false}>
+				<Carousel
+					autoPlay={true}
+					infiniteLoop={true}
+					className="pb-10 px-4 md:px-0"
+					showIndicators={false}
+					showThumbs={false}
+				>
 					{carousel.map((src, index) => {
 						return (
 							<div key={index}>
