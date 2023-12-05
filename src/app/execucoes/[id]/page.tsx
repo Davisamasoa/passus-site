@@ -319,16 +319,9 @@ const workData: photoData[] = [
 	{
 		author: "Miss Universo 2022",
 		topic: "Miss Universo Brasil Tour",
-		video: "https://davisms.s3.sa-east-1.amazonaws.com/miss-tour.mp4",
-		video2: "https://davisms.s3.sa-east-1.amazonaws.com/miss-tour-2.mp4",
-		text1:
-			"Na televisão, é essencial contar com espaços dedicados ao público feminino, que ofereçam dicas, cuidados e programas que valorizam e enaltecem a mulher em todas as suas facetas.",
-		text2:
-			"Essa representação na mídia promove a diversidade e a igualdade, além de fornecer informações que atendam aos interesses e necessidades do público feminino.",
-		text3:
-			"UMiss se destaca com a proposta. O canal não apenas aborda temas voltados à mulher, como beleza, moda e bem-estar, mas também produz uma série dedicada ao universo das misses, destacando a importância dessas mulheres como agentes de mudança e inspiração.",
-		text4:
-			"A estratégia aqui é criar um ambiente representativo que proporciona conteúdos enriquecedores para toda a audiência. A Passus é a agência de todos os programas do canal UMiss. ",
+
+		img1: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
+		img2: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
 	},
 	{
 		video: "https://davisms.s3.sa-east-1.amazonaws.com/vodka.mp4",
@@ -379,8 +372,8 @@ const workData: photoData[] = [
 		dark: true,
 		author: "UMiss",
 		topic: "Tudo sobre o universo feminino",
-		img1: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
-		img2: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
+		video: "https://davisms.s3.sa-east-1.amazonaws.com/miss-tour.mp4",
+		video2: "https://davisms.s3.sa-east-1.amazonaws.com/miss-tour-2.mp4",
 		text1:
 			"Na televisão, é essencial contar com espaços dedicados ao público feminino, que ofereçam dicas, cuidados e programas que valorizam e enaltecem a mulher em todas as suas facetas.",
 		text2:
