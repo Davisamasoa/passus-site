@@ -130,7 +130,7 @@ const photoArray: photoData[] = [
 		title: "CBD é saúde",
 	},
 	{
-		src: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
+		src: "/assets/image/trabalho/umiss.jpg",
 		subtitle: "UMiss",
 		title: "Tudo sobre o universo feminino",
 	},

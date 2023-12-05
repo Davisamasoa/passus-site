@@ -29,8 +29,6 @@ export default function Photo({
 	main = false,
 	srcset = undefined,
 }: Props) {
-	const [loading, setLoading] = useState<boolean>(true);
-
 	let photoPosition: boolean = false;
 	switch (subtitle) {
 		case "Aldo Rebelo":
@@ -57,15 +55,6 @@ export default function Photo({
 					className=""
 				>
 					<div className=" z-50 overflow-hidden">
-						{loading ? (
-							<div
-								className={`bg-gray-400 flex justify-center items-center lg:max-h-none h-[230px] sm:h-[400px] w-full ${
-									main ? "2xl:!h-[400px] lg:!h-[350px] md:!h-[300px] " : undefined
-								}`}
-							>
-								<SkewLoader size={10} />
-							</div>
-						) : undefined}
 						<picture>
 							{srcset ? <source media="(max-width: 768px)" srcSet={srcset} /> : undefined}
 
@@ -80,8 +69,9 @@ export default function Photo({
 								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
 								src={src}
 								alt={alt}
-								onLoad={() => setLoading(false)}
 								loading="lazy"
+								placeholder="blur"
+								blurDataURL="/public/image/blur.jpg"
 							/>
 						</picture>
 					</div>

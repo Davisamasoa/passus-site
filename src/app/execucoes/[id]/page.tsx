@@ -209,8 +209,7 @@ const workData: photoData[] = [
 		topic: "O segundo grito de liberdade",
 		video: "https://davisms.s3.sa-east-1.amazonaws.com/brasil200.mp4",
 		img2: "/assets/image/trabalho/brasil200/1.jpg",
-		img3: "/assets/image/trabalho/brasil200/2.jpg",
-		img4: "/assets/image/trabalho/brasil200/3.jpg",
+		carousel: ["/assets/image/trabalho/brasil200/2.jpg", "/assets/image/trabalho/brasil200/3.jpg"],
 		text1:
 			"Durante sua história o Brasil vem sistematicamente lutando para ser o país do presente. Passados inúmeros governos, o país do amanhã nunca se tornou o país do hoje. Golpes, revoluções, promessas, escândalos… estamos sempre correndo atrás dos prejuízos e não indo no rumo do desenvolvimento.",
 		text3:
@@ -320,8 +319,8 @@ const workData: photoData[] = [
 	{
 		author: "Miss Universo 2022",
 		topic: "Miss Universo Brasil Tour",
-		img1: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
-		img2: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
+		video: "https://davisms.s3.sa-east-1.amazonaws.com/miss-tour.mp4",
+		video2: "https://davisms.s3.sa-east-1.amazonaws.com/miss-tour-2.mp4",
 		text1:
 			"Na televisão, é essencial contar com espaços dedicados ao público feminino, que ofereçam dicas, cuidados e programas que valorizam e enaltecem a mulher em todas as suas facetas.",
 		text2:
@@ -332,7 +331,8 @@ const workData: photoData[] = [
 			"A estratégia aqui é criar um ambiente representativo que proporciona conteúdos enriquecedores para toda a audiência. A Passus é a agência de todos os programas do canal UMiss. ",
 	},
 	{
-		img1: "/assets/image/trabalho/Vodka Tiiv.jpg",
+		video: "https://davisms.s3.sa-east-1.amazonaws.com/vodka.mp4",
+		video2: "https://davisms.s3.sa-east-1.amazonaws.com/vodka2.mp4",
 		text1:
 			"A Tiiv é vanguarda. A pioneira no Brasil a produzir vodka orgânica, adotando padrões rigorosos que a colocam como uma das poucas no mundo a seguir tais critérios. Sua estratégia vai além de simplesmente oferecer um destilado; a Tiiv não só carrega em sua composição ingredientes naturais de qualidade superior, mas também o espírito de inovação e sustentabilidade.",
 		topic2: "Inspiração russa e alma brasileira",
