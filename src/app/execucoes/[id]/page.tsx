@@ -168,9 +168,10 @@ const workData: photoData[] = [
 		dark: true,
 		author: "Ashby",
 		topic: "3 décadas de sabor.",
-		img1: "/assets/image/trabalho/ashby.jpg",
-		img2: "/assets/image/trabalho/ashby.jpg",
-		img3: "/assets/image/trabalho/ashby.jpg",
+		video: "https://davisms.s3.sa-east-1.amazonaws.com/ashby.mp4",
+		img2: "/assets/image/trabalho/ashby/1.jpg",
+		img3: "/assets/image/trabalho/ashby/2.jpg",
+
 		text1:
 			"A Cervejaria Ashby, com sua trajetória consolidada no segmento de cervejas artesanais, tem se destacado por décadas por sua cerveja de sabor premiado e pela sua dedicação em oferecer ao consumidor uma experiência singular.",
 		text2:
@@ -186,13 +187,15 @@ const workData: photoData[] = [
 		topic: "Crédito para todos",
 	},
 	{
-		img1: "/assets/image/trabalho/Rubinho Nunes.jpg",
+		img1: "/assets/image/trabalho/rubinho/1.jpg",
+		img2: "/assets/image/trabalho/rubinho/2.jpg",
+		img3: "/assets/image/trabalho/rubinho/3.jpg",
 		text1:
 			"Na política brasileira, é inegável que já enfrentamos enormes desafios, incluindo escândalos de corrupção, falta de incentivo ao empreendedorismo e uma excessiva burocratização. Tudo isso acaba dificultando o desenvolvimento econômico e social do nosso país.",
 		text2:
 			"Em meio a isso, o vereador e um dos cofundadores do MBL (Movimento Brasil Livre), Rubinho Nunes, se posicionou como uma voz ativa na luta contra a corrupção.",
 		topic2: "Força para defender, ousadia para enfrentar.",
-		img2: "/assets/image/trabalho/Rubinho Nunes.jpg",
+
 		text3:
 			"Sua atuação busca incentivar o empreendedorismo e proporcionar um ambiente mais favorável ao desenvolvimento socioeconômico do Brasil, apoiando todos os empreendedores que desejam trabalhar de forma honesta.",
 		text4:
@@ -204,9 +207,10 @@ const workData: photoData[] = [
 		dark: true,
 		author: "Brasil 200",
 		topic: "O segundo grito de liberdade",
-		img1: "/assets/image/trabalho/Brasil 200.jpg",
-		img2: "/assets/image/trabalho/Brasil 200.jpg",
-		img3: "/assets/image/trabalho/Brasil 200.jpg",
+		video: "https://davisms.s3.sa-east-1.amazonaws.com/brasil200.mp4",
+		img2: "/assets/image/trabalho/brasil200/1.jpg",
+		img3: "/assets/image/trabalho/brasil200/2.jpg",
+		img4: "/assets/image/trabalho/brasil200/3.jpg",
 		text1:
 			"Durante sua história o Brasil vem sistematicamente lutando para ser o país do presente. Passados inúmeros governos, o país do amanhã nunca se tornou o país do hoje. Golpes, revoluções, promessas, escândalos… estamos sempre correndo atrás dos prejuízos e não indo no rumo do desenvolvimento.",
 		text3:
@@ -228,8 +232,9 @@ const workData: photoData[] = [
 		dark: true,
 		author: "ARCAH",
 		topic: "I believe in good people",
-		img1: "/assets/image/trabalho/ARCAH .jpeg",
-		img2: "/assets/image/trabalho/ARCAH .jpeg",
+		video: "https://davisms.s3.sa-east-1.amazonaws.com/arcah.mp4",
+		img2: "/assets/image/trabalho/arcah/1.jpg",
+		img3: "/assets/image/trabalho/arcah/2.jpg",
 		text1:
 			"Em nossa recente parceria, tivemos o privilégio de trabalhar com a ARCAH, uma organização que, desde sua fundação, tem se dedicado a reintegrar socialmente pessoas em situação de rua.",
 		text2:
@@ -244,8 +249,9 @@ const workData: photoData[] = [
 		dark: true,
 		author: "B-ON",
 		topic: "Consciência, Qualidade e Sabor em Cada Escolha.",
-		img1: "/assets/image/trabalho/B-ON saudável.jpg",
-		img2: "/assets/image/trabalho/B-ON saudável.jpg",
+		video: "https://davisms.s3.sa-east-1.amazonaws.com/b-on.mp4",
+		img2: "/assets/image/trabalho/b-on/1.jpg",
+		img3: "/assets/image/trabalho/b-on/2.jpg",
 		text1:
 			"A B-ON Saudável consolidou-se no mercado de alimentos como um farol em meio à vastidão de produtos ultraprocessados. Defendendo a saúde e bem-estar de seus consumidores, a empresa fornece uma gama de alimentos saborosos e ricos em nutrientes.",
 		text2:
@@ -258,12 +264,12 @@ const workData: photoData[] = [
 			"A parceria entre a B-ON Saudável e a Agência Passus redefiniu padrões, transformando a percepção do público sobre o que significa verdadeiramente consumir de forma consciente e saudável",
 	},
 	{
-		img1: "/assets/image/trabalho/Pamplona Alimentos .jpg",
+		img1: "/assets/image/trabalho/pamplona/1.jpg",
+		img2: "/assets/image/trabalho/pamplona/2.jpg",
 		text1:
 			"Nem todas as empresas alimentícias estão verdadeiramente comprometidas com a preocupação em fornecer alimentos de qualidade, especialmente quando se trata de carne suína. Com frequência, os padrões de produção e os interesses comerciais prevalecem, colocando em segundo plano o bem-estar dos animais e a excelência do produto final.",
 		text2:
 			"Contudo, a Pamplona Alimentos é uma exceção notável nesse cenário desde 1948. A empresa dedica-se a levar para as famílias as melhores carnes suínas, com um compromisso sólido de tradição e qualidade.",
-		img2: "/assets/image/trabalho/Pamplona Alimentos .jpg",
 		text3:
 			"A Pamplona se destaca pela sua cuidadosa integração ao meio ambiente, promovendo uma alimentação saudável, responsável e sustentável.",
 		text4:
@@ -275,9 +281,9 @@ const workData: photoData[] = [
 		dark: true,
 		author: "Michel Temer e Maurício Macri",
 		topic: "Conferência pela Liberdade",
-		img1: "/assets/image/trabalho/Temer-e-macri.jpg",
-		img2: "/assets/image/trabalho/Temer-e-macri.jpg",
-		img3: "/assets/image/trabalho/Temer-e-macri.jpg",
+		img1: "/assets/image/trabalho/temer e macri/1.jpg",
+		img2: "/assets/image/trabalho/temer e macri/2.jpg",
+		img3: "/assets/image/trabalho/temer e macri/3.jpg",
 		text1:
 			"A Conferência Internacional da Liberdade tornou-se um espaço vital para discussões relevantes no cenário global, contando com a participação de personalidades marcantes, como os ex-presidentes Maurício Macri e Michel Temer.",
 		text2:
@@ -291,8 +297,9 @@ const workData: photoData[] = [
 		dark: true,
 		author: "Campanha pela Reforma Tributária",
 		topic: "Brasil próspero e justo.",
-		img1: "/assets/image/trabalho/Campanha Reforma Tributária.jpg",
-		img2: "/assets/image/trabalho/Campanha Reforma Tributária.jpg",
+		img1: "/assets/image/trabalho/reforma tributaria/1.jpg",
+		img2: "/assets/image/trabalho/reforma tributaria/2.jpg",
+		img3: "/assets/image/trabalho/reforma tributaria/3.jpg",
 		text1:
 			"Em 2020 uma das discussões mais importantes do país era a composição de uma proposta de Reforma Tributária. Algumas entidades e grupos se posicionaram em apoio a desoneração da folha de pagamentos como medida para aliviar a carga tributária sobre as empresas e estimular o emprego e o crescimento econômico.",
 		text2:
@@ -339,8 +346,9 @@ const workData: photoData[] = [
 	{
 		author: "CASP",
 		topic: "Uma história de parceria com o campo.",
-		img1: "/assets/image/trabalho/CASP.jpg",
-		img2: "/assets/image/trabalho/CASP.jpg",
+		video: "https://davisms.s3.sa-east-1.amazonaws.com/casp.mp4",
+		img2: "/assets/image/trabalho/casp/1.jpg",
+		img3: "/assets/image/trabalho/casp/2.jpg",
 		text1:
 			"No competitivo cenário do agronegócio, muitas empresas enfrentam desafios para transmitir segurança, transparência e qualidade em suas operações. Esses pilares são fundamentais para os produtores, que buscam parcerias confiáveis e eficientes para impulsionar seus negócios.",
 		text2:
