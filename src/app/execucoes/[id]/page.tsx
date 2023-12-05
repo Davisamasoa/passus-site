@@ -352,8 +352,9 @@ const workData: photoData[] = [
 	{
 		author: "Aurapharma",
 		topic: "A vida é prioridade. Sempre.",
-		img1: "/assets/image/trabalho/Aurapharma.jpg",
-		img2: "/assets/image/trabalho/Aurapharma.jpg",
+		img1: "/assets/image/trabalho/aurapharma/1.jpg",
+		img2: "/assets/image/trabalho/aurapharma/2.jpg",
+		img3: "/assets/image/trabalho/aurapharma/3.jpg",
 		text1:
 			"Em um cenário onde o uso da Cannabis Medicinal é uma necessidade para muitas pessoas que enfrentam doenças neurológicas, a realidade brasileira ainda se mantém com desafios de comunicação que dificultam o debate correto do tema.",
 		text2:
