@@ -44,6 +44,7 @@ export default function Header({}: Props) {
 				case "/execucoes/umiss":
 				case "/execucoes/programa-4x4":
 				case "/execucoes/tarcisio-de-freitas":
+				case "/execucoes/miss-universo-brasil":
 					body.style.backgroundColor = "black";
 					setHeaderColor("bg-black text-gray-400");
 					setLogoColor("invert");
