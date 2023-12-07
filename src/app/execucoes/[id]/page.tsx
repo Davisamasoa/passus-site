@@ -9,7 +9,7 @@ type Props = {};
 type photoData = {
 	dark?: boolean;
 	author: string;
-	topic: string;
+	topic?: string;
 	topic2?: string;
 	img1?: string;
 	img2?: string;
@@ -383,6 +383,32 @@ const workData: photoData[] = [
 			"UMiss se destaca com a proposta. O canal não apenas aborda temas voltados à mulher, como beleza, moda e bem-estar, mas também produz uma série dedicada ao universo das misses, destacando a importância dessas mulheres como agentes de mudança e inspiração.",
 		text4:
 			"A estratégia aqui é criar um ambiente representativo que proporciona conteúdos enriquecedores para toda a audiência. A Passus é a agência de todos os programas do canal UMiss. ",
+	},
+	{
+		author: "Miss universo brasil 2021",
+		topic: "Teresa Santos",
+		text1:
+			"Juntamente com a Organização Miss Universo Brasil, nós tivemos o privilégio de registrar o concurso nacional que resultou na coroação de Teresa Santos como a vencedora de 2021.",
+		text2:
+			"Indo além do evento, trabalhamos diariamente no registro da preparação intensa de Teresa para o cenário internacional e documentamos suas atividades como Miss Universo Brasil. Nossa abordagem visa oferecer ao público apaixonado por esse universo uma nova.",
+		text3:
+			"perspectiva, destacando não apenas o brilho do palco, mas também os bastidores e a verdadeira jornada que essas mulheres embarcam.",
+	},
+	{
+		author: "Miss universo brasil 2022",
+		topic: "Mia Mamede",
+		text1:
+			"Juntamente com a Organização Miss Universo Brasil, nós tivemos o privilégio de registrar o concurso nacional que resultou na coroação de Mia Mamede como a vencedora de 2022.",
+		text2:
+			"Indo além do evento, trabalhamos diariamente no registro da preparação intensa de Mia para o cenário internacional e documentamos suas atividades como Miss Universo Brasil. Nossa abordagem visa oferecer ao público apaixonado por esse universo uma nova perspectiva, destacando não apenas o brilho do palco, mas também os bastidores e a verdadeira jornada que essas mulheres embarcam.",
+	},
+	{
+		author: "Miss universo brasil 2023",
+		topic: "Maria Brechane",
+		text1:
+			"Juntamente com a Organização Miss Universo Brasil, nós tivemos o privilégio de registrar o concurso nacional que resultou na coroação de Maria Brechane como a vencedora de 2023.",
+		text2:
+			"Indo além do evento, trabalhamos diariamente no registro da preparação intensa de Maria para o cenário internacional e documentamos suas atividades como Miss Universo Brasil. Nossa abordagem visa oferecer ao público apaixonado por esse universo uma nova perspectiva, destacando não apenas o brilho do palco, mas também os bastidores e a verdadeira jornada que essas mulheres embarcam.",
 	},
 ];
 

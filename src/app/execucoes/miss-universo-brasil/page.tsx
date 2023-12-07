@@ -15,14 +15,19 @@ let delay = 0;
 
 const photoArray: photoData[] = [
 	{
-		src: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
-		subtitle: "UMiss",
-		title: "Miss Universo Brasil Tour",
+		src: "/assets/image/trabalho/miss/2021.jpg",
+		subtitle: "Miss Universo Brasil 2021",
+		title: "Teresa Santos",
 	},
 	{
-		src: "/assets/image/trabalho/umiss.jpg",
-		subtitle: "UMiss",
-		title: "Tudo sobre o universo feminino",
+		src: "/assets/image/trabalho/miss/2022.jpg",
+		subtitle: "Miss Universo Brasil 2022",
+		title: "Mia Mamede",
+	},
+	{
+		src: "/assets/image/trabalho/miss/2023.jpg",
+		subtitle: "Miss Universo Brasil 2023",
+		title: "Maria Brechane",
 	},
 ];
 export default function Home() {
