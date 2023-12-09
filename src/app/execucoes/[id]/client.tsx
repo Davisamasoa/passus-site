@@ -42,9 +42,9 @@ export default function ExecucoesId({}: Props) {
 			{
 				author: "Vinicius Poit",
 				topic: "Respeito ao povo paulista.",
-				img1: "/assets/image/trabalho/poit/poit.jpg",
-				video2: "https://davisms.s3.sa-east-1.amazonaws.com/poit.mp4",
-				firstText: "",
+				img2: "/assets/image/trabalho/poit/poit.jpg",
+				video: "https://davisms.s3.sa-east-1.amazonaws.com/poit.mp4",
+
 				text1:
 					"Vinicius Poit, ex-candidato ao governo de São Paulo, apresentou estratégias centradas na eficiência da gestão pública, visando utilizar melhor os recursos em benefício do cidadão e incentivar o empreendedorismo como forma de impulsionar a economia e gerar oportunidades de emprego.",
 				text2:
@@ -495,8 +495,6 @@ export default function ExecucoesId({}: Props) {
 	};
 
 	const position = findIndexByAuthor(workData, pathname.replace("/execucoes/", "").replaceAll("-", " "));
-
-	console.log(position);
 
 	return (
 		<>
