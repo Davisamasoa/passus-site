@@ -194,9 +194,15 @@ export default function ExecucoesId({}: Props) {
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/Apresenta%C3%A7%C3%A3o+Credal.mp4",
 				img2: "/assets/image/trabalho/credal/1.jpg",
 				img3: "/assets/image/trabalho/credal/2.jpg",
-				img4: "/assets/image/trabalho/credal/3.jpg",
+
 				author: "Credal Bank",
-				topic: "Crédito para todos",
+				topic: "O crédito que acredita em você.",
+				text1:
+					"A Credal, destacando-se no mercado financeiro nacional, oferece um portfólio abrangente de soluções de crédito, caracterizado por inovações disruptivas e personalização. Especializada em financiamento corporativo e individual, a empresa integra tecnologias de ponta como sistemas de crédito digital avançados e aplicações de blockchain. Esta abordagem se distingue por sua transparência operacional e responsabilidade fiduciária, evidenciada por suas iniciativas proativas e engajamento consistente nas plataformas de mídia digital.",
+				text2:
+					"Identificando uma lacuna estratégica no mercado, a Agência Passus foi mobilizada para desenvolver um conjunto robusto de estratégias de comunicação. O foco estava na aquisição de clientes, com uma atenção particular ao segmento Business-to-Business (B2B).",
+				text3:
+					"A execução envolveu o desenvolvimento e implementação de uma estratégia de comunicação multifacetada. Esta campanha não só ampliou a visibilidade da Credal no mercado B2B, mas também consolidou sua reputação como uma entidade de vanguarda no setor financeiro, destacando-se pela inovação em soluções de crédito.",
 			},
 			{
 				img1: "/assets/image/trabalho/rubinho/1.jpg",
@@ -319,9 +325,9 @@ export default function ExecucoesId({}: Props) {
 					"A Agência Passus foi escolhida para criar peças publicitárias e ajudar com que essas visões fossem presença marcada no debate público, pautando outras vozes e fazendo com que as pessoas pudessem compreender visões que, para muitos, são puramente técnicas.",
 			},
 			{
-				video2: "https://davisms.s3.sa-east-1.amazonaws.com/Resumo+2021.mp4",
-
-				img1: "/assets/image/trabalho/Behind The Crown - o que há por trás da coroa.jpg",
+				dark: true,
+				video: "https://davisms.s3.sa-east-1.amazonaws.com/behind.mp4",
+				video2: "https://davisms.s3.sa-east-1.amazonaws.com/behind2.mp4",
 
 				author: "Behind the Crown",
 				topic: "O que há por trás da coroa",
@@ -331,6 +337,7 @@ export default function ExecucoesId({}: Props) {
 					"Ao mostrar a rotina e a preparação intensiva das candidatas, conduzimos a audiência por uma jornada diferente, proporcionando uma visão completa do processo até o grande momento da final. Esse é mais que um simples concurso; contamos histórias e determinações que moldam o percurso das participantes rumo à tão desejada coroa.",
 			},
 			{
+				dark: true,
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/Conhe%C3%A7a+a+Soul+TV.mp4",
 				img2: "/assets/image/trabalho/soul/1.jpg",
 				img3: "/assets/image/trabalho/soul/2.jpg",
@@ -419,15 +426,17 @@ export default function ExecucoesId({}: Props) {
 					"A estratégia aqui é criar um ambiente representativo que proporciona conteúdos enriquecedores para toda a audiência. A Passus é a agência de todos os programas do canal UMiss. ",
 			},
 			{
+				dark: true,
 				author: "Miss universo brasil 2021",
 				topic: "Teresa Santos",
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/miss-2021.mp4",
+				video2: "https://davisms.s3.sa-east-1.amazonaws.com/teresa.mp4",
 				text1:
 					"Juntamente com a Organização Miss Universo Brasil, nós tivemos o privilégio de registrar o concurso nacional que resultou na coroação de Teresa Santos como a vencedora de 2021.",
-				text2:
-					"Indo além do evento, trabalhamos diariamente no registro da preparação intensa de Teresa para o cenário internacional e documentamos suas atividades como Miss Universo Brasil. Nossa abordagem visa oferecer ao público apaixonado por esse universo uma nova.",
 				text3:
-					"perspectiva, destacando não apenas o brilho do palco, mas também os bastidores e a verdadeira jornada que essas mulheres embarcam.",
+					"Indo além do evento, trabalhamos diariamente no registro da preparação intensa de Teresa para o cenário internacional e documentamos suas atividades como Miss Universo Brasil.",
+				text5:
+					"Nossa abordagem visa oferecer ao público apaixonado por esse universo uma nova perspectiva, destacando não apenas o brilho do palco, mas também os bastidores e a verdadeira jornada que essas mulheres embarcam.",
 				carousel: [
 					"/assets/image/trabalho/miss-2021/1.jpg",
 					"/assets/image/trabalho/miss-2021/2.jpg",
@@ -445,26 +454,14 @@ export default function ExecucoesId({}: Props) {
 			{
 				author: "Miss universo brasil 2022",
 				topic: "Mia Mamede",
-				video: "https://davisms.s3.sa-east-1.amazonaws.com/miss-2022.mp4",
+
+				img1: "/assets/image/trabalho/miss-2022/1.jpg",
+				img2: "/assets/image/trabalho/miss-2022/2.jpg",
 				text1:
 					"Juntamente com a Organização Miss Universo Brasil, nós tivemos o privilégio de registrar o concurso nacional que resultou na coroação de Mia Mamede como a vencedora de 2022.",
-				text2:
+				text3:
 					"Indo além do evento, trabalhamos diariamente no registro da preparação intensa de Mia para o cenário internacional e documentamos suas atividades como Miss Universo Brasil. Nossa abordagem visa oferecer ao público apaixonado por esse universo uma nova perspectiva, destacando não apenas o brilho do palco, mas também os bastidores e a verdadeira jornada que essas mulheres embarcam.",
-				carousel: [
-					"/assets/image/trabalho/miss-2022/1.jpg",
-					"/assets/image/trabalho/miss-2022/2.jpg",
-					"/assets/image/trabalho/miss-2022/3.jpg",
-					"/assets/image/trabalho/miss-2022/4.jpg",
-					"/assets/image/trabalho/miss-2022/5.jpg",
-					"/assets/image/trabalho/miss-2022/6.jpg",
-					"/assets/image/trabalho/miss-2022/7.jpg",
-					"/assets/image/trabalho/miss-2022/8.jpg",
-					"/assets/image/trabalho/miss-2022/9.jpg",
-					"/assets/image/trabalho/miss-2022/10.jpg",
-					"/assets/image/trabalho/miss-2022/11.jpg",
-					"/assets/image/trabalho/miss-2022/12.jpg",
-					"/assets/image/trabalho/miss-2022/13.jpg",
-				],
+				img3: "/assets/image/trabalho/miss-2022/3.jpg",
 			},
 			{
 				author: "Miss universo brasil 2023",

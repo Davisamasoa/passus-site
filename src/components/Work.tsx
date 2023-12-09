@@ -95,7 +95,7 @@ export default function Work({
 							width={2000}
 							height={2000}
 							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
-							className="image h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover"
+							className="image h-[220px] sm:h-[300px] md:h-[450px] lg:h-[600px] object-cover"
 							alt="a"
 							src={img1}
 						/>
@@ -151,7 +151,7 @@ export default function Work({
 							blurDataURL="/assets/image/blur.jpg"
 							width={1300}
 							height={850}
-							className="image h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover"
+							className="image h-[220px] sm:h-[300px] md:h-[450px] lg:h-[600px] object-cover"
 							alt="a"
 							src={img2}
 						/>
@@ -207,7 +207,7 @@ export default function Work({
 							width={2000}
 							height={2000}
 							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
-							className="image h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover"
+							className="image h-[220px] sm:h-[300px] md:h-[450px] lg:h-[600px] object-cover"
 							alt="a"
 							src={img3}
 						/>
@@ -225,7 +225,7 @@ export default function Work({
 					{carousel.map((src, index) => {
 						return (
 							<div key={index}>
-								<img className="h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover" src={src} />
+								<img className="h-[220px] sm:h-[050px] md:h-[450px] lg:h-[600px] object-cover" src={src} />
 							</div>
 						);
 					})}
@@ -262,7 +262,7 @@ export default function Work({
 							width={2000}
 							height={2000}
 							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
-							className="image h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover"
+							className="image h-[220px] sm:h-[300px] md:h-[450px] lg:h-[600px] object-cover"
 							alt="a"
 							src={img4}
 						/>

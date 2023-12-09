@@ -44,6 +44,9 @@ export default function Header({}: Props) {
 				case "/execucoes/programa-4x4":
 				case "/execucoes/tarcisio-de-freitas":
 				case "/execucoes/miss-universo-brasil":
+				case "/execucoes/soultv":
+				case "/execucoes/behind-the-crown":
+				case "/execucoes/miss-universo-brasil-2021":
 					body.style.backgroundColor = "black";
 					setHeaderColor("bg-black text-gray-400");
 					setLogoColor("");
