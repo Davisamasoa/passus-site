@@ -21,12 +21,13 @@ export default function PhotoReveal({ src, topic, text }: Props) {
 				transition={{ duration: 1.5 }}
 			>
 				<Image
+					placeholder="blur"
+					blurDataURL="/assets/image/blur.jpg"
 					width={2000}
 					height={1000}
 					src={src}
-					placeholder="blur"
-					blurDataURL="https://cdn.wallpapersafari.com/89/17/nIGxhw.jpg"
 					quality={100}
+					priority={true}
 					alt={topic}
 					className="w-full inteli image"
 				/>

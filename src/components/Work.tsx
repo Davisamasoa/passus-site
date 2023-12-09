@@ -87,6 +87,8 @@ export default function Work({
 						className="pb-10 px-4 md:px-0"
 					>
 						<Image
+							placeholder="blur"
+							blurDataURL="/assets/image/blur.jpg"
 							width={2000}
 							height={2000}
 							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
@@ -142,6 +144,8 @@ export default function Work({
 						className="pb-10 px-4 md:px-0"
 					>
 						<Image
+							placeholder="blur"
+							blurDataURL="/assets/image/blur.jpg"
 							width={1300}
 							height={850}
 							className="image h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover"
@@ -195,6 +199,8 @@ export default function Work({
 						className="pb-10 px-4 md:px-0"
 					>
 						<Image
+							placeholder="blur"
+							blurDataURL="/assets/image/blur.jpg"
 							width={2000}
 							height={2000}
 							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
@@ -248,6 +254,8 @@ export default function Work({
 						className="pb-10 px-4 md:px-0"
 					>
 						<Image
+							placeholder="blur"
+							blurDataURL="/assets/image/blur.jpg"
 							width={2000}
 							height={2000}
 							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"

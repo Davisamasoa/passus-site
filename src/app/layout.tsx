@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
 	title: "Passus",
-	description: "Social Manager Agency",
+	description: "Agência de publicidade",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -1,8 +1,6 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import { SkewLoader } from "react-spinners";
 
 type Props = {
 	src: string;
@@ -71,7 +69,7 @@ export default function Photo({
 								alt={alt}
 								loading="lazy"
 								placeholder="blur"
-								blurDataURL="/public/image/blur.jpg"
+								blurDataURL="/assets/image/blur.jpg"
 							/>
 						</picture>
 					</div>
