@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { m, LazyMotion, domAnimation } from "framer-motion";
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -41,6 +41,9 @@ export default function Work({
 	video2,
 	carousel,
 }: Props) {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div
 			className={`image-container relative block
