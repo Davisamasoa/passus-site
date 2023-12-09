@@ -319,7 +319,10 @@ export default function ExecucoesId({}: Props) {
 					"A Agência Passus foi escolhida para criar peças publicitárias e ajudar com que essas visões fossem presença marcada no debate público, pautando outras vozes e fazendo com que as pessoas pudessem compreender visões que, para muitos, são puramente técnicas.",
 			},
 			{
+				video2: "https://davisms.s3.sa-east-1.amazonaws.com/Resumo+2021.mp4",
+
 				img1: "/assets/image/trabalho/Behind The Crown - o que há por trás da coroa.jpg",
+
 				author: "Behind the Crown",
 				topic: "O que há por trás da coroa",
 				text1:
