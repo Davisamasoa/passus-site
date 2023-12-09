@@ -20,7 +20,7 @@ export default function Home() {
 	const mainPhotoArray: photoData[] = [
 		{
 			src: "/assets/image/h-miss.jpg",
-			subtitle: "Miss Universo 2022",
+			subtitle: "Miss Universo Brasil 2022",
 			title: "Jornada para a coroa",
 		},
 		{

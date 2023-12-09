@@ -112,7 +112,7 @@ export default function Execucao() {
 			},
 			{
 				src: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
-				subtitle: "UMiss",
+				subtitle: "UMiss ",
 				title: "Miss Universo Brasil Tour",
 			},
 			{
@@ -130,11 +130,7 @@ export default function Execucao() {
 				subtitle: "Aurapharma",
 				title: "Mais vida, menos barreiras",
 			},
-			{
-				src: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
-				subtitle: "CBDMED",
-				title: "CBD é saúde",
-			},
+
 			{
 				src: "/assets/image/trabalho/umiss.jpg",
 				subtitle: "UMiss",

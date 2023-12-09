@@ -191,7 +191,10 @@ export default function ExecucoesId({}: Props) {
 					"A comunicação busca enfatizar a excelência e tradição da Ashby, utilizando-se de uma linguagem sofisticada e canais de comunicação apropriados para o segmento.",
 			},
 			{
-				img1: "/assets/image/trabalho/Credal.jpg",
+				video: "https://davisms.s3.sa-east-1.amazonaws.com/Apresenta%C3%A7%C3%A3o+Credal.mp4",
+				img2: "/assets/image/trabalho/credal/1.jpg",
+				img3: "/assets/image/trabalho/credal/2.jpg",
+				img4: "/assets/image/trabalho/credal/3.jpg",
 				author: "Credal Bank",
 				topic: "Crédito para todos",
 			},
@@ -228,7 +231,7 @@ export default function ExecucoesId({}: Props) {
 				author: "Patriota",
 				topic: "Patriotismo como unidade nacional.",
 				img1: "/assets/image/trabalho/patriota.jpg",
-				img2: "/assets/image/trabalho/patriota.jpg",
+				img2: "/assets/image/trabalho/patriota/patriota2.jpg",
 				text1:
 					"O PATRIOTA, como um partido político, é reconhecidamente conservador, defensor do livre-mercado e cristão.",
 				text2:
@@ -319,18 +322,33 @@ export default function ExecucoesId({}: Props) {
 				img1: "/assets/image/trabalho/Behind The Crown - o que há por trás da coroa.jpg",
 				author: "Behind the Crown",
 				topic: "O que há por trás da coroa",
+				text1:
+					"Uma inspiração que impulsiona inúmeras mulheres na busca pela coroa do Miss Universo Brasil. Nos bastidores do maior concurso de beleza do país, Behind The Crown oferece mistura elementos de reality show e documentário. A Agência Passus, por meio desse projeto, redefine a narrativa ao capturar meticulosamente os bastidores, o esforço da equipe e as emoções das candidatas.",
+				text2:
+					"Ao mostrar a rotina e a preparação intensiva das candidatas, conduzimos a audiência por uma jornada diferente, proporcionando uma visão completa do processo até o grande momento da final. Esse é mais que um simples concurso; contamos histórias e determinações que moldam o percurso das participantes rumo à tão desejada coroa.",
 			},
 			{
-				img1: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
+				video: "https://davisms.s3.sa-east-1.amazonaws.com/Conhe%C3%A7a+a+Soul+TV.mp4",
+				img2: "/assets/image/trabalho/soul/1.jpg",
+				img3: "/assets/image/trabalho/soul/2.jpg",
 				author: "SoulTV",
 				topic: "Um streaming para todos",
+				text1:
+					"Imagine um mundo onde o streaming não é apenas entretenimento, mas uma experiência de várias faces e não apenas com conteúdos de estúdios grandes. É nesse universo que a SoulTV se destaca.",
+				text3:
+					"Oferecendo muito mais do que apenas séries e filmes, ela se propõe a ser uma janela para novos conteúdos.",
+				text4:
+					"Com um toque criativo e uma pitada de inovação, a Passus cria campanhas que fazem a SoulTV estar presente em todas as plataformas, onde cada movimento busca envolver mais espectadores.",
 			},
 			{
-				author: "Miss Universo 2022",
+				author: "uMiss ",
 				topic: "Miss Universo Brasil Tour",
-
-				img1: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
-				img2: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
+				video: "https://davisms.s3.sa-east-1.amazonaws.com/miss-tour.mp4",
+				video2: "https://davisms.s3.sa-east-1.amazonaws.com/miss-tour-2.mp4",
+				text1:
+					"Cada episódio do UMiss Tour oferece a modelos, influenciadores, formadores de opinião e convidados especiais a chance única de explorar destinos e participar de eventos renomados, proporcionando experiências únicas.",
+				text2:
+					"Cada episódio do UMiss Tour oferece a modelos, influenciadores, formadores de opinião e convidados especiais a chance única de explorar destinos e participar de eventos renomados, proporcionando experiências únicas.",
 			},
 			{
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/vodka.mp4",
@@ -373,17 +391,21 @@ export default function ExecucoesId({}: Props) {
 				text4:
 					"Nossa parceria com a Aura Pharma teve como objetivo primordial promover uma compreensão firme sobre o potencial da Cannabis medicinal, destacando sua relevância como uma alternativa valiosa, assim como outros remédios da indústria farmacêutica. Além disso, enfatizamos a importância de seguir protocolos seguros e transparentes, sempre respaldados por artigos científicos e estudos clínicos de alta qualidade.",
 			},
-			{
-				img1: "/assets/image/trabalho/Miss Universo Brasil Tour.jpg",
-				author: "CBDMED",
-				topic: "CBD é saúde",
-			},
+
 			{
 				dark: true,
 				author: "UMiss",
 				topic: "Tudo sobre o universo feminino",
-				video: "https://davisms.s3.sa-east-1.amazonaws.com/miss-tour.mp4",
-				video2: "https://davisms.s3.sa-east-1.amazonaws.com/miss-tour-2.mp4",
+				video: "https://davisms.s3.sa-east-1.amazonaws.com/Chamada+Umiss+2023+ATT.mp4",
+				img2: "/assets/image/trabalho/umiss/1.jpg",
+
+				carousel: [
+					"/assets/image/trabalho/umiss/2.jpg",
+					"/assets/image/trabalho/umiss/3.jpg",
+					"/assets/image/trabalho/umiss/4.jpg",
+					"/assets/image/trabalho/umiss/5.jpg",
+				],
+
 				text1:
 					"Na televisão, é essencial contar com espaços dedicados ao público feminino, que ofereçam dicas, cuidados e programas que valorizam e enaltecem a mulher em todas as suas facetas.",
 				text2:
@@ -414,6 +436,7 @@ export default function ExecucoesId({}: Props) {
 					"/assets/image/trabalho/miss-2021/8.jpg",
 					"/assets/image/trabalho/miss-2021/9.jpg",
 					"/assets/image/trabalho/miss-2021/10.jpg",
+					"/assets/image/trabalho/miss-2021/11.jpg",
 				],
 			},
 			{
@@ -444,6 +467,12 @@ export default function ExecucoesId({}: Props) {
 				author: "Miss universo brasil 2023",
 				topic: "Maria Brechane",
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/miss-2023.mp4",
+
+				carousel: [
+					"/assets/image/trabalho/miss-2023/2.jpg",
+					"/assets/image/trabalho/miss-2023/3.png",
+					"/assets/image/trabalho/miss-2023/4.jpg",
+				],
 				text1:
 					"Juntamente com a Organização Miss Universo Brasil, nós tivemos o privilégio de registrar o concurso nacional que resultou na coroação de Maria Brechane como a vencedora de 2023.",
 				text2:

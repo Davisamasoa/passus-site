@@ -3,10 +3,9 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import passus from "../svg/logo_passus.svg";
+import passus from "../app/logo.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import path from "path";
 
 type Props = {};
 
@@ -47,11 +46,11 @@ export default function Header({}: Props) {
 				case "/execucoes/miss-universo-brasil":
 					body.style.backgroundColor = "black";
 					setHeaderColor("bg-black text-gray-400");
-					setLogoColor("invert");
+					setLogoColor("");
 					break;
 				default:
 					body.style.backgroundColor = "#FFF";
-					setLogoColor("");
+					setLogoColor("invert");
 					setHeaderColor("bg-white text-gray-500");
 			}
 		}
