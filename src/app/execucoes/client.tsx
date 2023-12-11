@@ -63,7 +63,7 @@ export default function Execucao() {
 			{
 				src: "/assets/image/trabalho/Rubinho Nunes.jpg",
 				subtitle: "Rubinho Nunes",
-				title: "São mais justa e livre",
+				title: "São Paulo mais justa e livre",
 			},
 			{
 				src: "/assets/image/trabalho/Brasil 200.jpg",
