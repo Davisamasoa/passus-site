@@ -42,7 +42,7 @@ export default function ExecucoesId({}: Props) {
 			{
 				author: "Vinicius Poit",
 				topic: "Respeito ao povo paulista.",
-				img2: "/assets/image/trabalho/poit/poit.jpg",
+				img2: "/assets/image/trabalho/poit/29.webp",
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/poit.mp4",
 
 				text1:
@@ -54,39 +54,38 @@ export default function ExecucoesId({}: Props) {
 				text4:
 					"Nossa proposta de comunicação foi inovadora e envolvente. Utilizando-se das redes sociais, criamos uma narrativa que aproximou Poit do público jovem e empreendedor. A Agência Passus se orgulha de ter sido parte deste projeto transformador, unindo inovação em comunicação com a visão progressista de Vinicius Poit.",
 				carousel: [
-					"/assets/image/trabalho/poit/1.jpg",
-					"/assets/image/trabalho/poit/2.jpg",
-					"/assets/image/trabalho/poit/3.jpg",
-					"/assets/image/trabalho/poit/4.jpg",
-					"/assets/image/trabalho/poit/5.jpg",
-					"/assets/image/trabalho/poit/6.jpg",
-					"/assets/image/trabalho/poit/7.jpg",
-					"/assets/image/trabalho/poit/8.jpg",
-					"/assets/image/trabalho/poit/10.jpg",
-					"/assets/image/trabalho/poit/11.jpg",
-					"/assets/image/trabalho/poit/12.jpg",
-					"/assets/image/trabalho/poit/13.jpg",
-					"/assets/image/trabalho/poit/14.jpg",
-					"/assets/image/trabalho/poit/15.jpg",
-					"/assets/image/trabalho/poit/16.jpg",
-					"/assets/image/trabalho/poit/17.jpg",
-					"/assets/image/trabalho/poit/18.jpg",
-					"/assets/image/trabalho/poit/19.jpg",
-					"/assets/image/trabalho/poit/20.jpg",
-					"/assets/image/trabalho/poit/21.jpg",
-					"/assets/image/trabalho/poit/22.jpg",
-					"/assets/image/trabalho/poit/23.jpg",
-					"/assets/image/trabalho/poit/24.jpg",
-					"/assets/image/trabalho/poit/25.jpg",
-					"/assets/image/trabalho/poit/26.jpg",
-					"/assets/image/trabalho/poit/27.jpg",
-					"/assets/image/trabalho/poit/28.jpg",
-					"/assets/image/trabalho/poit/29.jpg",
+					"/assets/image/trabalho/poit/1.webp",
+					"/assets/image/trabalho/poit/2.webp",
+					"/assets/image/trabalho/poit/3.webp",
+					"/assets/image/trabalho/poit/4.webp",
+					"/assets/image/trabalho/poit/5.webp",
+					"/assets/image/trabalho/poit/6.webp",
+					"/assets/image/trabalho/poit/7.webp",
+					"/assets/image/trabalho/poit/8.webp",
+					"/assets/image/trabalho/poit/10.webp",
+					"/assets/image/trabalho/poit/11.webp",
+					"/assets/image/trabalho/poit/12.webp",
+					"/assets/image/trabalho/poit/13.webp",
+					"/assets/image/trabalho/poit/14.webp",
+					"/assets/image/trabalho/poit/15.webp",
+					"/assets/image/trabalho/poit/16.webp",
+					"/assets/image/trabalho/poit/17.webp",
+					"/assets/image/trabalho/poit/18.webp",
+					"/assets/image/trabalho/poit/19.webp",
+					"/assets/image/trabalho/poit/20.webp",
+					"/assets/image/trabalho/poit/21.webp",
+					"/assets/image/trabalho/poit/22.webp",
+					"/assets/image/trabalho/poit/23.webp",
+					"/assets/image/trabalho/poit/24.webp",
+					"/assets/image/trabalho/poit/25.webp",
+					"/assets/image/trabalho/poit/26.webp",
+					"/assets/image/trabalho/poit/27.webp",
+					"/assets/image/trabalho/poit/28.webp",
 				],
 			},
 
 			{
-				img1: "/assets/image/trabalho/Miss – Beleza nacional.jpg",
+				img1: "/assets/image/trabalho/Miss – Beleza nacional.webp",
 				author: "Miss Universo Brasil",
 				topic: "Beleza nacional",
 			},
@@ -97,13 +96,13 @@ export default function ExecucoesId({}: Props) {
 					"O jornalismo é uma poderosa ferramenta para a promoção de informação e construção de uma sociedade engajada. No entanto, nem todos seguem uma abordagem responsável e imparcial. Muitas produções acabam prejudicando a busca pela verdade e comprometendo a qualidade das informações.",
 				text2:
 					"Apesar disso, há programas que se destacam pela excelência em sua abordagem jornalística, como o Programa 4 por 4, que reúne os maiores nomes do jornalismo independente para debates embasados sobre temas políticos e sociais.",
-				img2: "/assets/image/trabalho/programa4x4/1.jpg",
+				img2: "/assets/image/trabalho/programa4x4/1.webp",
 				text3:
 					"Essa estratégia é feita a partir de diferentes perspectivas, o que permite que os telespectadores tenham acesso a informações fundamentadas. Apresentado por Luis Ernesto Lacombe, Ana Paula Henkel, Rodrigo Constantino e Guilherme Fiuza, o programa ao vivo conseguiu grande relevância.",
 				text6:
 					"A Agência Passus participou da concepção do branding, do lançamento e da estratégia digital. Com quase 900 mil inscritos no YouTube, cerca de 700 mil seguidores em redes sociais e altas médias de visualizações, o Programa 4 por 4 se tornou um destaque nas suas transmissões ao vivo aos domingos.",
-				img3: "/assets/image/trabalho/programa4x4/2.jpg",
-				img4: "/assets/image/trabalho/programa4x4/3.jpg",
+				img3: "/assets/image/trabalho/programa4x4/2.webp",
+				img4: "/assets/image/trabalho/programa4x4/3.webp",
 				author: "Programa 4x4",
 				topic: "Jornalismo sério e independente",
 				topic2: "Jornalismo sério e independente",
@@ -115,17 +114,17 @@ export default function ExecucoesId({}: Props) {
 					"São Paulo enfrenta desafios significativos em termos de segurança pública, saúde e educação, fatores que influenciam diretamente na qualidade de vida de seus moradores.",
 				text2:
 					"Tarcísio de Freitas, ex-Ministro da Infraestrutura e atual Governador de São Paulo, teve como principal objetivo trazer a esperança de volta aos paulistanos. Estratégias de políticas públicas e a relação de sua figura técnica e comprometida foram a escolha de 13 milhões de pessoas",
-				img2: "/assets/image/trabalho/Tarcísio de Freitas.jpg",
+				img2: "/assets/image/trabalho/Tarcísio de Freitas.webp",
 				text3:
 					"A proposta da Agência Passus para esse trabalho se pautou em humanizar a figura de Tarcísio, aproximando-o da realidade dos cidadãos. Por meio de vídeos e fotografias de alta qualidade, retratamos momentos genuínos do pré-candidato em interações cotidianas e reuniões estratégicas.",
 				carousel: [
-					"/assets/image/trabalho/tarcisio/1.jpg",
-					"/assets/image/trabalho/tarcisio/2.jpg",
-					"/assets/image/trabalho/tarcisio/3.jpg",
-					"/assets/image/trabalho/tarcisio/4.jpg",
-					"/assets/image/trabalho/tarcisio/5.jpg",
-					"/assets/image/trabalho/tarcisio/6.jpg",
-					"/assets/image/trabalho/tarcisio/7.jpg",
+					"/assets/image/trabalho/tarcisio/1.webp",
+					"/assets/image/trabalho/tarcisio/2.webp",
+					"/assets/image/trabalho/tarcisio/3.webp",
+					"/assets/image/trabalho/tarcisio/4.webp",
+					"/assets/image/trabalho/tarcisio/5.webp",
+					"/assets/image/trabalho/tarcisio/6.webp",
+					"/assets/image/trabalho/tarcisio/7.webp",
 				],
 				text6:
 					"Com uma linguagem contemporânea e dinâmica, a comunicação foi projetada para alcançar e engajar diversas faixas etárias, ressaltando o caráter inovador da campanha e a visão de futuro de Tarcísio para São Paulo.",
@@ -137,8 +136,8 @@ export default function ExecucoesId({}: Props) {
 				author: "Jovem Pan e Brasil 200",
 				topic: "Contra a Fome na pandemia.",
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/jovempan.mp4",
-				img2: "/assets/image/trabalho/jovempan/1.jpg",
-				img3: "/assets/image/trabalho/jovempan/2.jpg",
+				img2: "/assets/image/trabalho/jovempan/1.webp",
+				img3: "/assets/image/trabalho/jovempan/2.webp",
 				text1:
 					"No contexto da pandemia de COVID-19, a sociedade enfrentou momentos extremamente desafiadores, onde muitas pessoas se viram em situações de extrema vulnerabilidade e necessidade.",
 				text2:
@@ -155,7 +154,7 @@ export default function ExecucoesId({}: Props) {
 				author: "Aldo Rebelo",
 				topic: "Uma vida dedicada à política.",
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/aldorebelo.mp4",
-				img2: "/assets/image/trabalho/aldo rebelo/aldo.jpg",
+				img2: "/assets/image/trabalho/aldo rebelo/aldo.webp",
 				text1:
 					"Desde o início de sua trajetória política, Aldo Rebelo se destacou como um nome comprometido com o desenvolvimento e a soberania do Brasil. Atuante em diversos cargos ao longo de sua carreira, Aldo acumulou experiência em funções significativas: foi Ministro da Coordenação Política e Assuntos Institucionais, Ministro dos Esportes, Ministro da Ciência, Tecnologia e Inovação, e Ministro da Defesa.",
 				text2:
@@ -164,13 +163,13 @@ export default function ExecucoesId({}: Props) {
 				text4:
 					"Agora, pelo PDT, Aldo Rebelo pleiteou uma vaga no Senado Federal, trazendo uma proposta de candidatura que busca conciliar desenvolvimento econômico com justiça social. Sua campanha foca na garantia dos direitos dos trabalhadores, na promoção de políticas trabalhistas e na defesa de um Brasil que valorize a ideia de nação soberana.",
 				carousel: [
-					"/assets/image/trabalho/aldo rebelo/1.jpg",
-					"/assets/image/trabalho/aldo rebelo/2.jpg",
-					"/assets/image/trabalho/aldo rebelo/3.jpg",
-					"/assets/image/trabalho/aldo rebelo/4.jpg",
-					"/assets/image/trabalho/aldo rebelo/5.jpg",
-					"/assets/image/trabalho/aldo rebelo/6.jpg",
-					"/assets/image/trabalho/aldo rebelo/7.jpg",
+					"/assets/image/trabalho/aldo rebelo/1.webp",
+					"/assets/image/trabalho/aldo rebelo/2.webp",
+					"/assets/image/trabalho/aldo rebelo/3.webp",
+					"/assets/image/trabalho/aldo rebelo/4.webp",
+					"/assets/image/trabalho/aldo rebelo/5.webp",
+					"/assets/image/trabalho/aldo rebelo/6.webp",
+					"/assets/image/trabalho/aldo rebelo/7.webp",
 				],
 			},
 			{
@@ -178,8 +177,8 @@ export default function ExecucoesId({}: Props) {
 				author: "Ashby",
 				topic: "3 décadas de sabor.",
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/ashby.mp4",
-				img2: "/assets/image/trabalho/ashby/1.jpg",
-				img3: "/assets/image/trabalho/ashby/2.jpg",
+				img2: "/assets/image/trabalho/ashby/1.webp",
+				img3: "/assets/image/trabalho/ashby/2.webp",
 
 				text1:
 					"A Cervejaria Ashby, com sua trajetória consolidada no segmento de cervejas artesanais, tem se destacado por décadas por sua cerveja de sabor premiado e pela sua dedicação em oferecer ao consumidor uma experiência singular.",
@@ -192,8 +191,8 @@ export default function ExecucoesId({}: Props) {
 			},
 			{
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/Apresenta%C3%A7%C3%A3o+Credal.mp4",
-				img2: "/assets/image/trabalho/credal/1.jpg",
-				img3: "/assets/image/trabalho/credal/2.jpg",
+				img2: "/assets/image/trabalho/credal/1.webp",
+				img3: "/assets/image/trabalho/credal/2.webp",
 
 				author: "Credal Bank",
 				topic: "O crédito que acredita em você.",
@@ -205,9 +204,9 @@ export default function ExecucoesId({}: Props) {
 					"A execução envolveu o desenvolvimento e implementação de uma estratégia de comunicação multifacetada. Esta campanha não só ampliou a visibilidade da Credal no mercado B2B, mas também consolidou sua reputação como uma entidade de vanguarda no setor financeiro, destacando-se pela inovação em soluções de crédito.",
 			},
 			{
-				img1: "/assets/image/trabalho/rubinho/1.jpg",
-				img2: "/assets/image/trabalho/rubinho/2.jpg",
-				img3: "/assets/image/trabalho/rubinho/3.jpg",
+				img1: "/assets/image/trabalho/rubinho/1.webp",
+				img2: "/assets/image/trabalho/rubinho/2.webp",
+				img3: "/assets/image/trabalho/rubinho/3.webp",
 				text1:
 					"Na política brasileira, é inegável que já enfrentamos enormes desafios, incluindo escândalos de corrupção, falta de incentivo ao empreendedorismo e uma excessiva burocratização. Tudo isso acaba dificultando o desenvolvimento econômico e social do nosso país.",
 				text2:
@@ -226,8 +225,8 @@ export default function ExecucoesId({}: Props) {
 				author: "Brasil 200",
 				topic: "O segundo grito de liberdade",
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/brasil200.mp4",
-				img2: "/assets/image/trabalho/brasil200/1.jpg",
-				carousel: ["/assets/image/trabalho/brasil200/2.jpg", "/assets/image/trabalho/brasil200/3.jpg"],
+				img2: "/assets/image/trabalho/brasil200/1.webp",
+				carousel: ["/assets/image/trabalho/brasil200/2.webp", "/assets/image/trabalho/brasil200/3.webp"],
 				text1:
 					"Durante sua história o Brasil vem sistematicamente lutando para ser o país do presente. Passados inúmeros governos, o país do amanhã nunca se tornou o país do hoje. Golpes, revoluções, promessas, escândalos… estamos sempre correndo atrás dos prejuízos e não indo no rumo do desenvolvimento.",
 				text3:
@@ -236,8 +235,8 @@ export default function ExecucoesId({}: Props) {
 			{
 				author: "Patriota",
 				topic: "Patriotismo como unidade nacional.",
-				img1: "/assets/image/trabalho/patriota.jpg",
-				img2: "/assets/image/trabalho/patriota/patriota2.jpg",
+				img1: "/assets/image/trabalho/patriota.webp",
+				img2: "/assets/image/trabalho/patriota/patriota2.webp",
 				text1:
 					"O PATRIOTA, como um partido político, é reconhecidamente conservador, defensor do livre-mercado e cristão.",
 				text2:
@@ -250,8 +249,8 @@ export default function ExecucoesId({}: Props) {
 				author: "ARCAH",
 				topic: "I believe in good people",
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/arcah.mp4",
-				img2: "/assets/image/trabalho/arcah/1.jpg",
-				img3: "/assets/image/trabalho/arcah/2.jpg",
+				img2: "/assets/image/trabalho/arcah/1.webp",
+				img3: "/assets/image/trabalho/arcah/2.webp",
 				text1:
 					"Em nossa recente parceria, tivemos o privilégio de trabalhar com a ARCAH, uma organização que, desde sua fundação, tem se dedicado a reintegrar socialmente pessoas em situação de rua.",
 				text2:
@@ -267,8 +266,8 @@ export default function ExecucoesId({}: Props) {
 				author: "B-ON",
 				topic: "Consciência, Qualidade e Sabor em Cada Escolha.",
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/b-on.mp4",
-				img2: "/assets/image/trabalho/b-on/1.jpg",
-				img3: "/assets/image/trabalho/b-on/2.jpg",
+				img2: "/assets/image/trabalho/b-on/1.webp",
+				img3: "/assets/image/trabalho/b-on/2.webp",
 				text1:
 					"A B-ON Saudável consolidou-se no mercado de alimentos como um farol em meio à vastidão de produtos ultraprocessados. Defendendo a saúde e bem-estar de seus consumidores, a empresa fornece uma gama de alimentos saborosos e ricos em nutrientes.",
 				text2:
@@ -281,8 +280,8 @@ export default function ExecucoesId({}: Props) {
 					"A parceria entre a B-ON Saudável e a Agência Passus redefiniu padrões, transformando a percepção do público sobre o que significa verdadeiramente consumir de forma consciente e saudável",
 			},
 			{
-				img1: "/assets/image/trabalho/pamplona/1.jpg",
-				img2: "/assets/image/trabalho/pamplona/2.jpg",
+				img1: "/assets/image/trabalho/pamplona/1.webp",
+				img2: "/assets/image/trabalho/pamplona/2.webp",
 				text1:
 					"Nem todas as empresas alimentícias estão verdadeiramente comprometidas com a preocupação em fornecer alimentos de qualidade, especialmente quando se trata de carne suína. Com frequência, os padrões de produção e os interesses comerciais prevalecem, colocando em segundo plano o bem-estar dos animais e a excelência do produto final.",
 				text2:
@@ -298,9 +297,9 @@ export default function ExecucoesId({}: Props) {
 				dark: true,
 				author: "Michel Temer e Maurício Macri",
 				topic: "Conferência pela Liberdade",
-				img1: "/assets/image/trabalho/temer e macri/1.jpg",
-				img2: "/assets/image/trabalho/temer e macri/2.jpg",
-				img3: "/assets/image/trabalho/temer e macri/3.jpg",
+				img1: "/assets/image/trabalho/temer e macri/1.webp",
+				img2: "/assets/image/trabalho/temer e macri/2.webp",
+				img3: "/assets/image/trabalho/temer e macri/3.webp",
 				text1:
 					"A Conferência Internacional da Liberdade tornou-se um espaço vital para discussões relevantes no cenário global, contando com a participação de personalidades marcantes, como os ex-presidentes Maurício Macri e Michel Temer.",
 				text2:
@@ -314,9 +313,9 @@ export default function ExecucoesId({}: Props) {
 				dark: true,
 				author: "Campanha pela Reforma Tributária",
 				topic: "Brasil próspero e justo.",
-				img1: "/assets/image/trabalho/reforma tributaria/1.jpg",
-				img2: "/assets/image/trabalho/reforma tributaria/2.jpg",
-				img3: "/assets/image/trabalho/reforma tributaria/3.jpg",
+				img1: "/assets/image/trabalho/reforma tributaria/1.webp",
+				img2: "/assets/image/trabalho/reforma tributaria/2.webp",
+				img3: "/assets/image/trabalho/reforma tributaria/3.webp",
 				text1:
 					"Em 2020 uma das discussões mais importantes do país era a composição de uma proposta de Reforma Tributária. Algumas entidades e grupos se posicionaram em apoio a desoneração da folha de pagamentos como medida para aliviar a carga tributária sobre as empresas e estimular o emprego e o crescimento econômico.",
 				text2:
@@ -339,8 +338,8 @@ export default function ExecucoesId({}: Props) {
 			{
 				dark: true,
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/Conhe%C3%A7a+a+Soul+TV.mp4",
-				img2: "/assets/image/trabalho/soul/1.jpg",
-				img3: "/assets/image/trabalho/soul/2.jpg",
+				img2: "/assets/image/trabalho/soul/1.webp",
+				img3: "/assets/image/trabalho/soul/2.webp",
 				author: "SoulTV",
 				topic: "Um streaming para todos",
 				text1:
@@ -377,8 +376,8 @@ export default function ExecucoesId({}: Props) {
 				author: "CASP",
 				topic: "Uma história de parceria com o campo.",
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/casp.mp4",
-				img2: "/assets/image/trabalho/casp/1.jpg",
-				img3: "/assets/image/trabalho/casp/2.jpg",
+				img2: "/assets/image/trabalho/casp/1.webp",
+				img3: "/assets/image/trabalho/casp/2.webp",
 				text1:
 					"No competitivo cenário do agronegócio, muitas empresas enfrentam desafios para transmitir segurança, transparência e qualidade em suas operações. Esses pilares são fundamentais para os produtores, que buscam parcerias confiáveis e eficientes para impulsionar seus negócios.",
 				text2:
@@ -389,9 +388,9 @@ export default function ExecucoesId({}: Props) {
 			{
 				author: "Aurapharma",
 				topic: "A vida é prioridade. Sempre.",
-				img1: "/assets/image/trabalho/aurapharma/1.jpg",
-				img2: "/assets/image/trabalho/aurapharma/2.jpg",
-				img3: "/assets/image/trabalho/aurapharma/3.jpg",
+				img1: "/assets/image/trabalho/aurapharma/1.webp",
+				img2: "/assets/image/trabalho/aurapharma/2.webp",
+				img3: "/assets/image/trabalho/aurapharma/3.webp",
 				text1:
 					"Em um cenário onde o uso da Cannabis Medicinal é uma necessidade para muitas pessoas que enfrentam doenças neurológicas, a realidade brasileira ainda se mantém com desafios de comunicação que dificultam o debate correto do tema.",
 				text2:
@@ -407,13 +406,13 @@ export default function ExecucoesId({}: Props) {
 				author: "UMiss",
 				topic: "Tudo sobre o universo feminino",
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/Chamada+Umiss+2023+ATT.mp4",
-				img2: "/assets/image/trabalho/umiss/1.jpg",
+				img2: "/assets/image/trabalho/umiss/1.webp",
 
 				carousel: [
-					"/assets/image/trabalho/umiss/2.jpg",
-					"/assets/image/trabalho/umiss/3.jpg",
-					"/assets/image/trabalho/umiss/4.jpg",
-					"/assets/image/trabalho/umiss/5.jpg",
+					"/assets/image/trabalho/umiss/2.webp",
+					"/assets/image/trabalho/umiss/3.webp",
+					"/assets/image/trabalho/umiss/4.webp",
+					"/assets/image/trabalho/umiss/5.webp",
 				],
 
 				text1:
@@ -438,30 +437,30 @@ export default function ExecucoesId({}: Props) {
 				text5:
 					"Nossa abordagem visa oferecer ao público apaixonado por esse universo uma nova perspectiva, destacando não apenas o brilho do palco, mas também os bastidores e a verdadeira jornada que essas mulheres embarcam.",
 				carousel: [
-					"/assets/image/trabalho/miss-2021/1.jpg",
-					"/assets/image/trabalho/miss-2021/2.jpg",
-					"/assets/image/trabalho/miss-2021/3.jpg",
-					"/assets/image/trabalho/miss-2021/4.jpg",
-					"/assets/image/trabalho/miss-2021/5.jpg",
-					"/assets/image/trabalho/miss-2021/6.jpg",
-					"/assets/image/trabalho/miss-2021/7.jpg",
-					"/assets/image/trabalho/miss-2021/8.jpg",
-					"/assets/image/trabalho/miss-2021/9.jpg",
-					"/assets/image/trabalho/miss-2021/10.jpg",
-					"/assets/image/trabalho/miss-2021/11.jpg",
+					"/assets/image/trabalho/miss-2021/1.webp",
+					"/assets/image/trabalho/miss-2021/2.webp",
+					"/assets/image/trabalho/miss-2021/3.webp",
+					"/assets/image/trabalho/miss-2021/4.webp",
+					"/assets/image/trabalho/miss-2021/5.webp",
+					"/assets/image/trabalho/miss-2021/6.webp",
+					"/assets/image/trabalho/miss-2021/7.webp",
+					"/assets/image/trabalho/miss-2021/8.webp",
+					"/assets/image/trabalho/miss-2021/9.webp",
+					"/assets/image/trabalho/miss-2021/10.webp",
+					"/assets/image/trabalho/miss-2021/11.webp",
 				],
 			},
 			{
 				author: "Miss universo brasil 2022",
 				topic: "Mia Mamede",
 
-				img1: "/assets/image/trabalho/miss-2022/1.jpg",
-				img2: "/assets/image/trabalho/miss-2022/2.jpg",
+				img1: "/assets/image/trabalho/miss-2022/1.webp",
+				img2: "/assets/image/trabalho/miss-2022/2.webp",
 				text1:
 					"Juntamente com a Organização Miss Universo Brasil, nós tivemos o privilégio de registrar o concurso nacional que resultou na coroação de Mia Mamede como a vencedora de 2022.",
 				text3:
 					"Indo além do evento, trabalhamos diariamente no registro da preparação intensa de Mia para o cenário internacional e documentamos suas atividades como Miss Universo Brasil. Nossa abordagem visa oferecer ao público apaixonado por esse universo uma nova perspectiva, destacando não apenas o brilho do palco, mas também os bastidores e a verdadeira jornada que essas mulheres embarcam.",
-				img3: "/assets/image/trabalho/miss-2022/3.jpg",
+				img3: "/assets/image/trabalho/miss-2022/3.webp",
 			},
 			{
 				author: "Miss universo brasil 2023",
@@ -469,9 +468,9 @@ export default function ExecucoesId({}: Props) {
 				video: "https://davisms.s3.sa-east-1.amazonaws.com/miss-2023.mp4",
 
 				carousel: [
-					"/assets/image/trabalho/miss-2023/2.jpg",
-					"/assets/image/trabalho/miss-2023/3.png",
-					"/assets/image/trabalho/miss-2023/4.jpg",
+					"/assets/image/trabalho/miss-2023/2.webp",
+					"/assets/image/trabalho/miss-2023/3.webp",
+					"/assets/image/trabalho/miss-2023/4.webp",
 				],
 				text1:
 					"Juntamente com a Organização Miss Universo Brasil, nós tivemos o privilégio de registrar o concurso nacional que resultou na coroação de Maria Brechane como a vencedora de 2023.",
