@@ -1,0 +1,4 @@
+// Placeholder exibido enquanto as imagens carregam (versão 10x7 de public/assets/image/blur.webp).
+// O next/image só aceita data URLs aqui: caminhos para arquivos não funcionam como blurDataURL.
+export const BLUR_DATA_URL =
+	"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAACqADAAQAAAABAAAABwAAAADD6HxEAAAAvUlEQVQIHQ2NvVLDMBCEdYqMJ/xMYHgRSBk6OjrevwSnwI5sy2frZEmnQ7vNzny7s/D99fn88vp2fr9cPtr2eL3+3IaePBKR0tocmvbpdLp/eLTTvGHXdb/WWr9h8GuMyUTaU4jTOC1uq2Ac7dAPiAvHnVM2sx0brRsNLOBwdYh//eARobASMYtbDMidyhkOGNKMm5vdHkiXAgAGvefCnqiuKdWfnFLiWi4CoEzcU2ZeQ5AiXIqIqq5ZVYn6B6gNlPAvPWiaAAAAAElFTkSuQmCC";

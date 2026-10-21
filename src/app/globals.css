@@ -2,53 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: GoudyOldStyle;
-	src: url("../../public/assets/font/Goudy\ Old\ Style\ Regular.ttf");
-}
-
-@font-face {
-	font-family: GLC;
-	src: url("../../public/assets/font/1592\ GLC\ Garamond\ W00\ Normal.ttf");
-}
-
-@font-face {
-	font-family: Basic;
-	src: url("../../public/assets/font/Basic-Commercial-LT-Com-Light.ttf");
-}
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-body {
-	background-color: white;
-}
-
-body.dark {
-	background-color: black;
-	color: white;
-}
-
 ul li {
 	cursor: pointer;
-}
-
-.logo {
-	letter-spacing: -6px;
 }
 
 @media (max-width: 670px) {
 	main img {
 		width: 100%;
 	}
-}
-
-.header {
-	position: fixed;
-	top: 0;
 }
 
 @media (min-width: 1424px) {

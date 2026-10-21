@@ -1,274 +1,116 @@
-import React, { useEffect } from "react";
-import { m, LazyMotion, domAnimation } from "framer-motion";
+"use client";
+
+import { useEffect } from "react";
+import { m } from "framer-motion";
 import Image from "next/image";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import type { Work as WorkData } from "@/data/works";
+import { BLUR_DATA_URL } from "@/lib/images";
 
 type Props = {
-	dark: boolean | undefined;
-	topic2?: string;
-	img1?: string;
-	img2?: string;
-	img3?: string;
-	img4?: string;
-	firstText?: string;
-	text1?: string;
-	text2?: string;
-	text3?: string;
-	text4?: string;
-	text5?: string;
-	text6?: string;
-	video?: string | undefined;
-	video2?: string | undefined;
-	carousel?: string[];
+	work: WorkData;
+	dark: boolean;
 };
 
-export default function Work({
-	dark,
-	topic2,
-	img1,
-	img2,
-	img3,
-	img4,
-	firstText,
-	text1,
-	text2,
-	text3,
-	text4,
-	text5,
-	text6,
-	video,
-	video2,
-	carousel,
-}: Props) {
+const fadeIn = {
+	initial: { opacity: 0 },
+	whileInView: { opacity: 1 },
+	viewport: { once: true },
+	transition: { duration: 1.5 },
+} as const;
+
+const textClassName = "mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify";
+const mediaHeight = "h-[220px] sm:h-[300px] md:h-[450px] lg:h-[600px] object-cover";
+
+/** Bloco de parágrafos; só é exibido quando o primeiro texto existe. */
+function TextBlock({ texts, dark }: { texts: (string | undefined)[]; dark: boolean }) {
+	const [lead, ...rest] = texts;
+	if (!lead) return null;
+
+	return (
+		<m.div {...fadeIn} className={`${textClassName} sm:text-xl text-base ${dark ? "text-gray-400" : "text-gray-800"}`}>
+			<p>{lead}</p>
+			{rest.map((text, index) => text && <p key={index} className="pt-10">{text}</p>)}
+		</m.div>
+	);
+}
+
+function WorkImage({ src, alt }: { src?: string; alt: string }) {
+	if (!src) return null;
+
+	return (
+		<m.div {...fadeIn} className="pb-10 px-4 md:px-0">
+			<Image
+				placeholder="blur"
+				blurDataURL={BLUR_DATA_URL}
+				width={2000}
+				height={2000}
+				sizes="(max-width: 768px) 100vw, 80vw"
+				className={`image ${mediaHeight}`}
+				alt={alt}
+				src={src}
+			/>
+		</m.div>
+	);
+}
+
+function WorkVideo({ src }: { src?: string }) {
+	if (!src) return null;
+
+	return (
+		<m.div {...fadeIn} className="pb-10">
+			<video width="100%" controls autoPlay playsInline muted loop>
+				<source src={src} />
+			</video>
+		</m.div>
+	);
+}
+
+export default function Work({ work, dark }: Props) {
+	const { author, topic2, img1, img2, img3, img4, video, video2, carousel } = work;
+	const { text1, text2, text3, text4, text5, text6 } = work;
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
 	return (
-		<div
-			className={`image-container relative block
-			 mx-auto overflow-hidden md:px-[10%]  w-full lg:px-headerPaddingLG`}
-		>
-			{firstText ? (
-				<LazyMotion features={domAnimation}>
-					<m.h1
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: true }}
-						initial={{ opacity: 0 }}
-						transition={{ duration: 1.5, delay: 0 }}
-						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
-							dark ? "text-gray-400" : "text-gray-800"
-						} `}
-					>
-						<p>{firstText}</p>
-					</m.h1>
-				</LazyMotion>
-			) : undefined}
-			{video ? (
-				<LazyMotion features={domAnimation}>
-					<m.div
-						initial={{ opacity: 0 }}
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: true }}
-						transition={{ duration: 1.5 }}
-						className="pb-10"
-					>
-						<video width="100%" controls autoPlay playsInline muted loop>
-							<source src={video} />
-						</video>
-					</m.div>
-				</LazyMotion>
-			) : undefined}
+		<div className="image-container relative block mx-auto overflow-hidden md:px-[10%] w-full lg:px-headerPaddingLG">
+			<WorkVideo src={video} />
+			<WorkImage src={img1} alt={author} />
+			<TextBlock texts={[text1, text2]} dark={dark} />
 
-			{img1 ? (
-				<LazyMotion features={domAnimation}>
-					<m.div
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: true }}
-						initial={{ opacity: 0 }}
-						transition={{ duration: 1.5 }}
-						className="pb-10 px-4 md:px-0"
-					>
-						<Image
-							placeholder="blur"
-							blurDataURL="/assets/image/blur.jpg"
-							width={2000}
-							height={2000}
-							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
-							className="image h-[220px] sm:h-[300px] md:h-[450px] lg:h-[600px] object-cover"
-							alt="a"
-							src={img1}
-						/>
-					</m.div>
-				</LazyMotion>
-			) : undefined}
+			{topic2 && (
+				<m.h2 {...fadeIn} className={`${textClassName} sm:text-2xl text-lg ${dark ? "text-white" : "text-black"}`}>
+					{topic2}
+				</m.h2>
+			)}
 
-			{text1 ? (
-				<LazyMotion features={domAnimation}>
-					<m.h1
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: true }}
-						initial={{ opacity: 0 }}
-						transition={{ duration: 1.5, delay: 0 }}
-						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
-							dark ? "text-gray-400" : "text-gray-800"
-						} `}
-					>
-						<p>{text1}</p>
+			<WorkImage src={img2} alt={author} />
+			<WorkVideo src={video2} />
+			<TextBlock texts={[text3, text4, text5]} dark={dark} />
+			<WorkImage src={img3} alt={author} />
 
-						{text2 ? <p className="pt-10">{text2}</p> : undefined}
-					</m.h1>
-				</LazyMotion>
-			) : undefined}
-
-			{topic2 ? (
-				<LazyMotion features={domAnimation}>
-					<m.h1
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: true }}
-						initial={{ opacity: 0 }}
-						transition={{ duration: 1.5, delay: 0 }}
-						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-2xl text-lg ${
-							dark ? "text-white" : "text-black"
-						} `}
-					>
-						{topic2}
-					</m.h1>
-				</LazyMotion>
-			) : undefined}
-
-			{img2 ? (
-				<LazyMotion features={domAnimation}>
-					<m.div
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: true }}
-						initial={{ opacity: 0 }}
-						transition={{ duration: 1.5 }}
-						className="pb-10 px-4 md:px-0"
-					>
-						<Image
-							placeholder="blur"
-							blurDataURL="/assets/image/blur.jpg"
-							width={1300}
-							height={850}
-							className="image h-[220px] sm:h-[300px] md:h-[450px] lg:h-[600px] object-cover"
-							alt="a"
-							src={img2}
-						/>
-					</m.div>
-				</LazyMotion>
-			) : undefined}
-			{video2 ? (
-				<LazyMotion features={domAnimation}>
-					<m.div
-						initial={{ opacity: 0 }}
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: true }}
-						transition={{ duration: 1.5 }}
-						className="pb-10"
-					>
-						<video width="100%" controls autoPlay playsInline muted loop>
-							<source src={video2} />
-						</video>
-					</m.div>
-				</LazyMotion>
-			) : undefined}
-
-			{text3 ? (
-				<LazyMotion features={domAnimation}>
-					<m.h1
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: true }}
-						initial={{ opacity: 0 }}
-						transition={{ duration: 1.5, delay: 0 }}
-						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
-							dark ? "text-gray-400" : "text-gray-800"
-						} `}
-					>
-						<p>{text3}</p>
-
-						{text4 ? <p className="pt-10">{text4}</p> : undefined}
-						{text5 ? <p className="pt-10">{text5}</p> : undefined}
-					</m.h1>
-				</LazyMotion>
-			) : undefined}
-			{img3 ? (
-				<LazyMotion features={domAnimation}>
-					<m.div
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: true }}
-						initial={{ opacity: 0 }}
-						transition={{ duration: 1.5 }}
-						className="pb-10 px-4 md:px-0"
-					>
-						<Image
-							placeholder="blur"
-							blurDataURL="/assets/image/blur.jpg"
-							width={2000}
-							height={2000}
-							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
-							className="image h-[220px] sm:h-[300px] md:h-[450px] lg:h-[600px] object-cover"
-							alt="a"
-							src={img3}
-						/>
-					</m.div>
-				</LazyMotion>
-			) : undefined}
-			{carousel ? (
-				<Carousel
-					autoPlay={true}
-					infiniteLoop={true}
-					className="pb-10 px-4 md:px-0"
-					showIndicators={false}
-					showThumbs={false}
-				>
-					{carousel.map((src, index) => {
-						return (
-							<div key={index}>
-								<img className="h-[220px] sm:h-[050px] md:h-[450px] lg:h-[600px] object-cover" src={src} />
-							</div>
-						);
-					})}
+			{carousel && (
+				<Carousel autoPlay infiniteLoop className="pb-10 px-4 md:px-0" showIndicators={false} showThumbs={false}>
+					{carousel.map((src) => (
+						<div key={src}>
+							<Image
+								width={2000}
+								height={2000}
+								sizes="(max-width: 768px) 100vw, 80vw"
+								className={mediaHeight}
+								alt={author}
+								src={src}
+							/>
+						</div>
+					))}
 				</Carousel>
-			) : undefined}
-			{text6 ? (
-				<LazyMotion features={domAnimation}>
-					<m.h1
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: true }}
-						initial={{ opacity: 0 }}
-						transition={{ duration: 1.5, delay: 0 }}
-						className={`mx-auto sm:px-headerPadding md:px-[25%] w-full px-4 pb-10 font-goudyOldStyle text-justify  sm:text-xl text-base ${
-							dark ? "text-gray-400" : "text-gray-800"
-						} `}
-					>
-						<p>{text6}</p>
-					</m.h1>
-				</LazyMotion>
-			) : undefined}
+			)}
 
-			{img4 ? (
-				<LazyMotion features={domAnimation}>
-					<m.div
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: true }}
-						initial={{ opacity: 0 }}
-						transition={{ duration: 1.5 }}
-						className="pb-10 px-4 md:px-0"
-					>
-						<Image
-							placeholder="blur"
-							blurDataURL="/assets/image/blur.jpg"
-							width={2000}
-							height={2000}
-							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
-							className="image h-[220px] sm:h-[300px] md:h-[450px] lg:h-[600px] object-cover"
-							alt="a"
-							src={img4}
-						/>
-					</m.div>
-				</LazyMotion>
-			) : undefined}
+			<TextBlock texts={[text6]} dark={dark} />
+			<WorkImage src={img4} alt={author} />
 		</div>
 	);
 }

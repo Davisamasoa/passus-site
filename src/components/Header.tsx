@@ -1,106 +1,71 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import passus from "../app/logo.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { m } from "framer-motion";
+import passus from "../app/logo.png";
+import { isDarkRoute } from "@/lib/theme";
 
-type Props = {};
+const navLinks = [
+	{ href: "/execucoes", label: "Execuções" },
+	{ href: "/inteligencias", label: "Inteligências" },
+	{ href: "/conceito", label: "Conceito" },
+	{ href: "/contato", label: "Contato" },
+];
 
-export default function Header({}: Props) {
-	const [prevScrollPos, setPrevScrollPos] = useState(0);
-	const [visible, setVisible] = useState(true);
-	const [headerColor, setHeaderColor] = useState<string>();
-	const [logoColor, setLogoColor] = useState<string>();
+export default function Header() {
 	const pathname = usePathname();
+	const dark = isDarkRoute(pathname);
+	const [visible, setVisible] = useState(true);
 
-	const handleScroll = () => {
-		const currentScrollPos = window.pageYOffset;
-		const isScrollingUp = currentScrollPos < prevScrollPos;
-
-		setPrevScrollPos(currentScrollPos);
-
-		setVisible(isScrollingUp || currentScrollPos < 10);
-	};
-
+	// Esconde o header ao rolar para baixo e mostra ao rolar para cima (ou perto do topo).
 	useEffect(() => {
-		const body = document.querySelector("body");
+		let lastScrollY = window.scrollY;
 
-		if (body) {
-			switch (pathname) {
-				case "/conceito":
-				case "/execucoes":
-				case "/execucoes/aldo-rebelo":
-				case "/execucoes/arcah":
-				case "/execucoes/ashby":
-				case "/execucoes/b-on":
-				case "/execucoes/jovem-pan-e-brasil-200":
-				case "/execucoes/campanha-pela-reforma-tributaria":
-				case "/execucoes/brasil-200":
-				case "/execucoes/michel-temer-e-mauricio-macri":
-				case "/execucoes/umiss":
-				case "/execucoes/programa-4x4":
-				case "/execucoes/tarcisio-de-freitas":
-				case "/execucoes/miss-universo-brasil":
-				case "/execucoes/soultv":
-				case "/execucoes/behind-the-crown":
-				case "/execucoes/miss-universo-brasil-2021":
-					body.style.backgroundColor = "black";
-					setHeaderColor("bg-black text-gray-400");
-					setLogoColor("");
-					break;
-				default:
-					body.style.backgroundColor = "#FFF";
-					setLogoColor("invert");
-					setHeaderColor("bg-white text-gray-500");
-			}
-		}
-	}, [pathname]);
-
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
-
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
+		const handleScroll = () => {
+			const currentScrollY = window.scrollY;
+			setVisible(currentScrollY < lastScrollY || currentScrollY < 10);
+			lastScrollY = currentScrollY;
 		};
-	}, [prevScrollPos, visible]);
+
+		window.addEventListener("scroll", handleScroll, { passive: true });
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
 
 	return (
-		<motion.header
-			initial={{ y: 0, opacity: 0 }}
-			animate={{ y: visible ? 0 : -130, opacity: 1 }}
-			transition={{ duration: 0.3 }}
-			className={`fixed top-0  ${headerColor} flex  justify-between md:flex-row flex-col items-center md:gap-0 gap-7  2xl:px-headerPaddingLG px-headerPadding mx-auto py-8 w-full z-50`}
-		>
-			<Link scroll={true} href="/">
-				<Image width={80} className={`sm:w-20 w-16 ${logoColor}`} src={passus} alt="logo da passus" />
-			</Link>
-			<nav className="w-full md:w-fit">
-				<ul className="flex justify-between md:justify-center font-extralight md:gap-8 text-xs">
-					<li>
-						<Link scroll={true} href="/execucoes">
-							Execuções
-						</Link>
-					</li>
-					<li>
-						<Link scroll={true} href="/inteligencias">
-							Inteligências
-						</Link>
-					</li>
-					<li>
-						<Link scroll={true} href="/conceito">
-							Conceito
-						</Link>
-					</li>
-					<li>
-						<Link scroll={true} href="/contato">
-							Contato
-						</Link>
-					</li>
-				</ul>
-			</nav>
-		</motion.header>
+		<>
+			{/* Renderizado já no HTML do servidor, evitando o "flash" branco nas páginas escuras.
+			    O !important é necessário para sobrepor a classe bg-white do <body>. */}
+			{dark && <style>{"body{background-color:black!important}"}</style>}
+			<m.header
+				initial={{ y: 0, opacity: 0 }}
+				animate={{ y: visible ? 0 : -130, opacity: 1 }}
+				transition={{ duration: 0.3 }}
+				className={`fixed top-0 ${
+					dark ? "bg-black text-gray-400" : "bg-white text-gray-500"
+				} flex justify-between md:flex-row flex-col items-center md:gap-0 gap-7 2xl:px-headerPaddingLG px-headerPadding mx-auto py-8 w-full z-50`}
+			>
+				<Link href="/">
+					<Image
+						width={80}
+						className={`sm:w-20 w-16 ${dark ? "" : "invert"}`}
+						src={passus}
+						alt="logo da passus"
+						preload
+					/>
+				</Link>
+				<nav className="w-full md:w-fit">
+					<ul className="flex justify-between md:justify-center font-extralight md:gap-8 text-xs">
+						{navLinks.map(({ href, label }) => (
+							<li key={href}>
+								<Link href={href}>{label}</Link>
+							</li>
+						))}
+					</ul>
+				</nav>
+			</m.header>
+		</>
 	);
 }
